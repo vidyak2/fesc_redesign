@@ -1,0 +1,132 @@
+1. Objectives and purpose of the redesign
+The Florida State government has created the Florida Energy Systems Consortium website: http://floridaenergy.ufl.edu, in order to encourage collaboration between the various experts in energy and provide important information to the state and to the public. However, while analyzing this website, it has become apparent that accessing the wanted information is sometimes difficult, depending on the device, and considering the multiple navigation items. 
+A redesign of this website could be advantageous since improvements would facilitate user experience, and allow information to be accessible to all. 
+
+2. State of the Current Site
+2.1 Accessibility Audit
+Accessibility is very important to all web pages, since it allows all users to access the web and understand the elements being displayed. The FESC website has been tested for accessibility, and few low points have been found. These have been presented in the following section.
+
+2.1.1 Image Alt Attribute
+All image tags should contain an “alt” attribute. In a case where the image cannot be displayed or seen by the user, a text will appear, explaining the content of the image. For example, on the Home page, the header image should have a description value next to “alt”. 
+
+2.1.2 Page Organization 
+Every web page should be organized in order of tags, such as “h1”, “h2”, “section”, “p”. In this website, several “div” tags appear and make it difficult to understand the page structure at first sight. It is also visible that two h1 tags are present one below the other. Depending on their importance, one could be changed to h2. 
+
+2.1.3 Color Contrast
+Color contrast is important to increase clarity of the web page, as well as allow users with disabilities to understand the content, without depending on the colors. On the home page, the combination of orange and navy blue, as well as light brown and navy blue, may not be optimal for everyone. 
+
+2.1.4 Text Size
+Text size is important, considering that some users may need to increase the text size to read, and this should be done by zooming into the page. However, when doing so, even if the text size increases slightly, so do a lot of other elements, for example, the contact icons in the footer. These take up a lot of the space on the page, which may become a disturbance on a smaller screen.
+
+2.1.5 Forms
+All forms should contain “id”, “label”, and “for” attributes. In the case of the search bar, the “id” is missing. Also, for the final subscription form, all these elements are missing, and this makes it difficult to understand the purpose of the form. 
+
+2.2 Mobile Friendliness 
+According to the Google Mobile-Friendly Test, the Home page of the FESC website is not mobile friendly (Google, n.d.). This test established that the clickable elements are very close together, making it difficult to access. Other issues englobe a viewport not set, text of a too small size, as well as content that is wider than the screen size. 
+
+2.3 Performance 
+According to WebPageTest, this website is struggling to compress images, and is taking longer load. This has been verified on several devices and connection types (WebPageTest, n.d.).
+• Desktop, Android, iOS, on Chrome browser: First byte time: 0.943s, load time: 4.105s 
+• IE10: First byte time: 1.451s, load time: 4.345s
+• Firefox, with Cable connection: first byte: 1.811s, load time: 7.159s
+• iPhone 6s: First byte: 2.042s, load time: 5.764s
+• Galaxy S5, on Chrome browser: First byte: 0.993s, load time: 5.467s, and the compressed images are given B 
+
+According to Pingdom, in New York, the performance grade given is 85%, and the load time is 2.05s (pingdom, 2018). However, according to Google PageSpeed Tools, on a mobile the optimization is as low as 58% (Google, n.d.). 
+
+2.4 Functionality
+Overall, the site seems functional. Links lead appropriately to the wanted pages. However, the Sitemap link present at the bottom of the Home page links to a Sitemap page, with no content except a navigation. In the same way, the About Us page contains the same text as the Home page. This shows repetitivity and could be improved.
+
+2.5 Ease of Use
+The functionality could be improved. The left-side navigation changes on every page, and it becomes difficult to navigate through the various pages. 
+Also, adding additional responsivity to this page could be useful, because presently the content is wider than the screen when displayed on a smaller device.
+ 
+3. User Research 
+The purpose of the Florida Energy Systems Consortium is to research and develop innovative energy systems. This would permit the use of alternative, improved, and efficient energy, leading to the economic development and expansion of Florida State.  
+The FESC website was created to encourage collaboration between the experts in energy, present across the 12 universities that support this cause. This website should also become a state resource and allow a platform to develop education and outreach programs for the public.
+
+The users of this website would mainly be government officials, public that desires to keep informed, as well as researchers and experts from the 12 supporting universities:
+• University of Florida
+• Florida State University
+• University of Central Florida
+• University of South Florida
+• Florida Agricultural and Mechanical University
+• Florida Atlantic University
+• Florida Gulf Coast University
+• Florida International University
+• New College of Florida
+• University of North Florida
+• University of West Florida, and 
+• Florida Polytechnic University. 
+
+It is possible to further pinpoint the expected audience by using the Website audience classification tool (websitecriteria, 2010). That table is presented below. 
+
+       Audience attributes	Your audiences’ characteristics & scenarios	Impact (H, M, L)
+Who	Age and age groups	Adults over 35						H
+	Personal life-style	Working adults						L
+	Gender			Both							L
+	Language		English as first language				M
+	Education		University						M
+	Learning preferences	Text, statistics					M
+	Work attributes		Professional, Research					H
+	Expectations		Clear information, ability to communicate via the website	H
+	Existing knowledge	Adequate amount						M
+	Web and computer experience	Low-Medium					H
+How	On what device they will read it	Large monitor				H
+	Internet connection speed		Standard				H
+Where	User’s location				Local					M
+	Place where the page is read		Home, Work				M
+Why	Why users seek the content	To be informed, and communicate with others	H
+	Importance of the content to them	Very important				H
+	How they found the page			Given link				M
+When	When it is read				At work					M
+
+ 
+4. Device Support Necessary
+It could be assumed that the users of this website would be over the age of 35 since they are researchers and working professionals. The domain of Energy does not use current technology very often. In this case, the website should be easily usable for older browsers.
+However, many users may also use their smartphone, since 89% of the population between the ages of 30 and 49, and 73% between the ages of 50 and 64, own a smartphone. Smartphone usage for this site may also be increasing since most users are college graduates, and 91% possess a smartphone (Pew Research Center, 2018). 
+It has also been verified that the average internet connection speed in the US is around 16.3mbps. For mobile phones, the average connection speed is 7.5 mbps (Kemp, 2017). Updating to a more responsive and performing site becomes important.  
+
+5. Recommendations - Deliverables
+Below are recommendations directly relating to the points to improve, put together in this report.
+5.1 Accessibility
+• Add Image Alt Attribute: All images should be verified, and alt tags should be added.
+• Organize HTML structure: Changes to the HTML structure would clarify the code and reduce the number of classes applied for styling. The “div” tags could be replaced by a more descriptive tag, such as “section” and “article”. 
+• Correct color contrast: The navigation colors can be modified to more clear contrasts, such as white and navy blue. 
+• Reduce number of colors on the page: Esthetically, the number of colors could be reduced to two or three, leading to a clear display of the important elements and navigation tools on the page. 
+• Add attributes to forms: All forms should be fixed to contain “id”, “label”, and “for” attributes. The purpose of each form should be clearly stated. 
+• Reduce footer size: The bottom blue footer with the school logos could be replaced uniquely by linking the websites when listing the 12 universities. This way, extra space isn’t used on the web page.
+
+5.2 Mobile Friendliness & Responsivity
+• Space clickable elements: When on a smaller screen, spacing elements will permit easy touch-screen access. 
+• Viewport size: A viewport size should be set, permitting resizing on a small screen. 
+• Resize navigation: Navigation bars should resize with the width and height of the screen.
+• Increase text size: On a smaller screen, such as a phone, the text size should increase to permit easy reading, especially considering that the website focuses more on text than on images.  
+• Keep elements proportional: When reducing screen size, the icons enlarge more than necessary. All the elements on the page should move together and stay proportional. 
+
+5.4 Performance
+• Optimize images: This would decrease load time, since a smaller pixel image could be used, when the highest resolution is not necessary. 
+• Download content: Headers could use images from an easily accessible network, and not link to download content. 
+
+5.5 Functionality
+• Verify navigation links: This would eliminate links that lead to the same page, or that do not add any supplementary information, increasing clarity of the elements on the page.
+
+5.6 Ease of Use
+• Collapse elements on the left-side navigation: The left-side navigation is longer than the content on some pages. A collapsing menu would be useful here. 
+• Merge left-side and main navigations: This could avoid unnecessary links such as, Public Outreach on the Home page, left-side navigation, which leads to the same page as Outreach, on the main navigation.
+• Keep an identical left-side navigation on every page: This would permit the user to continue from one page to another, always relying on the same menu.
+
+6. Bibliography
+
+FESC Florida Energy Systems Consortium. (2015). FESC Bringing Energy Solutions to Florida, the Nation and the World. Retrieved from http://floridaenergy.ufl.edu
+Google. (n.d.). Mobile-Friendly Test. Retrieved from https://search.google.com/test/mobile-friendly
+Google. (n.d.). PageSpeed Insights. Retrieved from https://developers.google.com/speed/pagespeed/insights/
+Kemp, S. (2017). Digital in 2017: Global Overview. Retrieved from we are social: https://wearesocial.com/uk/special-reports/digital-in-2017-global-overview
+Lawton Henry, S. (2017). Easy Checks - A First Review of Web Accessibility. Retrieved from W3C Web Accessibility Initiative: https://www.w3.org/WAI/eval/preliminary
+Lawton Henry, S. (2018). Evaluation Web Accessibility Overview. Retrieved from W3C Web Accessibility Initiative: https://www.w3.org/WAI/eval/Overview
+Pew Research Center. (2018). Mobile Fact Sheet. Retrieved from Pew Research Center: http://www.pewinternet.org/fact-sheet/mobile/
+pingdom. (2018). Pingdom Website Speed Test. Retrieved from https://tools.pingdom.com
+WebPageTest. (n.d.). Test a website's performance. Retrieved from WebPageTest: https://www.webpagetest.org
+websitecriteria. (2010). Website Writing Guide. Retrieved from http://www.websitecriteria.com/website_writing_guide_before_you_begin_to_write/identify_the_intended_audience.html
+
+
