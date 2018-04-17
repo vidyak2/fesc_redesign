@@ -113,7 +113,17 @@ Below are recommendations directly relating to the points to improve, put togeth
 
 5.6 Ease of Use
 • Collapse elements on the left-side navigation: The left-side navigation is longer than the content on some pages. A collapsing menu would be useful here. 
-• Merge left-side and main navigations: This could avoid unnecessary links such as, Public Outreach on the Home page, left-side navigation, which leads to the same page as Outreach, on the main navigation.
+• Merge left-side navigation and main navigation: This could avoid unnecessary links such as, Public Outreach on the Home page, left-side navigation, which leads to the same page as Outreach, on the main navigation. 
+Links eliminated from the left-side navigation of the HOME page:
+  - Home: Same page as Home on the main nav
+  - About Us: Text is identical to Home page
+  - FESC Funded Projects: Same page as FESC Research
+  - Facilities and Resources: Same page as User Facilities on the main nav
+  - Energy Education/ Energy Jobs: Same page as Education on the main nav
+  - Public Outreach: Same page as Outreach in the main nav
+  - FESC Conferences: Information will be added on Home page, with News & Events, and the Conferences page will be changed to News & Events
+  - Frequently Asked Questions: Place in main nav, since it is an important link that will often be looked for, and should be easily found
+  - Contact Us: Same page as Contact Us on the main nav
 • Keep an identical left-side navigation on every page: This would permit the user to continue from one page to another, always relying on the same menu.
 
 6. Bibliography
