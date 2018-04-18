@@ -16,17 +16,23 @@
 
 
   <!-- Font Awesome CDN link -->
-  <!--  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <!-- Facebook Meta Tags -->
   <meta property="og:title" content="2017 FESC/Polytech Conference - July 31-August 01 2017">
   <meta property="og:description" content="FESC holds an annual technical workshop to disseminate the latest advances in energy research and education and assist the Florida Office of Energy with the Florida Energy Summit.">
-  <!-- Several images representing the FESC conference have been tried, but were unable to be read by Facebook debugger. Until a new image is found, the current image is inserted as a placeholder. -->
   <meta property="og:image" content="http://floridaenergy.ufl.edu/wp-content/uploads/Polytech-Conference-Venue.jpg">
   <meta property="og:image:weight" content="1280">
   <meta property="og:image:height" content="720">
   <meta property="og:url" content="https://vidyak2.github.io/fesc_redesign/">
   <meta property="og:type" content="website">
+
+  <!-- Twitter Meta Tags - To be completed when share button is created -->
+  <meta name="twitter:title" content=" ">
+  <meta name="twitter:description" content=" ">
+  <meta name="twitter:image" content=" ">
+  <meta name="twitter:card" content="summary_large_image">
+
 </head>
 
 <body>
@@ -40,49 +46,49 @@
         <img class="logo" src="images/logo.png" alt="logo">
       </div>
 
-      <h1>FESC Florida Energy Systems Consortium</h1>
-    </div>
+      <!-- h1 has been commented since the current header image has the logo and h1 included. However, during the redesign, the logo image will be replaced by an h1 in Google Font text, and a simple image of the logo, increasing efficiency of the website -->
+      <!-- <h1>FESC Florida Energy Systems Consortium</h1>-->
 
-    <!-- Center Top Submit Form -->
-    <article class="center">
-      <form name="research" onsubmit="search()">
-        <label>Search for:
+      <!-- Center Top Submit Form -->
+      <article class="center">
+        <form name="research" onsubmit="search()">
+          <label>Search for:
             <input class="topsearch" type="text" name="searchbar">
             <button>Search</button>
           </label>
-      </form>
-    </article>
+        </form>
+      </article>
+    </div>
 
     <!--Main Nav -->
     <nav class="mainnav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">FESC Research</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Outreach</a></li>
-        <li><a href="#">User Facilities</a></li>
-        <li><a href="#">Energy Industry</a></li>
-        <li><a href="#">Advisory Board</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+
+      <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+          <a href="#">Florida Energy Facts</a>
+          <a href="#">FESC Expertise</a>
+          <a href="#">FL University Research</a>
+          <a href="#">Technology Commercialization</a>
+          <a href="#">FESC Conferences</a>
+          <a href="#">Annual Reports, Publications and Presentations</a>
+          <a href="#">Supplementary Information</a>
+        </div>
+      </div>
+
+      <a href="#">FESC Research</a>
+      <a href="#">Education</a>
+      <a href="#">Outreach</a>
+      <a href="#">User Facilities</a>
+      <a href="energyindustry.html">Energy Industry</a>
+      <a href="#">Advisory Board</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
 
   <main>
     <!-- Left Side Nav. Some links present on the left side navigation of the original website have been eliminated during the remodel. Explanations for these choices can be found in section 5.6 of the Proposal. -->
-
-    <nav class="leftsidenav">
-      <ul>
-        <li><a href="#">Florida Energy Facts</a></li>
-        <li><a href="#">FESC Expertise</a></li>
-        <li><a href="#">FL University Research</a></li>
-        <li><a href="#">Technology Commercialization</a></li>
-        <li><a href="#">FESC Conferences</a></li>
-        <li><a href="#">Annual Reports, Publications and Presentations</a></li>
-        <li><a href="#">Supplementary Information</a></li>
-      </ul>
-    </nav>
 
     <section class="container">
       <h2>FESC Bringing Energy Solutions to Florida, the Nation and the World</h2>
@@ -162,9 +168,9 @@
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
 
-        <!-- Center top Submit form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
+        <!-- Footer Submit form -->
+        <article class="footcenter">
+          <form name="signup" onsubmit="submit()">
             <label>Sign up for the FESC Florida Energy Connecions Newsletter 
             <input class="newsletter" type="text" name="signup">
               <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 

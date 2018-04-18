@@ -1,0 +1,101 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 100%;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: #FFFFFF;
+
+    /*    background: linear-gradient(rgba(153, 204, 255, 0.8), rgba(153, 204, 255, 0.2), rgba(153, 204, 255, 0.1), rgba(153, 204, 255, 0), rgba(153, 204, 255, 0.1), rgba(153, 204, 255, 0.2), rgba(153, 204, 255, 0.8));*/
+  }
+
+  div.topheader {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Children elements */
+
+  /* Logo image */
+
+  .logo {
+    max-width: 100%;
+  }
+
+  div.imgcontainer {
+    height: 100%;
+  }
+
+  /* NAVIGATION */
+
+  /* Children elements of div.topheader */
+
+  /* Search Bar */
+
+  .center {
+    align-self: flex-end;
+    padding: 0.5rem;
+  }
+
+  input.topsearch {
+    width: 20rem;
+    text-align: center;
+  }
+
+
+
+  /* Main Navigation */
+
+  /* Parent element */
+
+  .mainnav {
+    flex-wrap: wrap;
+    padding: 0.5rem 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav a {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* Create dropdown */
+
+  .dropbtn {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+  }
+
+  /* Position: absolute permits the dropdown to appear over other elements on the page */
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
