@@ -135,16 +135,16 @@ Links eliminated from the left-side navigation of the HOME page:
 Links relating to types of energy have been taken from left-side navigation and placed in clickable images:
   - Algae
   - Biomass & Biofuels
-  - Solar, Utilities
-  - Electric & Power
+  - Solar
+  - Utilities, Electric & Power
   - Marine
   - Natural Gas
   - Wind
-  - Gas Turbine, Oil & Petroleum pages 
+  - Gas Turbine, Oil & Petroleum 
 The rest of the links from the left-side navigation have been placed in the drop-down menu.
 
 6.3 CONTACT US PAGE: 
-Most of the links on the left-side navigation are repeated from the other pages. In this case, they can all be eliminated. 
+Most of the links on the left-side navigation are repeated from the other pages. In this case, they have all been eliminated. 
 
 7. Bibliography
 
