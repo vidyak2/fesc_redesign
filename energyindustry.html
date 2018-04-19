@@ -19,6 +19,22 @@
 
   <!-- Font Awesome CDN link -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- Facebook Meta Tags - To be completed when share button is created -->
+  <meta property="og:title" content=" ">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content=" ">
+  <meta property="og:image:weight" content=" ">
+  <meta property="og:image:height" content=" ">
+  <meta property="og:url" content=" ">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Meta Tags - To be completed when share button is created -->
+  <meta name="twitter:title" content=" ">
+  <meta name="twitter:description" content=" ">
+  <meta name="twitter:image" content=" ">
+  <meta name="twitter:card" content="summary_large_image">
+
 </head>
 
 <body>
@@ -32,52 +48,66 @@
         <img class="logo" src="images/logo.png" alt="logo">
       </div>
 
-      <h1>Energy Industry</h1>
-    </div>
-
-    <!-- Center Top Submit Form -->
-    <article class="center">
-      <form name="research" onsubmit="search()">
-        <label>Search for:
+      <article class="center">
+        <form name="research" onsubmit="search()">
+          <label>Search for:
             <input class="topsearch" type="text" name="searchbar">
-            <button>Search</button>
           </label>
-      </form>
-    </article>
+        </form>
+      </article>
+
+    </div>
 
     <!--Main Nav -->
     <nav class="mainnav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">FESC Research</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Outreach</a></li>
-        <li><a href="#">User Facilities</a></li>
-        <li><a href="#">Energy Industry</a></li>
-        <li><a href="#">Advisory Board</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+
+      <div class="drpdwn">
+        <button class="drpbtn">Home</button>
+        <div class="drpdwn-cntent">
+          <a href="index.html">About Us</a>
+          <a href="#">Florida Energy Facts</a>
+          <a href="#">FESC Expertise</a>
+          <a href="#">FL University Research</a>
+          <a href="#">Technology Commercialization</a>
+          <a href="#">Annual Reports, Publications and Presentations</a>
+          <a href="#">Supplementary Information</a>
+        </div>
+      </div>
+      <a href="#">FESC Research</a>
+      <a href="#">Education</a>
+      <a href="#">Outreach</a>
+      <a href="#">User Facilities</a>
+      <div class="drpdwn">
+        <button class="drpbtn">Energy Industry</button>
+        <div class="drpdwn-cntent">
+          <a href="energyindustry.html">About Energy Industry</a>
+          <a href="#">Energy Efficiency</a>
+          <a href="#">Energy Crops</a>
+          <a href="#">Waste to Energy</a>
+          <a href="#">Smart Grid & Power</a>
+          <a href="#">Energy Storage</a>
+          <a href="#">Network & Security</a>
+          <a href="#">Water Purification</a>
+          <a href="#">Consulates & Law</a>
+          <a href="#">Engineering Consulting</a>
+          <a href="#">Associations & Organizations</a>
+          <a href="#">Energy Financing & Funding</a>
+          <a href="#">FL University Spin-off</a>
+          <a href="#">Educational & Professional Energy Opportunities</a>
+          <a href="#">Other</a>
+        </div>
+      </div>
+      <a href="#">News & Events</a>
+      <a href="#">FAQ</a>
+      <a href="#">Advisory Board</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
+
+    <h1>Energy Industry</h1>
   </header>
 
 
   <main>
-    <!-- Left Side Nav. Some links present on the left side navigation of the original website have been eliminated during the remodel. Explanations for these choices can be found in section 5.6 of the Proposal. -->
-
-    <!--
-    <nav class="leftsidenav">
-      <ul>
-        <li><a href="#">Florida Energy Facts</a></li>
-        <li><a href="#">FESC Expertise</a></li>
-        <li><a href="#">FL University Research</a></li>
-        <li><a href="#">Technology Commercialization</a></li>
-        <li><a href="#">FESC Conferences</a></li>
-        <li><a href="#">Annual Reports, Publications and Presentations</a></li>
-        <li><a href="#">Supplementary Information</a></li>
-      </ul>
-    </nav>
--->
-
     <section class="container">
       <!-- Main Text Article -->
       <article class="maintext">
@@ -86,13 +116,23 @@
         <p>This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
       </article>
 
-      <!-- Images Article. Each image links to a single web page. This eliminates the side navigation on this page. -->
+      <!-- Images Article. Each image links to a single web page. This eliminates left-side navigation. -->
       <article class="images">
+        <!-- Link to Algea Page-->
         <a href="#"><img class="energyimg" src="images/algae.png" alt="algae"></a>
+        <!-- Link to Biomass & Biofuels Page-->
         <a href="#"><img class="energyimg" src="images/biomassandbiofuels.png" alt="biomass and biofuels"></a>
+        <!-- Link to Solar Page-->
         <a href="#"><img class="energyimg" src="images/solar.png" alt="solar"></a>
+        <!-- Link to Wind Page-->
         <a href="#"><img class="energyimg" src="images/wind.png" alt="wind"></a>
+        <!-- Link to Utilities, Electric & Power Page-->
         <a href="#"><img class="energyimg" src="images/electricity.png" alt="utilities electric & power"></a>
+        <!-- Link to Marine Page - This image will be changed by a Marine image -->
+        <a href="#"><img class="energyimg" src="images/algae.png" alt="marine"></a>
+        <!-- Link to Natural Gas Page - This image will be changed by a Natural Gas image -->
+        <a href="#"><img class="energyimg" src="images/algae.png" alt="natural gas"></a>
+        <!-- Link to Gas Turbine, Oil & Petroleum Page-->
         <a href="#"><img class="energyimg" src="images/petroleum.png" alt="gas turbine, oil & petroleum"></a>
       </article>
     </section>
@@ -100,34 +140,36 @@
 
   <footer>
     <article class="footer">
-      <!-- Copyright section -->
+
+      <!-- Footer Submit form -->
+      <article class="footcenter">
+        <form name="signup" onsubmit="submit()">
+          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
+            <input class="newsletter" type="text" name="signup">
+              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
+          </label>
+        </form>
+      </article>
+
+      <!-- Copyright Section -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
       <p class="foot">Last modified on <time datetime="2018-04-18">April 18 2018</time></p>
 
-      <!-- Footer icons -->
+      <!-- Footer Icons -->
       <div class="icons">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-        <!-- Center top Submit form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-          </form>
-        </article>
       </div>
 
-      <!-- Back to top button -->
+      <!-- Back to Top Button -->
       <a class="footer" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
     </article>
 
   </footer>
 
+  <!-- Script Tag -->
   <script src="#"></script>
 </body>
 
