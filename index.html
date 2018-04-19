@@ -42,61 +42,79 @@
   <header>
     <div class="topheader">
 
+      <!-- The header image will be replaced by an h1 in Google Font text and a logo image, increasing efficiency -->
       <div class="imgcontainer">
         <img class="logo" src="images/logo.png" alt="logo">
       </div>
-
-      <!-- h1 has been commented since the current header image has the logo and h1 included. However, during the redesign, the logo image will be replaced by an h1 in Google Font text, and a simple image of the logo, increasing efficiency of the website -->
-      <!-- <h1>FESC Florida Energy Systems Consortium</h1>-->
 
       <!-- Center Top Submit Form -->
       <article class="center">
         <form name="research" onsubmit="search()">
           <label>Search for:
             <input class="topsearch" type="text" name="searchbar">
-            <button>Search</button>
           </label>
         </form>
       </article>
     </div>
 
     <!--Main Nav -->
+    <!-- Left-side menus have been merged into the main menu, as drop-downs. All explanations for deleted links from left-side menus can be found in section 6 of proposal.txt. -->
     <nav class="mainnav">
 
-      <div class="dropdown">
-        <button class="dropbtn">Home</button>
-        <div class="dropdown-content">
+      <div class="drpdwn">
+        <button class="drpbtn">Home</button>
+        <div class="drpdwn-cntent">
+          <a href="index.html">About Us</a>
           <a href="#">Florida Energy Facts</a>
           <a href="#">FESC Expertise</a>
           <a href="#">FL University Research</a>
           <a href="#">Technology Commercialization</a>
-          <a href="#">FESC Conferences</a>
           <a href="#">Annual Reports, Publications and Presentations</a>
           <a href="#">Supplementary Information</a>
         </div>
       </div>
-
       <a href="#">FESC Research</a>
       <a href="#">Education</a>
       <a href="#">Outreach</a>
       <a href="#">User Facilities</a>
-      <a href="energyindustry.html">Energy Industry</a>
+      <div class="drpdwn">
+        <button class="drpbtn">Energy Industry</button>
+        <div class="drpdwn-cntent">
+          <a href="energyindustry.html">About Energy Industry</a>
+          <a href="#">Energy Efficiency</a>
+          <a href="#">Energy Crops</a>
+          <a href="#">Waste to Energy</a>
+          <a href="#">Smart Grid & Power</a>
+          <a href="#">Energy Storage</a>
+          <a href="#">Network & Security</a>
+          <a href="#">Water Purification</a>
+          <a href="#">Consulates & Law</a>
+          <a href="#">Engineering Consulting</a>
+          <a href="#">Associations & Organizations</a>
+          <a href="#">Energy Financing & Funding</a>
+          <a href="#">FL University Spin-off</a>
+          <a href="#">Educational & Professional Energy Opportunities</a>
+          <a href="#">Other</a>
+        </div>
+      </div>
+      <a href="#">News & Events</a>
+      <a href="#">FAQ</a>
       <a href="#">Advisory Board</a>
       <a href="contact.html">Contact Us</a>
     </nav>
+
+    <h1>About Us</h1>
   </header>
 
 
   <main>
-    <!-- Left Side Nav. Some links present on the left side navigation of the original website have been eliminated during the remodel. Explanations for these choices can be found in section 5.6 of the Proposal. -->
-
     <section class="container">
       <h2>FESC Bringing Energy Solutions to Florida, the Nation and the World</h2>
 
       <!-- Main Text Article -->
       <article class="maintext">
 
-        <!-- INSERT VIDEO HERE. The text will be placed on the left side, and the video will be placed on the right side of the main article. -->
+        <!-- INSERT VIDEO HERE. The text will be placed on the left side, and the video will be placed on the right side in the main article. -->
 
         <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its <a href="#backtouniversities">12 supported universities</a> to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to <strong>'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'</strong>. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
 
@@ -117,12 +135,10 @@
       <article class="news">
         <h2>News & Events</h2>
 
-        <h3>Florida Energy Summit</h3>
-        <h4>October 18-20 2017</h4>
+        <h3>Florida Energy Summit - October 18-20 2017</h3>
         <p><a href="#">Westin Fort Lauderdale Beach Resort - Fort Lauderdale, Florida</a></p>
 
-        <h3>2017 FESC/Polytech Conference</h3>
-        <h4>July 31-August 01 2017</h4>
+        <h3>2017 FESC/Polytech Conference - July 31-August 01 2017</h3>
         <p>FESC holds an <a href="#">annual technical workshop</a> to disseminate the latest advances in energy research and education and assist the Florida Office of Energy with the Florida Energy Summit.</p>
 
         <!-- Facebook Share Button -->
@@ -157,34 +173,36 @@
 
   <footer>
     <article class="footer">
-      <!-- Copyright section -->
+
+      <!-- Footer Submit Form -->
+      <article class="footcenter">
+        <form name="signup" onsubmit="submit()">
+          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
+            <input class="newsletter" type="text" name="signup">
+              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
+          </label>
+        </form>
+      </article>
+
+      <!-- Copyright Section -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
       <p class="foot">Last modified on <time datetime="2018-04-18">April 18 2018</time></p>
 
-      <!-- Footer icons -->
+      <!-- Footer Icons -->
       <div class="icons">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-        <!-- Footer Submit form -->
-        <article class="footcenter">
-          <form name="signup" onsubmit="submit()">
-            <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-          </form>
-        </article>
       </div>
 
-      <!-- Back to top button -->
+      <!-- Back to Top Button -->
       <a class="footer" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
     </article>
 
   </footer>
 
+  <!-- Script Tag -->
   <script src="#"></script>
 </body>
 

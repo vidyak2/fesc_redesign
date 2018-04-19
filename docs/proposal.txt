@@ -116,9 +116,10 @@ Below are recommendations directly relating to the points to improve, put togeth
 • Merge left-side navigation and main navigation: This could avoid unnecessary links such as, Public Outreach on the Home page, left-side navigation, which leads to the same page as Outreach, on the main navigation. 
 • Keep an identical left-side navigation on every page: This would permit the user to continue from one page to another, always relying on the same menu.
 
-7. Changes 
+6. Progress of the Redesign
 
 Changes Made As of April 18, 2018: 
+6.1 HOME PAGE: 
 Links eliminated from the left-side navigation of the HOME page:
   - Home: Same page as Home on the main nav
   - About Us: Text is identical to Home page
@@ -126,11 +127,26 @@ Links eliminated from the left-side navigation of the HOME page:
   - Facilities and Resources: Same page as User Facilities on the main nav
   - Energy Education/ Energy Jobs: Same page as Education on the main nav
   - Public Outreach: Same page as Outreach in the main nav
-  - FESC Conferences: Information will be added on Home page, with News & Events, and the Conferences page will be changed to News & Events
+  - FESC Conferences: Information will be added on Home page, with News & Events, and the Conferences page will be changed to News & Events in the main navigation
   - Frequently Asked Questions: Place in main nav, since it is an important link that will often be looked for, and should be easily found
   - Contact Us: Same page as Contact Us on the main nav
+  
+6.2 ENERGY INDUSTRY PAGE: 
+Links relating to types of energy have been taken from left-side navigation and placed in clickable images:
+  - Algae
+  - Biomass & Biofuels
+  - Solar, Utilities
+  - Electric & Power
+  - Marine
+  - Natural Gas
+  - Wind
+  - Gas Turbine, Oil & Petroleum pages 
+The rest of the links from the left-side navigation have been placed in the drop-down menu.
 
-6. Bibliography
+6.3 CONTACT US PAGE: 
+Most of the links on the left-side navigation are repeated from the other pages. In this case, they can all be eliminated. 
+
+7. Bibliography
 
 FESC Florida Energy Systems Consortium. (2015). FESC Bringing Energy Solutions to Florida, the Nation and the World. Retrieved from http://floridaenergy.ufl.edu
 Google. (n.d.). Mobile-Friendly Test. Retrieved from https://search.google.com/test/mobile-friendly
