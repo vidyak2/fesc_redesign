@@ -119,7 +119,7 @@ Below are recommendations directly relating to the points to improve, put togeth
 6. Progress of the Redesign
 
 Changes Made As of April 18, 2018: 
-6.1 HOME PAGE: 
+HOME PAGE: 
 Links eliminated from the left-side navigation of the HOME page:
   - Home: Same page as Home on the main nav
   - About Us: Text is identical to Home page
@@ -131,7 +131,7 @@ Links eliminated from the left-side navigation of the HOME page:
   - Frequently Asked Questions: Place in main nav, since it is an important link that will often be looked for, and should be easily found
   - Contact Us: Same page as Contact Us on the main nav
   
-6.2 ENERGY INDUSTRY PAGE: 
+ENERGY INDUSTRY PAGE: 
 Links relating to types of energy have been taken from left-side navigation and placed in clickable images:
   - Algae
   - Biomass & Biofuels
@@ -143,8 +143,22 @@ Links relating to types of energy have been taken from left-side navigation and 
   - Gas Turbine, Oil & Petroleum 
 The rest of the links from the left-side navigation have been placed in the drop-down menu.
 
-6.3 CONTACT US PAGE: 
+CONTACT US PAGE: 
 Most of the links on the left-side navigation are repeated from the other pages. In this case, they have all been eliminated. 
+
+Changes Made As of April 25, 2018:
+HOME PAGE: 
+Links eliminated from the main navigation of the HOME page:
+  - Florida Energy Facts: Move to Enery Industry navigation
+  - FL University Research: Move to FESC Research navigation
+  - Advisory Board: Move to dropdown of Home navigation
+  
+ENERGY INDUSTRY PAGE:
+  - Educational & Professional Energy Opportunities: Should be part of Education page
+  
+FESC RESEARCH PAGE: 
+  - Pages created to place elements eliminated from Home page
+  - Left side navigation: Replaced by Research Archives in dropdown menu
 
 7. Bibliography
 
