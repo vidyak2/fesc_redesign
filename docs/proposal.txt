@@ -147,7 +147,9 @@ CONTACT US PAGE:
 Most of the links on the left-side navigation are repeated from the other pages. In this case, they have all been eliminated. 
 
 Changes Made As of April 25, 2018:
-HOME PAGE: 
+
+HOME PAGE:
+- The header image is replaced by h1, h2, h3 Google Font text and a logo image, increasing efficiency (Done on all pages)
 Links eliminated from the main navigation of the HOME page:
   - Florida Energy Facts: Move to Enery Industry navigation
   - FL University Research: Move to FESC Research navigation

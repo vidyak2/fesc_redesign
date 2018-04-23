@@ -6,7 +6,7 @@
 
   body {
     font-size: 100%;
-    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif, Arial, sans-serif;
     background-color: #FFFFFF;
   }
 
@@ -34,9 +34,28 @@
 
   h1 {
     align-self: flex-start;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 46px;
+    font-weight: bolder;
     padding: 1rem 2rem;
+
+    font-family: 'Kalam', cursive;
+  }
+
+  h2 {
+    align-self: flex-start;
+    padding: 1rem 0rem 0.25rem 0rem;
+
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .lowerlogo {
+    font-size: 16px;
+    font-weight: lighter;
   }
 
   /* NAVIGATION */
@@ -71,14 +90,15 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    padding: 0rem 0rem 0rem 0rem;
   }
 
   /* Dropdown */
 
   .drpbtn {
     font-size: 16px;
-    font-weight: bold;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
     border: none;
     background-color: white;
   }
@@ -177,14 +197,6 @@
 
   .maintextcontact article {
     padding: 0.5rem;
-  }
-
-  h2 {
-    align-self: flex-start;
-    padding: 1rem 0rem 0.25rem 0rem;
-
-    font-size: 20px;
-    font-weight: bold;
   }
 
   ol {
