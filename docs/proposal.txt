@@ -152,14 +152,14 @@ HOME PAGE:
 - The header image is replaced by h1, h2, h3 Google Font text and a logo image, increasing efficiency (Done on all pages)
 Links eliminated from the main navigation of the HOME page:
   - Florida Energy Facts: Move to Enery Industry navigation
-  - FL University Research: Move to FESC Research navigation
+  - FL University Research: Move to FESC Research page
   - Advisory Board: Move to dropdown of Home navigation
   
 ENERGY INDUSTRY PAGE:
   - Educational & Professional Energy Opportunities: Should be part of Education page
   
 FESC RESEARCH PAGE: 
-  - Pages created to place elements eliminated from Home page
+  - Page created to place elements eliminated from Home page
   - Left side navigation: Replaced by Research Archives in dropdown menu
 
 7. Bibliography

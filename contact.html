@@ -11,11 +11,9 @@
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <!-- Print stylesheet -->
-  <link rel="stylesheet" type="text/css" href="#" media="print">
 
   <!-- Google font link -->
-
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
 
   <!-- Font Awesome CDN link -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -44,10 +42,7 @@
   <header>
     <div class="topheader">
 
-      <div class="imgcontainer">
-        <img class="logo" src="images/logo.png" alt="logo">
-      </div>
-
+      <!-- Center Top Submit Form -->
       <article class="center">
         <form name="research" onsubmit="search()">
           <label>Search for:
@@ -56,12 +51,15 @@
         </form>
       </article>
 
+      <h1>FESC</h1>
+      <img class="logo" src="images/logo.png" alt="logo" width="60">
+      <h2 class="logo">Florida Energy Systems Consortium</h2>
+      <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
     </div>
 
     <!--Main Nav -->
     <nav class="mainnav">
       <div class="drpdwn">
-        <!-- Form to access index.html in dropdown menu -->
         <form action="index.html">
           <input class="drpbtn" type="submit" value="Home">
         </form>
@@ -109,12 +107,11 @@
       <a href="#">FAQ</a>
       <a href="contact.html">Contact Us</a>
     </nav>
-
-    <h1>Contact Us</h1>
   </header>
 
   <main>
     <section class="container">
+      <h2>Contact Us</h2>
       <!-- Main Text Article -->
       <article class="maintextcontact">
 
@@ -140,8 +137,6 @@
           <p class="contact">Gainesville, FL 32611-5500</p>
         </article>
 
-        <!-- INSERT MAP HERE -->
-
         <article class="four">
           <h2>Parking Directions</h2>
           <p>The Visitor Welcome Center and Bookstore parking garage is located at the Reitz Union, at the corner of Museum Road and Reitz Union Drive. Daily and short-term fees are to be paid at pay stations located at the stair towers and elevators in the garage. Standard daily fee: $5.00 – 159 spaces available</p>
@@ -150,6 +145,11 @@
 
           <p>The garage hours of operation are Monday through Friday, 7:30 am to 4:30 pm. Short-term and daily fees apply during this time. The garage may be used during non-operating hours for short-term parking, free of charge.</p>
         </article>
+
+        <!-- Link to Google Map -->
+        <div class="map">
+        </div>
+
       </article>
     </section>
   </main>
