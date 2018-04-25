@@ -58,8 +58,7 @@ The following options have been decided using Google Fonts, and the suggestions 
 - Example: TUX (image_eight)
   Reason: This footer is clear and concise. Although, in this redesign, the location will not be in the footer since it is not critical to the users. The newsletter subscription, the social media tags, the back to top button, and the copyright sections can be placed like this example. This will create a short footer. 
 
-
-7. Bibliography
+4. Bibliography
 AWWWARDS. (2017). TUX. Retrieved from https://www.awwwards.com/inspiration/59b805f8e1382342df7273c4
 AWWWARDS Team. (n.d.). 20 Best Web Fonts from Google Web Fonts and @font-face. Retrieved from AWWWARDS: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html
 Cousins, C. (2012). Color and Cultural Design Considerations. Retrieved from https://www.webdesignerdepot.com/2012/06/color-and-cultural-design-considerations/
