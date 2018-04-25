@@ -1,0 +1,70 @@
+1. Color
+Choice: Shades of green (#2d862d, #339933, #c6ecc6)
+Reason: Green represents the environments and the nature. This color also signals “go”, pushing the readers to contribute and get involved. 
+
+This option has been chosen with the help of: WebDesignerDepot.
+
+2. Typography
+Choice: Open Sans
+Reason: For the main content, the objective of the font is not to stand out, but simply to be clean and easily readable. In the case of a header, or a word on which emphasis should be applied, this font can be used in Bold. 
+
+Choice: Kalam
+Reason: For the logo, Kalam has been chosen, since it ressembles the original logo font.
+
+The following options have been decided using Google Fonts, and the suggestions of AWWWARDS.
+
+3. Design 
+3.1 Design Components
+  - Header: Search Bar, FESC Name, Logo Image, & Main Navigation
+  - Main Content:
+    - Home page: Video & Text
+    - Research page: Text
+    - Enery Industry page: Images & Text
+    - Contact page: Text & Map
+  - Footer: Newsletter Sign Up, Copyright, Social Media Icons, Back to Top Button
+
+3.2 Header Design
+- The header will be identical on all pages. It should be clear, well spaced, and using contrasting colors for easy reading. 
+
+- Example: EPA website (image_one in Design Ideas Folder)
+  Reason: The top header of this website is very clear. All important information is visible and easily clickable, with appropriate distancing and color contrast. In this redesign project, the green color for the navigation would be the same as “Relation Programs and Information” on this screenshot, and the text would be white. 
+  
+3.3 Home Page & Contact Page Design
+- The home page and contact page should have the text on the left side and the video/map on the right side. This way, the main text will be next to the video/map, and the further information will be below. 
+
+- Example: WordPress Theme Twenty Twelve (image_two)
+  Reason: This theme has a clear format for a text-based website, like FESC. Adding the text on the left and the video on the right in this format, with the title in the top left is very clean. The spacing also shows a distinction between the text portion and the media portion of the page.
+  
+3.4 Research Page Design:
+- This page is mainly text. Using the format of image_three, the main content can be on the left, and selected recent information, or important facts can be on the right (where purple boxes are shown on the image).
+
+- Another possible format is image_four, in a case where images can be found for the various sections of the research page.  
+
+3.5 Energy Industry Page:
+- This page is mainly images, with very little text. In this case, images should be the main focus and clickable.
+
+- Example: image_five
+  Reason: This format shows a clear distinction between the text and the images. The top section (in the case of FESC redesign, there would be no video on this page) would be the text, and the bottome section would be all the images in a grid format.
+  
+- Example: Dollah (image_six)
+  Reason: This tight, compact formatting might be useful to put big images in a small space, with just the title, so users can click easily on the wanted images.
+  
+- Example: Fukasawa (image_seven)
+  Reason: This theme adds a more dynamic aspect to the page. The images are not all centered the same, and there is no text. This way, the user is inclined to visit all the images. 
+  
+3.5 Footer Design:
+- The footer will be identical on all pages. It should be clear, well spaced, and using contrasting colors for easy reading. 
+
+- Example: TUX (image_eight)
+  Reason: This footer is clear and concise. Although, in this redesign, the location will not be in the footer since it is not critical to the users. The newsletter subscription, the social media tags, the back to top button, and the copyright sections can be placed like this example. This will create a short footer. 
+
+
+7. Bibliography
+AWWWARDS. (2017). TUX. Retrieved from https://www.awwwards.com/inspiration/59b805f8e1382342df7273c4
+AWWWARDS Team. (n.d.). 20 Best Web Fonts from Google Web Fonts and @font-face. Retrieved from AWWWARDS: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html
+Cousins, C. (2012). Color and Cultural Design Considerations. Retrieved from https://www.webdesignerdepot.com/2012/06/color-and-cultural-design-considerations/
+EPA United States Environmental Protextion Agency. (2018). Environmental Information Exchange Network (EIEN). Retrieved from https://www.epa.gov/exchangenetwork
+WordPress. (2017). Fukasawa. Retrieved from https://wordpress.org/themes/dollah/
+WordPress. (2017). Twenty Twelve. Retrieved from https://wordpress.org/themes/twentytwelve/
+WordPress. (2018). Dollah. Retrieved from https://wordpress.org/themes/dollah/
+
