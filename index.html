@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 
   <!-- Google font link -->
-
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
 
   <!-- Font Awesome CDN link -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -42,11 +42,6 @@
   <header>
     <div class="topheader">
 
-      <!-- The header image will be replaced by an h1 in Google Font text and a logo image, increasing efficiency -->
-      <div class="imgcontainer">
-        <img class="logo" src="images/logo.png" alt="logo">
-      </div>
-
       <!-- Center Top Submit Form -->
       <article class="center">
         <form name="research" onsubmit="search()">
@@ -55,28 +50,40 @@
           </label>
         </form>
       </article>
+
+      <!-- The header image is replaced by h1, h2, h3 Google Font text and a logo image, increasing efficiency -->
+
+      <h1>FESC</h1>
+      <!-- When designing, all the elements of the logo will be placed the same way and the original FESC header -->
+      <img class="logo" src="images/logo.png" alt="logo" width="60">
+      <h2 class="logo">Florida Energy Systems Consortium</h2>
+      <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
     </div>
 
     <!--Main Nav -->
     <!-- Left-side menus have been merged into the main menu, as drop-downs. All explanations for deleted links from left-side menus can be found in section 6 of proposal.txt. -->
     <nav class="mainnav">
-
-
       <div class="drpdwn">
         <!-- Form to access index.html in dropdown menu -->
         <form action="index.html">
           <input class="drpbtn" type="submit" value="Home">
         </form>
         <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
           <a href="#">FESC Expertise</a>
-          <a href="#">FL University Research</a>
           <a href="#">Technology Commercialization</a>
           <a href="#">Annual Reports, Publications and Presentations</a>
+          <a href="#">Advisory Board</a>
           <a href="#">Supplementary Information</a>
         </div>
       </div>
-      <a href="#">FESC Research</a>
+      <div class="drpdwn">
+        <form action="research.html">
+          <input class="drpbtn" type="submit" value="FESC Research">
+        </form>
+        <div class="drpdwn-cntent">
+          <a href="#">Research Archives</a>
+        </div>
+      </div>
       <a href="#">Education</a>
       <a href="#">Outreach</a>
       <a href="#">User Facilities</a>
@@ -85,6 +92,7 @@
           <input class="drpbtn" type="submit" value="Energy Industry">
         </form>
         <div class="drpdwn-cntent">
+          <a href="#">Florida Energy Facts</a>
           <a href="#">Energy Efficiency</a>
           <a href="#">Energy Crops</a>
           <a href="#">Waste to Energy</a>
@@ -97,32 +105,36 @@
           <a href="#">Associations & Organizations</a>
           <a href="#">Energy Financing & Funding</a>
           <a href="#">FL University Spin-off</a>
-          <a href="#">Educational & Professional Energy Opportunities</a>
           <a href="#">Other</a>
         </div>
       </div>
       <a href="#">News & Events</a>
       <a href="#">FAQ</a>
-      <a href="#">Advisory Board</a>
       <a href="contact.html">Contact Us</a>
     </nav>
-
-    <h1>About Us</h1>
   </header>
 
 
   <main>
     <section class="container">
-      <h2>FESC Bringing Energy Solutions to Florida, the Nation and the World</h2>
-
+      <h2>FESC - Bringing Energy Solutions to Florida, the Nation and the World</h2>
       <!-- Main Text Article -->
       <article class="maintext">
 
-        <!-- INSERT VIDEO HERE. The text will be placed on the left side, and the video will be placed on the right side in the main article. -->
+        <!-- The video will be placed on the left side, and the text will be placed on the right side in the main article. -->
+        <h2>About Us</h2>
+        <article class="video">
+          <!-- Unable to get link to video for now -->
+          <video width="320" height="240" controls>
+            <source src="#" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+        </article>
 
-        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its <a href="#backtouniversities">12 supported universities</a> to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to <strong>'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'</strong>. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
+        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its <a href="#backtouniversities">12 supported universities</a> to share energy-related expertise.</p>
 
-        <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
+        <h2>Our Mission</h2>
+        <p>The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to 'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'.</p>
 
         <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
         <ol>
@@ -191,7 +203,7 @@
       <!-- Copyright Section -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-04-18">April 18 2018</time></p>
+      <p class="foot">Last modified on <time datetime="2018-04-25">April 25 2018</time></p>
 
       <!-- Footer Icons -->
       <div class="icons">
