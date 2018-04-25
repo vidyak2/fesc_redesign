@@ -11,11 +11,9 @@
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <!-- Print stylesheet -->
-  <link rel="stylesheet" type="text/css" href="#" media="print">
 
   <!-- Google font link -->
-
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
 
   <!-- Font Awesome CDN link -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -44,10 +42,7 @@
   <header>
     <div class="topheader">
 
-      <div class="imgcontainer">
-        <img class="logo" src="images/logo.png" alt="logo">
-      </div>
-
+      <!-- Center Top Submit Form -->
       <article class="center">
         <form name="research" onsubmit="search()">
           <label>Search for:
@@ -56,25 +51,34 @@
         </form>
       </article>
 
+      <h1>FESC</h1>
+      <img class="logo" src="images/logo.png" alt="logo" width="60">
+      <h2 class="logo">Florida Energy Systems Consortium</h2>
+      <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
     </div>
 
     <!--Main Nav -->
     <nav class="mainnav">
-
       <div class="drpdwn">
         <form action="index.html">
           <input class="drpbtn" type="submit" value="Home">
         </form>
         <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
           <a href="#">FESC Expertise</a>
-          <a href="#">FL University Research</a>
           <a href="#">Technology Commercialization</a>
           <a href="#">Annual Reports, Publications and Presentations</a>
+          <a href="#">Advisory Board</a>
           <a href="#">Supplementary Information</a>
         </div>
       </div>
-      <a href="#">FESC Research</a>
+      <div class="drpdwn">
+        <form action="research.html">
+          <input class="drpbtn" type="submit" value="FESC Research">
+        </form>
+        <div class="drpdwn-cntent">
+          <a href="#">Research Archives</a>
+        </div>
+      </div>
       <a href="#">Education</a>
       <a href="#">Outreach</a>
       <a href="#">User Facilities</a>
@@ -83,6 +87,7 @@
           <input class="drpbtn" type="submit" value="Energy Industry">
         </form>
         <div class="drpdwn-cntent">
+          <a href="#">Florida Energy Facts</a>
           <a href="#">Energy Efficiency</a>
           <a href="#">Energy Crops</a>
           <a href="#">Waste to Energy</a>
@@ -95,45 +100,42 @@
           <a href="#">Associations & Organizations</a>
           <a href="#">Energy Financing & Funding</a>
           <a href="#">FL University Spin-off</a>
-          <a href="#">Educational & Professional Energy Opportunities</a>
           <a href="#">Other</a>
         </div>
       </div>
       <a href="#">News & Events</a>
       <a href="#">FAQ</a>
-      <a href="#">Advisory Board</a>
       <a href="contact.html">Contact Us</a>
     </nav>
-
-    <h1>Contact Us</h1>
   </header>
 
   <main>
     <section class="container">
+      <h2>Contact Us</h2>
       <!-- Main Text Article -->
       <article class="maintextcontact">
 
         <h2>Contact Information</h2>
         <article class="one">
-          <p class="contactperson">Dr. David Norton; Interim Director</p>
+          <h3>Interim Director</h3>
+          <p class="contactperson">Dr. David Norton</p>
           <p class="contactperson">Email: dpnorton@ufl.edu</p>
         </article>
 
         <article class="two">
-          <p class="contactperson">Ms. Canan “Janan” Balaban; Associate Director</p>
+          <h3>Associate Director</h3>
+          <p class="contactperson">Ms. Canan “Janan” Balaban</p>
           <p class="contactperson">Email: cbalaban@ufl.edu</p>
           <p class="contactperson">Phone: 352 294 2027</p>
         </article>
 
         <article class="three">
-          <p>Visit Us</p>
+          <h2>Visit Us</h2>
           <p class="contact">Telephone: 352 294 2027</p>
           <p class="contact">272 Grinter Hall</p>
           <p class="contact">P.O. Box 115500</p>
           <p class="contact">Gainesville, FL 32611-5500</p>
         </article>
-
-        <!-- INSERT MAP HERE -->
 
         <article class="four">
           <h2>Parking Directions</h2>
@@ -143,6 +145,11 @@
 
           <p>The garage hours of operation are Monday through Friday, 7:30 am to 4:30 pm. Short-term and daily fees apply during this time. The garage may be used during non-operating hours for short-term parking, free of charge.</p>
         </article>
+
+        <!-- Link to Google Map -->
+        <div class="map">
+        </div>
+
       </article>
     </section>
   </main>
@@ -163,7 +170,7 @@
       <!-- Copyright Section -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-04-18">April 18 2018</time></p>
+      <p class="foot">Last modified on <time datetime="2018-04-25">April 25 2018</time></p>
 
       <!-- Footer Icons -->
       <div class="icons">
