@@ -1,0 +1,310 @@
+/* Definitions */
+
+$default-margin: 1rem auto;
+$topbottom-color: #d9f2d9;
+$nav-color: #39ac39;
+$main-back-color: #ffffff;
+
+$main-font: 'Open Sans',
+sans-serif;
+
+$fallback-font: 'Arial',
+sans-serif;
+
+$title-font: 'Kalam',
+cursive;
+
+/* Main styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: $main-font, $fallback-font;
+  background-color: $main-back-color;
+}
+
+/* Top Header */
+
+header {
+  background-color: $topbottom-color;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    article {
+      justify-content: flex-end;
+      padding: 0.5rem;
+      margin-left: auto;
+    }
+  }
+}
+
+/* Logo */
+
+div.imgcontainer {
+  max-width: 22%;
+  img {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+h1 {
+  align-self: flex-start;
+  font-size: 46px;
+  font-weight: bolder;
+  padding: 1rem 2rem 2rem 2rem;
+
+  font-family: $title-font;
+}
+
+
+/* Logo image */
+
+//div.imgcontainer {
+//  height: 100%;
+//}
+h2 {
+  align-self: flex-start;
+  padding: 1rem 0rem 0.25rem 0rem;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.lowerlogo {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/* NAVIGATION */
+
+/* Search Bar */
+
+input.topsearch {
+  width: 20rem;
+  text-align: center;
+}
+
+/* Main Navigation */
+
+.mainnav {
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+
+  background-color: $nav-color;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* Dropdown */
+
+.drpbtn {
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+
+  background-color: $nav-color;
+}
+
+/* Position: absolute permits the dropdown to appear over other elements on the page */
+
+.drpdwn-cntent {
+  padding: 0.5rem;
+  text-align: center;
+
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  width: 14rem;
+}
+
+.drpdwn-cntent a {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0.2rem;
+}
+
+.drpdwn-cntent a:hover {
+  background-color: #ddd;
+  border: 0.5px solid black;
+}
+
+.drpdwn:hover .drpdwn-cntent {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 0.5px solid black;
+}
+
+/* MAIN */
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  margin: $default-margin;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.container a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.maintext {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.maintext p {
+  text-indent: 1rem;
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.news {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.news p {
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 0.5rem 0rem;
+}
+
+
+.maintextcontact {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.maintextcontact p {
+  text-indent: 1rem;
+  line-height: 1.15rem;
+
+  padding: 0rem;
+}
+
+.maintextcontact article {
+  padding: 0.5rem;
+}
+
+ol {
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 2rem 0rem 2rem;
+  list-style-type: lower-alpha;
+}
+
+h3 {
+  padding: 1rem 0rem 0.5rem 0rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+iframe {
+  align-self: flex-end;
+}
+
+ul {
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 2rem 0rem 2rem;
+  list-style-type: circle
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  padding: 1rem 2rem;
+
+  background-color: $topbottom-color;
+}
+
+.footcenter {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+article.footer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot {
+  flex-grow: 1;
+
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  text-align: center;
+  font-size: small;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons a {
+  flex-grow: 1;
+  align-self: center;
+
+  padding: 0.25rem;
+}
+
+.footer {
+
+  flex-grow: 1;
+  align-self: flex-end;
+
+  padding: 0.5rem;
+}
