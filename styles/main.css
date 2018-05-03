@@ -1,4 +1,5 @@
 /* Definitions */
+/* HEADER */
 /* Main styles */
 * {
   margin: 0;
@@ -11,7 +12,7 @@ body {
   font-family: "Open Sans", sans-serif, "Arial", sans-serif;
   background-color: #ffffff; }
 
-/* Top Header */
+/* Top header styles */
 header {
   background-color: #d9f2d9;
   width: 100%;
@@ -41,25 +42,28 @@ header {
       padding: 0.5rem;
       margin-left: auto; }
 
-/* Logo */
-div.imgcontainer {
-  max-width: 22%; }
-  div.imgcontainer img {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto; }
+/* Search bar styles */
+input.topsearch {
+  width: 14rem;
+  text-align: center; }
+
+/* General images and h1, h2, h3, a styles */
+.imgcontainer {
+  max-width: 12%; }
+  .imgcontainer img {
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
 h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 46px;
   font-weight: bolder;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 0.5rem 2rem;
   font-family: "Kalam", cursive; }
 
-/* Logo image */
 h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -67,26 +71,36 @@ h2 {
   font-size: 20px;
   font-weight: 900; }
 
-.logo {
-  font-size: 20px; }
+h3 {
+  padding: 1rem 0rem 0.25rem 0rem;
+  font-size: 16px; }
 
-.lowerlogo {
+a {
   font-size: 16px;
-  font-weight: lighter; }
+  color: black;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 0rem; }
 
-/* NAVIGATION */
-/* Search Bar */
-input.topsearch {
-  width: 20rem;
-  text-align: center; }
-
-/* Main Navigation */
-.mainnav {
+/* Logo specific styles */
+.logotext {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1rem 2rem;
-  background-color: #39ac39; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .logotext h2 {
+    padding: 0rem 0rem 0.5rem 0rem;
+    font-family: "Open Sans", sans-serif; }
+  .logotext h3 {
+    padding: 0.25rem 0rem 0rem 0rem;
+    font-size: 14px; }
 
+/* Main navigation styles */
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,13 +109,9 @@ nav {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-nav a {
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-  padding: 0rem 0rem 0rem 0rem; }
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #39ac39; }
 
 /* Dropdown */
 .drpbtn {
@@ -112,6 +122,22 @@ nav a {
   background-color: #39ac39; }
 
 /* Position: absolute permits the dropdown to appear over other elements on the page */
+.drpdwn {
+  position: relative;
+  display: inline-block; }
+  .drpdwn :hover {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0.5px solid black; }
+
 .drpdwn-cntent {
   padding: 0.5rem;
   text-align: center;
@@ -121,16 +147,14 @@ nav a {
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   width: 14rem; }
+  .drpdwn-cntent a {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0.2rem; }
+  .drpdwn-cntent a:hover {
+    background-color: #ddd; }
 
-.drpdwn-cntent a {
-  font-size: 16px;
-  font-weight: normal;
-  padding: 0.2rem; }
-
-.drpdwn-cntent a:hover {
-  background-color: #ddd;
-  border: 0.5px solid black; }
-
+/* This can not be merged with the above styles, because it should only appear on hover once the menu has been loaded */
 .drpdwn:hover .drpdwn-cntent {
   display: block;
   display: -webkit-box;
@@ -216,11 +240,6 @@ ol {
   line-height: 1.15rem;
   padding: 1rem 2rem 0rem 2rem;
   list-style-type: lower-alpha; }
-
-h3 {
-  padding: 1rem 0rem 0.5rem 0rem;
-  font-size: 18px;
-  font-weight: bold; }
 
 iframe {
   -ms-flex-item-align: end;
