@@ -1,0 +1,326 @@
+/* Definitions */
+
+$default-margin: 1rem auto;
+$topbottom-color: #d9f2d9;
+$nav-color: #39ac39;
+$main-back-color: #ffffff;
+
+$main-font: 'Open Sans',
+sans-serif;
+
+$fallback-font: 'Arial',
+sans-serif;
+
+$title-font: 'Kalam',
+cursive;
+
+/* HEADER */
+
+/* Main styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: $main-font, $fallback-font;
+  background-color: $main-back-color;
+}
+
+/* Top header styles */
+
+header {
+  background-color: $topbottom-color;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    article {
+      justify-content: flex-end;
+      padding: 0.5rem;
+      margin-left: auto;
+    }
+  }
+}
+
+/* Search bar styles */
+
+input.topsearch {
+  width: 14rem;
+  text-align: center;
+}
+
+/* General images and h1, h2, h3, a styles */
+
+.imgcontainer {
+  max-width: 12%;
+  img {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+
+h1 {
+  align-self: flex-start;
+  font-size: 46px;
+  font-weight: bolder;
+  padding: 0.5rem 2rem;
+
+  font-family: $title-font;
+}
+
+h2 {
+  align-self: flex-start;
+  padding: 1rem 0rem 0.25rem 0rem;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h3 {
+  padding: 1rem 0rem 0.25rem 0rem;
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* Logo specific styles */
+
+.logotext {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  h2 {
+    padding: 0rem 0rem 0.5rem 0rem;
+    font-family: $main-font;
+  }
+
+  h3 {
+    padding: 0.25rem 0rem 0rem 0rem;
+    font-size: 14px;
+  }
+}
+
+/* Main navigation styles */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  background-color: $nav-color;
+}
+
+/* Dropdown */
+
+.drpbtn {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: $main-font;
+  border: none;
+
+  background-color: $nav-color;
+}
+
+/* Position: absolute permits the dropdown to appear over other elements on the page */
+
+.drpdwn {
+  position: relative;
+  display: inline-block;
+  :hover {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 0.5px solid black;
+  }
+}
+
+.drpdwn-cntent {
+  padding: 0.5rem;
+  text-align: center;
+
+  display: none;
+  position: absolute;
+  background-color: $main-back-color;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  width: 14rem;
+
+  a {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0.2rem;
+  }
+
+  a:hover {
+    background-color: #ddd;
+  }
+}
+
+/* This can not be merged with the above styles, because it should only appear on hover once the menu has been loaded */
+
+.drpdwn:hover .drpdwn-cntent {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 0.5px solid black;
+}
+
+
+
+
+
+
+/* MAIN */
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  margin: $default-margin;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.container a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.maintext {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.maintext p {
+  text-indent: 1rem;
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.news {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.news p {
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 0.5rem 0rem;
+}
+
+
+.maintextcontact {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.maintextcontact p {
+  text-indent: 1rem;
+  line-height: 1.15rem;
+
+  padding: 0rem;
+}
+
+.maintextcontact article {
+  padding: 0.5rem;
+}
+
+ol {
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 2rem 0rem 2rem;
+  list-style-type: lower-alpha;
+}
+
+iframe {
+  align-self: flex-end;
+}
+
+ul {
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 2rem 0rem 2rem;
+  list-style-type: circle
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  padding: 1rem 2rem;
+
+  background-color: $topbottom-color;
+}
+
+.footcenter {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+article.footer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot {
+  flex-grow: 1;
+
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  text-align: center;
+  font-size: small;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons a {
+  flex-grow: 1;
+  align-self: center;
+
+  padding: 0.25rem;
+}
+
+.footer {
+
+  flex-grow: 1;
+  align-self: flex-end;
+
+  padding: 0.5rem;
+}
