@@ -130,6 +130,7 @@ nav a {
 .drpbtn {
   font-size: 16px;
   text-decoration: none;
+  font-family: $main-font;
   border: none;
 
   background-color: $nav-color;
@@ -143,7 +144,7 @@ nav a {
 
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: $main-back-color;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   width: 14rem;
 }
@@ -166,6 +167,23 @@ nav a {
   flex-direction: column;
   border: 0.5px solid black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MAIN */
 

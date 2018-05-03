@@ -107,6 +107,7 @@ nav a {
 .drpbtn {
   font-size: 16px;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
   border: none;
   background-color: #39ac39; }
 
@@ -116,7 +117,7 @@ nav a {
   text-align: center;
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   width: 14rem; }
