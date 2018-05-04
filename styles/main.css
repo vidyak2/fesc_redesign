@@ -1,6 +1,5 @@
 /* Definitions */
-/* HEADER */
-/* Main styles */
+/* GENERAL STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,46 @@ body {
   font-family: "Open Sans", sans-serif, "Arial", sans-serif;
   background-color: #ffffff; }
 
-/* Top header styles */
+.imgcontainer {
+  max-width: 12%; }
+  .imgcontainer img {
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 46px;
+  font-weight: bolder;
+  padding: 0.5rem 2rem;
+  font-family: "Kalam", cursive; }
+
+h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1rem 0rem 0.25rem 0rem;
+  font-size: 20px;
+  font-weight: 900; }
+
+h3 {
+  padding: 1rem 0rem 0.25rem 0rem;
+  font-size: 16px; }
+
+a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 0rem; }
+
+p {
+  text-indent: 1rem;
+  text-align: justify;
+  line-height: 1.15rem;
+  padding: 1rem 0rem 0rem 0rem; }
+
+/* HEADER */
 header {
   background-color: #d9f2d9;
   width: 100%;
@@ -47,41 +85,7 @@ input.topsearch {
   width: 14rem;
   text-align: center; }
 
-/* General images and h1, h2, h3, a styles */
-.imgcontainer {
-  max-width: 12%; }
-  .imgcontainer img {
-    margin-left: auto;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-
-h1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  font-size: 46px;
-  font-weight: bolder;
-  padding: 0.5rem 2rem;
-  font-family: "Kalam", cursive; }
-
-h2 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding: 1rem 0rem 0.25rem 0rem;
-  font-size: 20px;
-  font-weight: 900; }
-
-h3 {
-  padding: 1rem 0rem 0.25rem 0rem;
-  font-size: 16px; }
-
-a {
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-  padding: 0rem 0rem 0rem 0rem; }
-
-/* Logo specific styles */
+/* Logo styles */
 .logotext {
   width: 100%;
   display: -webkit-inline-box;
@@ -112,8 +116,10 @@ nav {
           justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #39ac39; }
+  nav a {
+    padding: 0.25rem 0rem 0rem 0rem; }
 
-/* Dropdown */
+/* Dropdown menu styles */
 .drpbtn {
   font-size: 16px;
   text-decoration: none;
@@ -136,23 +142,23 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 0.5px solid black; }
+    border: 0.5px solid #39ac39; }
 
 .drpdwn-cntent {
   padding: 0.5rem;
   text-align: center;
   display: none;
   position: absolute;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  background-color: #d9f2d9;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
+          box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
   width: 14rem; }
   .drpdwn-cntent a {
     font-size: 16px;
     font-weight: normal;
     padding: 0.2rem; }
   .drpdwn-cntent a:hover {
-    background-color: #ddd; }
+    background-color: #ffffff; }
 
 /* This can not be merged with the above styles, because it should only appear on hover once the menu has been loaded */
 .drpdwn:hover .drpdwn-cntent {
@@ -166,7 +172,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 0.5px solid black; }
+  border: 0.5px solid #39ac39; }
 
 /* MAIN */
 .container {
@@ -177,63 +183,53 @@ nav {
       flex-wrap: wrap;
   margin: 1rem auto;
   padding: 0rem 2rem 2rem 2rem; }
-
-.container a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none; }
-
-.maintext {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding: 0rem 0rem 1rem 0rem; }
-
-.maintext p {
-  text-indent: 1rem;
-  text-align: justify;
-  line-height: 1.15rem;
-  padding: 1rem 0rem 0rem 0rem; }
-
-.news {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.news p {
-  text-align: justify;
-  line-height: 1.15rem;
-  padding: 0.5rem 0rem; }
-
-.maintextcontact {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0rem 0rem 1rem 0rem; }
-
-.maintextcontact p {
-  text-indent: 1rem;
-  line-height: 1.15rem;
-  padding: 0rem; }
-
-.maintextcontact article {
-  padding: 0.5rem; }
+  .container a {
+    font-weight: bold; }
+  .container .maintext {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 0rem 0rem 1rem 0rem; }
+    .container .maintext p {
+      text-indent: 1rem;
+      text-align: justify;
+      line-height: 1.15rem;
+      padding: 1rem 0rem 0rem 0rem; }
+  .container .news {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .container .news p {
+      text-align: justify;
+      line-height: 1.15rem;
+      padding: 0.5rem 0rem; }
+  .container .maintextcontact {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0rem 0rem 1rem 0rem; }
+    .container .maintextcontact p {
+      text-indent: 1rem;
+      line-height: 1.15rem;
+      padding: 0rem; }
+    .container .maintextcontact article {
+      padding: 0.5rem; }
 
 ol {
   text-align: justify;
@@ -262,12 +258,7 @@ footer {
   padding: 1rem 2rem;
   background-color: #d9f2d9; }
 
-.footcenter {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0rem 1rem 1rem 1rem; }
-
-article.footer {
+.footer {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -278,34 +269,34 @@ article.footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-
-.foot {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
-  text-align: center;
-  font-size: small; }
-
-.icons {
-  margin-left: auto;
-  margin-right: auto; }
-
-.icons a {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding: 0.25rem; }
-
-.footer {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding: 0.5rem; }
+  .footer .footcenter {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem 1rem 1rem 1rem; }
+  .footer .foot {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    text-align: center;
+    font-size: small; }
+  .footer .icons {
+    margin-left: auto;
+    margin-right: auto; }
+    .footer .icons a {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-item-align: center;
+          align-self: center;
+      padding: 0.25rem; }
+  .footer .backtotop {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 0.5rem; }
 
 /*# sourceMappingURL=main.css.map */
