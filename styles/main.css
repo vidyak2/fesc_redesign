@@ -1,5 +1,5 @@
 /* Definitions */
-/* GENERAL STYLES */
+/* BODY STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -10,45 +10,6 @@ body {
   font-size: 100%;
   font-family: "Open Sans", sans-serif, "Arial", sans-serif;
   background-color: #ffffff; }
-
-.imgcontainer {
-  max-width: 12%; }
-  .imgcontainer img {
-    margin-left: auto;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-
-h1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  font-size: 46px;
-  font-weight: bolder;
-  padding: 0.5rem 2rem;
-  font-family: "Kalam", cursive; }
-
-h2 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding: 1rem 0rem 0.25rem 0rem;
-  font-size: 20px;
-  font-weight: 900; }
-
-h3 {
-  padding: 1rem 0rem 0.25rem 0rem;
-  font-size: 16px; }
-
-a {
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-  padding: 0rem 0rem 0rem 0rem; }
-
-p {
-  text-indent: 1rem;
-  text-align: justify;
-  line-height: 1.15rem;
-  padding: 1rem 0rem 0rem 0rem; }
 
 /* HEADER */
 header {
@@ -77,7 +38,7 @@ header {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      padding: 0.5rem;
+      padding: 1rem 2rem 0rem 0rem;
       margin-left: auto; }
 
 /* Search bar styles */
@@ -103,6 +64,47 @@ input.topsearch {
   .logotext h3 {
     padding: 0.25rem 0rem 0rem 0rem;
     font-size: 14px; }
+
+/* GENERAL STYLES */
+.imgcontainer {
+  max-width: 12%; }
+  .imgcontainer img {
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 46px;
+  font-weight: bolder;
+  padding: 0.5rem 2rem;
+  font-family: "Kalam", cursive; }
+
+h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1rem 0rem 0.25rem 0rem;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 900; }
+
+h3 {
+  width: 100%;
+  padding: 1rem 0rem 0.25rem 0rem;
+  font-size: 16px; }
+
+a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 0rem; }
+
+p {
+  text-align: justify;
+  line-height: 1.5rem;
+  padding: 1rem 0rem 0rem 0rem; }
 
 /* Main navigation styles */
 nav {
@@ -176,66 +178,83 @@ nav {
 
 /* MAIN */
 .container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem 2rem; }
+  .container a {
+    font-weight: bolder; }
+
+.maintext {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .maintext p {
+    width: 100%;
+    height: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-indent: 0;
+    padding: 1rem 0rem; }
+  .maintext .topic {
+    font-size: 16px;
+    font-weight: bolder;
+    width: 50%; }
+    .maintext .topic a {
+      font-size: 16px; }
+  .maintext .video {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+.news {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 1rem auto;
-  padding: 0rem 2rem 2rem 2rem; }
-  .container a {
-    font-weight: bold; }
-  .container .maintext {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    padding: 0rem 0rem 1rem 0rem; }
-    .container .maintext p {
-      text-indent: 1rem;
-      text-align: justify;
-      line-height: 1.15rem;
-      padding: 1rem 0rem 0rem 0rem; }
-  .container .news {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .container .news p {
-      text-align: justify;
-      line-height: 1.15rem;
-      padding: 0.5rem 0rem; }
-  .container .maintextcontact {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0rem 0rem 1rem 0rem; }
-    .container .maintextcontact p {
-      text-indent: 1rem;
-      line-height: 1.15rem;
-      padding: 0rem; }
-    .container .maintextcontact article {
-      padding: 0.5rem; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .news p {
+    text-align: justify;
+    line-height: 1.5rem;
+    text-indent: 1rem;
+    padding: 0.5rem 0rem; }
 
 ol {
   text-align: justify;
-  line-height: 1.15rem;
+  line-height: 1.5rem;
   padding: 1rem 2rem 0rem 2rem;
   list-style-type: lower-alpha; }
+
+.universities {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 iframe {
   -ms-flex-item-align: end;
@@ -243,8 +262,8 @@ iframe {
 
 ul {
   text-align: justify;
-  line-height: 1.15rem;
-  padding: 1rem 2rem 0rem 2rem;
+  line-height: 2rem;
+  padding: 1rem 0rem 0rem 1rem;
   list-style-type: circle; }
 
 /* FOOTER */
@@ -272,15 +291,16 @@ footer {
   .footer .footcenter {
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem 1rem 1rem 1rem; }
+    padding: 0rem 0.5rem 0.5rem 0.5rem; }
   .footer .foot {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding-top: 0.15rem;
-    padding-bottom: 0.15rem;
+    padding-top: 0rem;
+    padding-bottom: 0.25rem;
     text-align: center;
-    font-size: small; }
+    font-size: small;
+    line-height: 1rem; }
   .footer .icons {
     margin-left: auto;
     margin-right: auto; }
