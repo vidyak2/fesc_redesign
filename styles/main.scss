@@ -1,8 +1,8 @@
 /* Definitions */
 
 $default-margin: 1rem auto;
-$topbottom-color: #d9f2d9;
-$nav-color: #39ac39;
+$topbottom-color: #d9f2d9; //rgb(217, 242, 217)
+$nav-color: #39ac39; //rgb(57, 172, 57)
 $main-back-color: #ffffff;
 
 $main-font: 'Open Sans',
@@ -14,9 +14,8 @@ sans-serif;
 $title-font: 'Kalam',
 cursive;
 
-/* HEADER */
 
-/* Main styles */
+/* GENERAL STYLES */
 
 * {
   margin: 0;
@@ -29,37 +28,6 @@ body {
   font-family: $main-font, $fallback-font;
   background-color: $main-back-color;
 }
-
-/* Top header styles */
-
-header {
-  background-color: $topbottom-color;
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  div {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    article {
-      justify-content: flex-end;
-      padding: 0.5rem;
-      margin-left: auto;
-    }
-  }
-}
-
-/* Search bar styles */
-
-input.topsearch {
-  width: 14rem;
-  text-align: center;
-}
-
-/* General images and h1, h2, h3, a styles */
 
 .imgcontainer {
   max-width: 12%;
@@ -98,7 +66,44 @@ a {
   padding: 0rem 0rem 0rem 0rem;
 }
 
-/* Logo specific styles */
+p {
+  text-indent: 1rem;
+  text-align: justify;
+  line-height: 1.15rem;
+
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+/* HEADER */
+
+header {
+  background-color: $topbottom-color;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    article {
+      justify-content: flex-end;
+      padding: 0.5rem;
+      margin-left: auto;
+    }
+  }
+}
+
+/* Search bar styles */
+
+input.topsearch {
+  width: 14rem;
+  text-align: center;
+}
+
+/* Logo styles */
 
 .logotext {
   width: 100%;
@@ -126,9 +131,13 @@ nav {
   padding: 1rem 2rem;
 
   background-color: $nav-color;
+
+  a {
+    padding: 0.25rem 0rem 0rem 0rem;
+  }
 }
 
-/* Dropdown */
+/* Dropdown menu styles */
 
 .drpbtn {
   font-size: 16px;
@@ -149,18 +158,17 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 0.5px solid black;
+    border: 0.5px solid rgb(57, 172, 57);
   }
 }
 
 .drpdwn-cntent {
   padding: 0.5rem;
   text-align: center;
-
   display: none;
   position: absolute;
-  background-color: $main-back-color;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  background-color: $topbottom-color;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
   width: 14rem;
 
   a {
@@ -170,7 +178,7 @@ nav {
   }
 
   a:hover {
-    background-color: #ddd;
+    background-color: $main-back-color;
   }
 }
 
@@ -181,12 +189,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 0.5px solid black;
+  border: 0.5px solid rgb(57, 172, 57);
 }
-
-
-
-
 
 
 /* MAIN */
@@ -197,60 +201,57 @@ nav {
 
   margin: $default-margin;
   padding: 0rem 2rem 2rem 2rem;
+
+  a {
+    font-weight: bold;
+  }
+
+  .maintext {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 0rem 0rem 1rem 0rem;
+
+    p {
+      text-indent: 1rem;
+      text-align: justify;
+      line-height: 1.15rem;
+
+      padding: 1rem 0rem 0rem 0rem;
+    }
+  }
+
+  .news {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    p {
+      text-align: justify;
+      line-height: 1.15rem;
+
+      padding: 0.5rem 0rem;
+    }
+  }
+
+  .maintextcontact {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0rem 0rem 1rem 0rem;
+
+    p {
+      text-indent: 1rem;
+      line-height: 1.15rem;
+
+      padding: 0rem;
+    }
+
+    article {
+      padding: 0.5rem;
+    }
+  }
 }
 
-.container a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.maintext {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
-  padding: 0rem 0rem 1rem 0rem;
-}
-
-.maintext p {
-  text-indent: 1rem;
-  text-align: justify;
-  line-height: 1.15rem;
-
-  padding: 1rem 0rem 0rem 0rem;
-}
-
-.news {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.news p {
-  text-align: justify;
-  line-height: 1.15rem;
-
-  padding: 0.5rem 0rem;
-}
-
-
-.maintextcontact {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0rem 0rem 1rem 0rem;
-}
-
-.maintextcontact p {
-  text-indent: 1rem;
-  line-height: 1.15rem;
-
-  padding: 0rem;
-}
-
-.maintextcontact article {
-  padding: 0.5rem;
-}
 
 ol {
   text-align: justify;
@@ -284,43 +285,42 @@ footer {
   background-color: $topbottom-color;
 }
 
-.footcenter {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0rem 1rem 1rem 1rem;
-}
-
-article.footer {
+.footer {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-}
 
-.foot {
-  flex-grow: 1;
+  .footcenter {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem 1rem 1rem 1rem;
+  }
 
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
-  text-align: center;
-  font-size: small;
-}
+  .foot {
+    flex-grow: 1;
 
-.icons {
-  margin-left: auto;
-  margin-right: auto;
-}
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    text-align: center;
+    font-size: small;
+  }
 
-.icons a {
-  flex-grow: 1;
-  align-self: center;
+  .icons {
+    margin-left: auto;
+    margin-right: auto;
+    a {
+      flex-grow: 1;
+      align-self: center;
 
-  padding: 0.25rem;
-}
+      padding: 0.25rem;
+    }
+  }
 
-.footer {
+  .backtotop {
 
-  flex-grow: 1;
-  align-self: flex-end;
+    flex-grow: 1;
+    align-self: flex-end;
 
-  padding: 0.5rem;
+    padding: 0.5rem;
+  }
 }
