@@ -40,6 +40,8 @@ header {
               justify-content: flex-end;
       padding: 1rem 2rem 0rem 0rem;
       margin-left: auto; }
+    header div .imgcontainer {
+      margin-left: 16rem; }
 
 /* Search bar styles */
 .center {
@@ -54,10 +56,6 @@ header {
     .center input.topsearch {
       width: 6rem; } }
 /* Logo styles */
-.imgcontainer {
-  width: 100%;
-  margin-left: 8rem; }
-
 .logotext {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -76,11 +74,6 @@ header {
     font-size: 14px; }
 
 @media screen and (max-width: 506px) {
-  .imgcontainer {
-    width: 100%;
-    -ms-flex-item-align: start;
-        align-self: flex-start; }
-
   .logotext {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

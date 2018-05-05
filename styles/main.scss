@@ -29,7 +29,6 @@ body {
   background-color: $main-back-color;
 }
 
-
 /* HEADER */
 
 header {
@@ -48,6 +47,9 @@ header {
       justify-content: flex-end;
       padding: 1rem 2rem 0rem 0rem;
       margin-left: auto;
+    }
+    .imgcontainer {
+      margin-left: 16rem;
     }
   }
 }
@@ -76,11 +78,6 @@ header {
 
 /* Logo styles */
 
-.imgcontainer {
-  width: 100%;
-  margin-left: 8rem;
-}
-
 .logotext {
   display: inline-flex;
   flex-wrap: wrap;
@@ -98,11 +95,6 @@ header {
 }
 
 @media screen and (max-width: 506px) {
-  .imgcontainer {
-    width: 100%;
-    align-self: flex-start;
-  }
-
   .logotext {
     flex-direction: column;
 
@@ -126,6 +118,7 @@ header {
     }
   }
 }
+
 
 @media screen and (max-width: 188px) {
   .imgcontainer {
