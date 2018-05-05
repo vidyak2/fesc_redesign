@@ -41,7 +41,10 @@ header {
       padding: 1rem 2rem 0rem 0rem;
       margin-left: auto; }
     header div .imgcontainer {
-      margin-left: 16rem; }
+      margin-left: 8rem; }
+  header .reducednav {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
 
 /* Search bar styles */
 .center {
@@ -50,6 +53,7 @@ header {
     width: 14rem;
     text-align: center; }
 
+/*  Resize search bar */
 @media screen and (max-width: 506px) {
   .center {
     padding: 0.5rem 0.25rem 0.5rem 0rem; }
@@ -73,6 +77,7 @@ header {
     padding: 0.25rem 0rem 0rem 0rem;
     font-size: 14px; }
 
+/* Resize logo */
 @media screen and (max-width: 506px) {
   .logotext {
     -webkit-box-orient: vertical;
@@ -94,7 +99,11 @@ header {
       font-size: 12px;
       -ms-flex-item-align: center;
           align-self: center;
-      text-align: center; } }
+      text-align: center; }
+
+  .imgcontainer {
+    -ms-flex-item-align: center;
+        align-self: center; } }
 @media screen and (max-width: 188px) {
   .imgcontainer {
     display: none; } }
@@ -146,6 +155,48 @@ nav {
   nav a {
     padding: 0.25rem 0rem 0rem 0rem; }
 
+@media screen and (max-width: 506px) {
+  nav {
+    display: none; } }
+@media screen and (min-width: 506px) {
+  .reducednav {
+    display: none; } }
+@media screen and (max-width: 506px) {
+  .reducednav {
+    display: inline-block;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+    width: 2.5rem;
+    border: 0.5px solid #39ac39;
+    border-radius: 0.4rem;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2); }
+    .reducednav :hover {
+      background-color: #39ac39; }
+
+  .barone,
+  .bartwo,
+  .barthree {
+    width: 2rem;
+    height: 0.35rem;
+    background-color: black;
+    margin: 0.2rem 0.15rem 0.2rem 0.15rem;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+
+  .hamburgerchange .barone {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px); }
+
+  .hamburgerchange .bartwo {
+    opacity: 0; }
+
+  .hamburgerchange .barthree {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px); } }
 /* Dropdown menu styles */
 .drpbtn {
   font-size: 16px;

@@ -7,3 +7,8 @@
 //  }
 //  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 //}
+
+
+function hammenu(x) {
+  x.classList.toggle("hamburgerchange");
+}
