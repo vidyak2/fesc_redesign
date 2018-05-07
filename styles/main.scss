@@ -33,51 +33,101 @@ body {
 
 header {
   background-color: $topbottom-color;
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 
-  div {
+  .topheader {
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: column;
 
     article {
-      justify-content: flex-end;
+      align-self: flex-end;
       padding: 1rem 2rem 0rem 0rem;
-      margin-left: auto;
     }
+
     .imgcontainer {
       margin-left: 8rem;
     }
   }
+}
+
+/* Top most navigation */
+
+.toptop {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  /* Appears when screen is reduced */
   .reducednav {
-    align-self: flex-end;
+    align-self: flex-start;
   }
-}
-
-/* Search bar styles */
-
-.center {
-  padding: 0.5rem 2rem 0.5rem 0rem;
-
-  input.topsearch {
-    width: 14rem;
-    text-align: center;
+  span {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.55rem;
+    width: 2.2rem;
+    height: 1.6rem;
+    border: 0.5px solid rgb(57, 172, 57);
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
   }
-}
 
-/*  Resize search bar */
-
-@media screen and (max-width: 506px) {
+  /* Search bar styles */
   .center {
-    padding: 0.5rem 0.25rem 0.5rem 0rem;
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 0.5rem 1rem 0.5rem 0rem;
 
     input.topsearch {
-      width: 6rem;
+      width: 8rem;
+      text-align: center;
     }
   }
+}
+
+/* Top most navigation (Hamburger menu) disappears on large screens */
+
+@media screen and (min-width: 506px) {
+  .reducednav {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+}
+
+/* Hamburger menu on reduced screen */
+
+.reducednav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0rem;
+  left: 0rem;
+  background-color: $nav-color;
+  overflow-x: hidden;
+  padding-top: 2rem;
+  transition: 0.5s;
+
+  a {
+    padding: 1rem;
+    decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+}
+
+/* X icon styles */
+
+.reducednav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  font-size: 36px;
 }
 
 /* Logo styles */
@@ -178,7 +228,7 @@ p {
 
 /* Main navigation styles */
 
-nav {
+.mainnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -193,55 +243,9 @@ nav {
 
 
 @media screen and (max-width: 506px) {
-  nav {
+  .mainnav {
     display: none;
   }
-}
-
-//Hamburger menustyles
-@media screen and (min-width: 506px) {
-  .reducednav {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 506px) {
-  .reducednav {
-    display: inline-block;
-    cursor: pointer;
-    display: flex;
-    margin: 0.25rem 0.25rem 0.5rem 0.25rem;
-    width: 2.5rem;
-    border: 0.5px solid rgb(57, 172, 57);
-    border-radius: 0.4rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
-
-    :hover {
-      background-color: $nav-color;
-    }
-  }
-
-  .barone,
-  .bartwo,
-  .barthree {
-    width: 2rem;
-    height: 0.35rem;
-    background-color: black;
-    margin: 0.2rem 0.15rem 0.2rem 0.15rem;
-    transition: 0.4s;
-  } //Hamburger menu styles when onclick function is applied
-  .hamburgerchange .barone {
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-
-  .hamburgerchange .bartwo {
-    opacity: 0;
-  }
-
-  .hamburgerchange .barthree {
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
 }
 
 /* Dropdown menu styles */

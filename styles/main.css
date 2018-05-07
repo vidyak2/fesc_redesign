@@ -13,18 +13,9 @@ body {
 
 /* HEADER */
 header {
-  background-color: #d9f2d9;
-  width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  header div {
+  background-color: #d9f2d9; }
+  header .topheader {
+    width: 100%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -34,31 +25,84 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    header div article {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      padding: 1rem 2rem 0rem 0rem;
-      margin-left: auto; }
-    header div .imgcontainer {
+    header .topheader article {
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      padding: 1rem 2rem 0rem 0rem; }
+    header .topheader .imgcontainer {
       margin-left: 8rem; }
-  header .reducednav {
+
+/* Top most navigation */
+.toptop {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* Appears when screen is reduced */
+  /* Search bar styles */ }
+  .toptop .reducednav {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .toptop span {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.55rem;
+    width: 2.2rem;
+    height: 1.6rem;
+    border: 0.5px solid #39ac39;
+    border-radius: 0.4rem;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2); }
+  .toptop .center {
     -ms-flex-item-align: end;
-        align-self: flex-end; }
+        align-self: flex-end;
+    margin-left: auto;
+    padding: 0.5rem 1rem 0.5rem 0rem; }
+    .toptop .center input.topsearch {
+      width: 8rem;
+      text-align: center; }
 
-/* Search bar styles */
-.center {
-  padding: 0.5rem 2rem 0.5rem 0rem; }
-  .center input.topsearch {
-    width: 14rem;
-    text-align: center; }
+/* Top most navigation (Hamburger menu) disappears on large screens */
+@media screen and (min-width: 506px) {
+  .reducednav {
+    display: none; }
 
-/*  Resize search bar */
-@media screen and (max-width: 506px) {
-  .center {
-    padding: 0.5rem 0.25rem 0.5rem 0rem; }
-    .center input.topsearch {
-      width: 6rem; } }
+  span {
+    display: none; } }
+/* Hamburger menu on reduced screen */
+.reducednav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0rem;
+  left: 0rem;
+  background-color: #39ac39;
+  overflow-x: hidden;
+  padding-top: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .reducednav a {
+    padding: 1rem;
+    decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+/* X icon styles */
+.reducednav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  font-size: 36px; }
+
 /* Logo styles */
 .logotext {
   display: -webkit-inline-box;
@@ -141,7 +185,7 @@ p {
   padding: 1rem 0rem 0rem 0rem; }
 
 /* Main navigation styles */
-nav {
+.mainnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,51 +196,12 @@ nav {
           justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #39ac39; }
-  nav a {
+  .mainnav a {
     padding: 0.25rem 0rem 0rem 0rem; }
 
 @media screen and (max-width: 506px) {
-  nav {
+  .mainnav {
     display: none; } }
-@media screen and (min-width: 506px) {
-  .reducednav {
-    display: none; } }
-@media screen and (max-width: 506px) {
-  .reducednav {
-    display: inline-block;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0.25rem 0.25rem 0.5rem 0.25rem;
-    width: 2.5rem;
-    border: 0.5px solid #39ac39;
-    border-radius: 0.4rem;
-    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
-            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2); }
-    .reducednav :hover {
-      background-color: #39ac39; }
-
-  .barone,
-  .bartwo,
-  .barthree {
-    width: 2rem;
-    height: 0.35rem;
-    background-color: black;
-    margin: 0.2rem 0.15rem 0.2rem 0.15rem;
-    -webkit-transition: 0.4s;
-    transition: 0.4s; }
-
-  .hamburgerchange .barone {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px); }
-
-  .hamburgerchange .bartwo {
-    opacity: 0; }
-
-  .hamburgerchange .barthree {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px); } }
 /* Dropdown menu styles */
 .drpbtn {
   font-size: 16px;
