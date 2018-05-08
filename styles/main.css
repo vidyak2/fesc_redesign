@@ -32,7 +32,7 @@ header {
     header .topheader .imgcontainer {
       margin-left: 8rem; }
 
-/* Top most navigation */
+/* TOP NAVIGATION */
 .toptop {
   width: 100%;
   display: -webkit-inline-box;
@@ -45,7 +45,7 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   /* Appears when screen is reduced */
-  /* Search bar styles */ }
+  /* SEARCH BAR styles */ }
   .toptop .reducednav {
     -ms-flex-item-align: start;
         align-self: flex-start; }
@@ -74,7 +74,7 @@ header {
 
   span {
     display: none; } }
-/* Hamburger menu on reduced screen */
+/* REDUCED NAV: HAMBURGER MENU on reduced screen */
 .reducednav {
   height: 100%;
   width: 0;
@@ -95,15 +95,6 @@ header {
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .reducednav .drpbtn {
-    font-size: 18px;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    border: none;
-    padding: 1.5rem 1rem 1rem 1.5rem;
-    display: block;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
 
 /* X icon styles */
 .reducednav .closebtn {
@@ -112,7 +103,7 @@ header {
   right: 0rem;
   font-size: 36px; }
 
-/* Logo styles */
+/* LOGO styles */
 .logotext {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -160,7 +151,7 @@ header {
 @media screen and (max-width: 188px) {
   .imgcontainer {
     display: none; } }
-/* GENERAL STYLES */
+/* GENERAL styles */
 h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -193,7 +184,7 @@ p {
   line-height: 1.5rem;
   padding: 1rem 0rem 0rem 0rem; }
 
-/* Main navigation styles */
+/* MAIN NAVIGATION styles */
 .mainnav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +202,7 @@ p {
 @media screen and (max-width: 628px) {
   .mainnav {
     display: none; } }
-/* Dropdown menu styles */
+/* DROPDOWN SUBNAVIGATION styles */
 .drpbtn {
   font-size: 16px;
   text-decoration: none;
@@ -241,6 +232,48 @@ p {
     padding: 0.2rem; }
   .drpdwn-cntent a:hover {
     background-color: #ffffff; }
+
+/* REDUCED NAVIGATION styles */
+.drpREDUCEDbtn {
+  background-color: #39ac39;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+/* Reduced nav DROPDOWN SUBNAVIGATION styles */
+.drpdwncntentREDUCED {
+  padding: 0.5rem;
+  text-align: center;
+  display: none;
+  position: relative;
+  background-color: #d9f2d9;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
+          box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
+  width: 14rem; }
+  .drpdwncntentREDUCED a {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0.2rem; }
+  .drpdwncntentREDUCED a:hover {
+    background-color: #ffffff; }
+
+.drpdwn:hover .drpdwncntentREDUCED {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.5px solid #39ac39; }
 
 /* This can not be merged with the above styles, because it should only appear on hover once the menu has been loaded */
 .drpdwn:hover .drpdwn-cntent {
@@ -381,7 +414,7 @@ ul {
       padding: 0rem 0rem 0rem 1rem; }
     .universities .one {
       padding: 0.5rem 0rem 0rem 1rem; } }
-/* Enery Industry styles */
+/* ENERGY INDUSTRY PAGE styles */
 #images {
   -webkit-column-count: 4;
           column-count: 4; }
@@ -397,7 +430,7 @@ ul {
 @media screen and (max-width: 640px) {
   #images .energyimg {
     padding: 0.25rem; } }
-/* Contact page styles */
+/* CONTACT PAGE styles */
 .maintextcontact {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

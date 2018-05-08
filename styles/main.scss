@@ -51,7 +51,7 @@ header {
   }
 }
 
-/* Top most navigation */
+/* TOP NAVIGATION */
 
 .toptop {
   width: 100%;
@@ -73,7 +73,7 @@ header {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
   }
 
-  /* Search bar styles */
+  /* SEARCH BAR styles */
   .center {
     align-self: flex-end;
     margin-left: auto;
@@ -97,7 +97,7 @@ header {
   }
 }
 
-/* Hamburger menu on reduced screen */
+/* REDUCED NAV: HAMBURGER MENU on reduced screen */
 
 .reducednav {
   height: 100%;
@@ -119,15 +119,6 @@ header {
     display: block;
     transition: 0.3s;
   }
-  .drpbtn {
-    font-size: 18px;
-    text-decoration: none;
-    font-family: $main-font;
-    border: none;
-    padding: 1.5rem 1rem 1rem 1.5rem;
-    display: block;
-    transition: 0.3s;
-  }
 }
 
 /* X icon styles */
@@ -139,7 +130,7 @@ header {
   font-size: 36px;
 }
 
-/* Logo styles */
+/* LOGO styles */
 
 .logotext {
   display: inline-flex;
@@ -194,7 +185,7 @@ header {
 }
 
 
-/* GENERAL STYLES */
+/* GENERAL styles */
 
 h1 {
   align-self: flex-start;
@@ -235,7 +226,7 @@ p {
   padding: 1rem 0rem 0rem 0rem;
 }
 
-/* Main navigation styles */
+/* MAIN NAVIGATION styles */
 
 .mainnav {
   display: flex;
@@ -256,7 +247,7 @@ p {
   }
 }
 
-/* Dropdown menu styles */
+/* DROPDOWN SUBNAVIGATION styles */
 
 .drpbtn {
   font-size: 16px;
@@ -295,6 +286,49 @@ p {
   a:hover {
     background-color: $main-back-color;
   }
+}
+
+/* REDUCED NAVIGATION styles */
+
+.drpREDUCEDbtn {
+  background-color: $nav-color;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: $main-font;
+  border: none;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Reduced nav DROPDOWN SUBNAVIGATION styles */
+
+.drpdwncntentREDUCED {
+  padding: 0.5rem;
+  text-align: center;
+  display: none;
+  position: relative;
+  background-color: $topbottom-color;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
+  width: 14rem;
+
+  a {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0.2rem;
+  }
+
+  a:hover {
+    background-color: $main-back-color;
+  }
+}
+
+.drpdwn:hover .drpdwncntentREDUCED {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 0.5px solid rgb(57, 172, 57);
 }
 
 /* This can not be merged with the above styles, because it should only appear on hover once the menu has been loaded */
@@ -440,7 +474,7 @@ ul {
   }
 }
 
-/* Enery Industry styles */
+/* ENERGY INDUSTRY PAGE styles */
 
 #images {
   column-count: 4;
@@ -463,7 +497,7 @@ ul {
   }
 }
 
-/* Contact page styles */
+/* CONTACT PAGE styles */
 
 .maintextcontact {
   display: inline-flex;
