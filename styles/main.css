@@ -307,57 +307,57 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  /* Home page styles */ }
+      flex-wrap: wrap; }
   .maintext p {
     width: 100%;
     height: 100%;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     font-size: 16px;
     line-height: 1.5rem;
     text-align: justify;
-    margin-top: auto;
-    margin-bottom: auto;
     text-indent: 0;
     padding: 1rem 0rem; }
-  .maintext .topic {
-    font-size: 16px;
-    font-weight: bolder;
-    width: 50%; }
-    .maintext .topic a {
-      font-size: 16px; }
-  .maintext .video {
+
+/* HOME PAGE styles */
+.topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 100%; }
+  .topic p {
+    width: 50%;
+    padding: 5.5rem 0rem 1rem 0rem; }
+  .topic .video {
     width: 50%;
     height: 100%;
-    padding: 1rem;
-    -ms-flex-item-align: center;
-        align-self: center; }
+    padding: 1rem; }
 
-@media screen and (max-width: 816px) {
+/* Resize home page */
+@media screen and (max-width: 926px) {
+  .topic p {
+    padding: 3rem 0rem 1rem 0rem; } }
+@media screen and (max-width: 866px) {
   .container {
     margin: 1rem; }
 
-  .maintext {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .topic {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .maintext .topic {
-      font-size: 16px;
-      font-weight: bolder;
-      width: 100%; }
-    .maintext .video {
+    .topic p {
       width: 100%;
+      height: auto;
+      padding: 1rem 0rem 1rem 0rem; }
+    .topic .video {
+      width: 100%;
+      height: auto;
       padding: 1rem;
-      -ms-flex-item-align: center;
-          align-self: center; } }
+      -ms-flex-item-align: end;
+          align-self: flex-end; } }
 @media screen and (max-width: 480px) {
   .video {
     display: none; } }
@@ -376,6 +376,9 @@ p {
     line-height: 1.5rem;
     text-indent: 1rem;
     padding: 0.5rem 0rem; }
+
+.info {
+  padding: 0.5rem 0rem 1rem 0rem; }
 
 ol {
   text-align: justify;
@@ -417,7 +420,8 @@ ul {
 /* ENERGY INDUSTRY PAGE styles */
 #images {
   -webkit-column-count: 4;
-          column-count: 4; }
+          column-count: 4;
+  padding: 0rem 0rem 0rem 3.5rem; }
   #images .energyimg {
     width: 80%;
     height: auto;
@@ -428,8 +432,10 @@ ul {
             box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2); }
 
 @media screen and (max-width: 640px) {
-  #images .energyimg {
-    padding: 0.25rem; } }
+  #images {
+    padding: 1rem; }
+    #images .energyimg {
+      padding: 0.25rem; } }
 /* CONTACT PAGE styles */
 .maintextcontact {
   display: -webkit-inline-box;
@@ -454,6 +460,16 @@ ul {
   text-indent: 1rem;
   padding: 1rem 0rem 0rem 0rem; }
 
+.visit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .visit img {
+    margin: 0rem 0rem 0rem 4rem; }
+
+@media screen and (max-width: 722px) {
+  .visit img {
+    display: none; } }
 .text {
   text-indent: 0rem; }
 
