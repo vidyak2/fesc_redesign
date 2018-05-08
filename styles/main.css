@@ -88,7 +88,7 @@ header {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   .reducednav a {
-    padding: 1.5rem 1rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem 1.5rem;
     decoration: none;
     font-size: 18px;
     color: black;
@@ -100,7 +100,7 @@ header {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     border: none;
-    padding: 1.5rem 1rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem 1.5rem;
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -224,16 +224,6 @@ p {
   position: relative;
   display: inline-block; }
   .drpdwn :hover {
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     border: 0.5px solid #39ac39; }
 
 .drpdwn-cntent {

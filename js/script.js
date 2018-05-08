@@ -9,9 +9,6 @@
 //}
 
 
-//function hammenu(x) {
-//  x.classList.toggle("hamburgerchange");
-//}
 
 function openNav() {
   document.getElementById("reducedNav").style.width = "250px";
