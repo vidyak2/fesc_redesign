@@ -39,18 +39,88 @@
   <a class="top"></a>
 
   <header>
+
     <div class="topheader">
 
-      <!-- Center Top Submit Form -->
-      <article class="center">
-        <form name="research" onsubmit="search()">
-          <label>Search:
+      <div class="toptop">
+
+        <!-- Hamburger Navigation -->
+        <div id="reducedNav" class="reducednav">
+          <!-- Call to JS for Hamburger Nav to close -->
+          <!-- &times represents an X icon in CSS -->
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <!-- index.html in dropdown menu -->
+          <div class="drpdwn">
+            <form action="index.html">
+              <input class="drpREDUCEDbtn" type="submit" value="Home">
+            </form>
+
+            <div class="drpdwncntentREDUCED">
+              <a href="#">FESC Expertise</a>
+              <a href="#">Technology Commercialization</a>
+              <a href="#">Annual Reports, Publications and Presentations</a>
+              <a href="#">Advisory Board</a>
+              <a href="#">Supplementary Information</a>
+            </div>
+          </div>
+
+          <div class="drpdwn">
+            <form action="research.html">
+              <input class="drpREDUCEDbtn" type="submit" value="FESC Research">
+            </form>
+            <div class="drpdwncntentREDUCED">
+              <a href="#">Research Archives</a>
+            </div>
+          </div>
+
+          <a href="#">Education</a>
+          <a href="#">Outreach</a>
+          <a href="#">User Facilities</a>
+
+          <div class="drpdwn">
+            <form action="energyindustry.html">
+              <input class="drpREDUCEDbtn" type="submit" value="Energy Industry">
+            </form>
+            <div class="drpdwncntentREDUCED">
+              <a href="#">Florida Energy Facts</a>
+              <a href="#">Energy Efficiency</a>
+              <a href="#">Energy Crops</a>
+              <a href="#">Waste to Energy</a>
+              <a href="#">Smart Grid & Power</a>
+              <a href="#">Energy Storage</a>
+              <a href="#">Network & Security</a>
+              <a href="#">Water Purification</a>
+              <a href="#">Consulates & Law</a>
+              <a href="#">Engineering Consulting</a>
+              <a href="#">Associations & Organizations</a>
+              <a href="#">Energy Financing & Funding</a>
+              <a href="#">FL University Spin-off</a>
+              <a href="#">Other</a>
+            </div>
+          </div>
+
+          <a href="#">News & Events</a>
+          <a href="#">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <!-- Call to JS for Hamburger Nav to open-->
+        <!-- Font Awesome icon used for the hamburger -->
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+        <!-- Center Top Submit Form -->
+
+        <article class="center">
+          <form name="research" onsubmit="search()">
+            <label>Search:
             <input class="topsearch" type="text" name="searchbar">
           </label>
-        </form>
-      </article>
+          </form>
+        </article>
+      </div>
 
-      <!-- The header image is replaced by h1, h2, h3 Google Font text and a logo image, increasing efficiency -->
       <div class="imgcontainer">
         <img src="images/logo.png" alt="logo" width="60">
       </div>
@@ -62,6 +132,7 @@
           <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
         </div>
       </div>
+
     </div>
 
     <!--Main Nav -->
@@ -122,23 +193,22 @@
     <section class="container">
       <h2>FESC - Bringing Energy Solutions to Florida, the Nation and the World</h2>
       <!-- Main Text Article -->
-      <article class="maintext">
+      <div class="maintext">
 
-        <!-- The video will be placed on the left side, and the text will be placed on the right side in the main article. -->
         <h2>About Us</h2>
-        <article class="video">
-          <!-- Unable to get link to video for now -->
-          <video width="320" height="240" controls>
-            <source src="#" type="video/mp4">
-            Your browser does not support this video.
-          </video>
-        </article>
-
         <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its <a href="#backtouniversities">12 supported universities</a> to share energy-related expertise.</p>
 
-        <h2>Our Mission</h2>
-        <p>The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to 'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'.</p>
+        <article class="topic">
+          <p>The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to 'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'.</p>
 
+          <!-- Unable to get link to video for now -->
+          <div class="video">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/YA2ofbdd-G8">
+          </iframe>
+          </div>
+        </article>
+
+        <h2>Our Mission</h2>
         <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
         <ol>
           <li> Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</li>
@@ -148,9 +218,11 @@
         </ol>
 
         <p>For more information on FESC, download the full brochure <a href="#">here</a>.</p>
-      </article>
+
+      </div>
 
       <!-- News & Events Article -->
+
       <article class="news">
         <h2>News & Events</h2>
 
@@ -160,24 +232,30 @@
         <h3>2017 FESC/Polytech Conference - July 31-August 01 2017</h3>
         <p>FESC holds an <a href="#">annual technical workshop</a> to disseminate the latest advances in energy research and education and assist the Florida Office of Energy with the Florida Energy Summit.</p>
 
-        <!-- Facebook Share Button -->
-        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fvidyak2.github.io%2Fweektwo%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
-        <p>For more information on the news, events, and conferences related to FESC, please visit the <a href="#">News & Events page</a>.</p>
+        <!-- Facebook Share Button -->
+
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fvidyak2.github.io%2Fweektwo%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0 " allowTransparency="true" allow="encrypted-media"></iframe>
       </article>
+      <p class="info">For more information on the news, events, and conferences related to FESC, please visit the <a href="#">News & Events page</a>.</p>
+
+
 
       <!-- Reference for Supported Universities -->
       <a id="backtouniversities"></a>
       <!-- Supported Universities Article -->
+
       <article class="universities">
         <h2>12 Supported Universities</h2>
-        <ul>
+        <ul class="one">
           <li>University of Florida</li>
           <li>Florida State University</li>
           <li>University of Central Florida</li>
           <li>University of South Florida</li>
           <li>Florida Agricultural and Mechanical University</li>
           <li>Florida Atlantic University</li>
+        </ul>
+        <ul class="two">
           <li>Florida Gulf Coast University</li>
           <li>Florida International University</li>
           <li>New College of Florida</li>
@@ -191,7 +269,7 @@
   </main>
 
   <footer>
-    <article class="footer">
+    <article class="footer ">
 
       <!-- Footer Submit Form -->
       <article class="footcenter">
@@ -206,13 +284,13 @@
       <!-- Copyright Section -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-04">May 04 2018</time></p>
+      <p class="foot">Last modified on <time datetime="2018-05-09">May 09 2018</time></p>
 
       <!-- Footer Icons -->
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="icons ">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square "></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square "></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin "></i></a>
       </div>
 
       <!-- Back to Top Button -->
@@ -222,7 +300,7 @@
   </footer>
 
   <!-- Script Tag -->
-  <script src="#"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
