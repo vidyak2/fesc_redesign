@@ -1,6 +1,6 @@
 /* Definitions */
 
-$default-margin: 1rem auto;
+$default-margin: 1rem 2rem;
 $topbottom-color: #d9f2d9; //rgb(217, 242, 217)
 $nav-color: #39ac39; //rgb(57, 172, 57)
 $main-back-color: #ffffff;
@@ -15,7 +15,7 @@ $title-font: 'Kalam',
 cursive;
 
 
-/* GENERAL STYLES */
+/* BODY STYLES */
 
 * {
   margin: 0;
@@ -29,84 +29,110 @@ body {
   background-color: $main-back-color;
 }
 
-.imgcontainer {
-  max-width: 12%;
-  img {
-    margin-left: auto;
-    justify-content: flex-end;
-  }
-}
-
-h1 {
-  align-self: flex-start;
-  font-size: 46px;
-  font-weight: bolder;
-  padding: 0.5rem 2rem;
-
-  font-family: $title-font;
-}
-
-h2 {
-  align-self: flex-start;
-  padding: 1rem 0rem 0.25rem 0rem;
-
-  font-size: 20px;
-  font-weight: 900;
-}
-
-h3 {
-  padding: 1rem 0rem 0.25rem 0rem;
-  font-size: 16px;
-}
-
-a {
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-  padding: 0rem 0rem 0rem 0rem;
-}
-
-p {
-  text-indent: 1rem;
-  text-align: justify;
-  line-height: 1.15rem;
-
-  padding: 1rem 0rem 0rem 0rem;
-}
-
 /* HEADER */
 
 header {
   background-color: $topbottom-color;
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 
-  div {
+  .topheader {
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: column;
 
     article {
-      justify-content: flex-end;
-      padding: 0.5rem;
-      margin-left: auto;
+      align-self: flex-end;
+      padding: 1rem 2rem 0rem 0rem;
+    }
+
+    .imgcontainer {
+      margin-left: 8rem;
     }
   }
 }
 
-/* Search bar styles */
+/* TOP NAVIGATION */
 
-input.topsearch {
-  width: 14rem;
-  text-align: center;
+.toptop {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  /* Appears when screen is reduced */
+  .reducednav {
+    align-self: flex-start;
+  }
+  span {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.55rem;
+    width: 2.2rem;
+    height: 1.6rem;
+    border: 0.5px solid rgb(57, 172, 57);
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+  }
+
+  /* SEARCH BAR styles */
+  .center {
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+
+    input.topsearch {
+      width: 8rem;
+      text-align: center;
+    }
+  }
 }
 
-/* Logo styles */
+/* Top most navigation (Hamburger menu) disappears on large screens */
+
+@media screen and (min-width: 629px) {
+  .reducednav {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+}
+
+/* REDUCED NAV: HAMBURGER MENU on reduced screen */
+
+.reducednav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0rem;
+  left: 0rem;
+  background-color: $nav-color;
+  overflow-x: hidden;
+  padding-top: 2rem;
+  transition: 0.5s;
+
+  a {
+    padding: 1.5rem 1rem 1rem 1.5rem;
+    decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+}
+
+/* X icon styles */
+
+.reducednav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  font-size: 36px;
+}
+
+/* LOGO styles */
 
 .logotext {
-  width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -122,9 +148,87 @@ input.topsearch {
   }
 }
 
-/* Main navigation styles */
+/* Resize logo */
 
-nav {
+@media screen and (max-width: 628px) {
+  .logotext {
+    flex-direction: column;
+
+    h1 {
+      align-self: center;
+      text-align: center;
+    }
+
+    h2 {
+      padding: 0rem 0rem 0.5rem 0rem;
+      font-size: 16px;
+      align-self: center;
+      text-align: center;
+    }
+
+    h3 {
+      padding: 0.25rem 0rem 0rem 0rem;
+      font-size: 12px;
+      align-self: center;
+      text-align: center;
+    }
+  }
+  .imgcontainer {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 188px) {
+  .imgcontainer {
+    display: none;
+  }
+}
+
+
+/* GENERAL styles */
+
+h1 {
+  align-self: flex-start;
+  font-size: 46px;
+  font-weight: bolder;
+  padding: 0.5rem 2rem;
+
+  font-family: $title-font;
+}
+
+
+h2 {
+  align-self: flex-start;
+  padding: 1rem 0rem 0.25rem 0rem;
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h3 {
+  width: 100%;
+  padding: 1rem 0rem 0.25rem 0rem;
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5rem;
+
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+/* MAIN NAVIGATION styles */
+
+.mainnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -137,7 +241,13 @@ nav {
   }
 }
 
-/* Dropdown menu styles */
+@media screen and (max-width: 628px) {
+  .mainnav {
+    display: none;
+  }
+}
+
+/* DROPDOWN SUBNAVIGATION styles */
 
 .drpbtn {
   font-size: 16px;
@@ -154,10 +264,6 @@ nav {
   position: relative;
   display: inline-block;
   :hover {
-    display: block;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     border: 0.5px solid rgb(57, 172, 57);
   }
 }
@@ -182,6 +288,49 @@ nav {
   }
 }
 
+/* REDUCED NAVIGATION styles */
+
+.drpREDUCEDbtn {
+  background-color: $nav-color;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: $main-font;
+  border: none;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Reduced nav DROPDOWN SUBNAVIGATION styles */
+
+.drpdwncntentREDUCED {
+  padding: 0.5rem;
+  text-align: center;
+  display: none;
+  position: relative;
+  background-color: $topbottom-color;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
+  width: 14rem;
+
+  a {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0.2rem;
+  }
+
+  a:hover {
+    background-color: $main-back-color;
+  }
+}
+
+.drpdwn:hover .drpdwncntentREDUCED {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 0.5px solid rgb(57, 172, 57);
+}
+
 /* This can not be merged with the above styles, because it should only appear on hover once the menu has been loaded */
 
 .drpdwn:hover .drpdwn-cntent {
@@ -196,66 +345,116 @@ nav {
 /* MAIN */
 
 .container {
-  display: inline-flex;
   flex-wrap: wrap;
-
   margin: $default-margin;
-  padding: 0rem 2rem 2rem 2rem;
 
   a {
-    font-weight: bold;
+    font-weight: bolder;
+  }
+}
+
+.maintext {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  p {
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-indent: 0;
+
+    padding: 1rem 0rem;
+  }
+}
+
+/* HOME PAGE styles */
+
+.topic {
+  display: flex;
+
+  font-size: 16px;
+  font-weight: bolder;
+  width: 100%;
+
+  p {
+    width: 50%;
+    padding: 5.5rem 0rem 1rem 0rem;
   }
 
-  .maintext {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    padding: 0rem 0rem 1rem 0rem;
+  .video {
+    width: 50%;
+    height: 100%;
 
+    padding: 1rem;
+  }
+}
+
+
+/* Resize home page */
+
+@media screen and (max-width: 926px) {
+  .topic {
     p {
-      text-indent: 1rem;
-      text-align: justify;
-      line-height: 1.15rem;
-
-      padding: 1rem 0rem 0rem 0rem;
+      padding: 3rem 0rem 1rem 0rem;
     }
   }
+}
 
-  .news {
-    display: inline-flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 866px) {
+  .container {
+    margin: 1rem;
+  }
+
+  .topic {
     flex-direction: column;
-    p {
-      text-align: justify;
-      line-height: 1.15rem;
-
-      padding: 0.5rem 0rem;
-    }
-  }
-
-  .maintextcontact {
-    display: inline-flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0rem 0rem 1rem 0rem;
-
     p {
-      text-indent: 1rem;
-      line-height: 1.15rem;
-
-      padding: 0rem;
+      width: 100%;
+      height: auto;
+      padding: 1rem 0rem 1rem 0rem;
     }
 
-    article {
-      padding: 0.5rem;
+    .video {
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      align-self: flex-end;
     }
   }
+}
+
+@media screen and (max-width: 480px) {
+  .video {
+    display: none;
+  }
+}
+
+
+.news {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  p {
+    text-align: justify;
+    line-height: 1.5rem;
+    text-indent: 1rem;
+    padding: 0.5rem 0rem;
+  }
+}
+
+.info {
+  padding: 0.5rem 0rem 1rem 0rem;
 }
 
 
 ol {
   text-align: justify;
-  line-height: 1.15rem;
+  line-height: 1.5rem;
 
   padding: 1rem 2rem 0rem 2rem;
   list-style-type: lower-alpha;
@@ -267,10 +466,114 @@ iframe {
 
 ul {
   text-align: justify;
+  line-height: 2rem;
+
+  padding: 1rem 0rem 0rem 1rem;
+  list-style-type: circle;
+}
+
+.universities {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+  .universities {
+    margin: 0rem;
+    ul {
+      padding: 0rem 0rem 0rem 1rem;
+    }
+    .one {
+      padding: 0.5rem 0rem 0rem 1rem;
+    }
+  }
+}
+
+/* ENERGY INDUSTRY PAGE styles */
+
+#images {
+  column-count: 4;
+  padding: 0rem 0rem 0rem 3.5rem;
+
+  .energyimg {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    border: 0.5px solid rgb(57, 172, 57);
+    border-radius: 0.25rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #images {
+    padding: 1rem;
+    .energyimg {
+      padding: 0.25rem;
+    }
+  }
+}
+
+/* CONTACT PAGE styles */
+
+.maintextcontact {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0rem 0rem 1rem 0rem;
+
+  article {
+    padding: 0rem 0rem 0.5rem 0rem;
+  }
+}
+
+.contact {
+  text-indent: 1rem;
   line-height: 1.15rem;
 
-  padding: 1rem 2rem 0rem 2rem;
-  list-style-type: circle
+  padding: 0rem;
+}
+
+.firstoftype {
+  text-indent: 1rem;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.visit {
+  display: flex;
+  img {
+    margin: 0rem 0rem 0rem 4rem;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  .visit {
+    img {
+      display: none;
+    }
+  }
+}
+
+.text {
+  text-indent: 0rem;
+}
+
+.centerbold {
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.center {
+  text-align: center;
+  padding: 0.15rem 0rem 0rem 0rem;
+}
+
+.smaller {
+  font-size: 12px;
+  line-height: 1rem;
 }
 
 /* FOOTER */
@@ -293,16 +596,23 @@ footer {
   .footcenter {
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  @media screen and (max-width: 670px) {
+    .footcenter {
+      text-align: center;
+    }
   }
 
   .foot {
     flex-grow: 1;
 
-    padding-top: 0.15rem;
-    padding-bottom: 0.15rem;
+    padding-top: 0rem;
+    padding-bottom: 0.25rem;
     text-align: center;
     font-size: small;
+    line-height: 1rem;
   }
 
   .icons {
@@ -317,7 +627,6 @@ footer {
   }
 
   .backtotop {
-
     flex-grow: 1;
     align-self: flex-end;
 
