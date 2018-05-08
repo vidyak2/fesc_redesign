@@ -39,16 +39,87 @@
   <a class="top"></a>
 
   <header>
+
     <div class="topheader">
 
-      <!-- Center Top Submit Form -->
-      <article class="center">
-        <form name="research" onsubmit="search()">
-          <label>Search:
+      <div class="toptop">
+
+        <!-- Hamburger Navigation -->
+        <div id="reducedNav" class="reducednav">
+          <!-- Call to JS for Hamburger Nav to close -->
+          <!-- &times represents an X icon in CSS -->
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <!-- index.html in dropdown menu -->
+          <div class="drpdwn">
+            <form action="index.html">
+              <input class="drpREDUCEDbtn" type="submit" value="Home">
+            </form>
+
+            <div class="drpdwncntentREDUCED">
+              <a href="#">FESC Expertise</a>
+              <a href="#">Technology Commercialization</a>
+              <a href="#">Annual Reports, Publications and Presentations</a>
+              <a href="#">Advisory Board</a>
+              <a href="#">Supplementary Information</a>
+            </div>
+          </div>
+
+          <div class="drpdwn">
+            <form action="research.html">
+              <input class="drpREDUCEDbtn" type="submit" value="FESC Research">
+            </form>
+            <div class="drpdwncntentREDUCED">
+              <a href="#">Research Archives</a>
+            </div>
+          </div>
+
+          <a href="#">Education</a>
+          <a href="#">Outreach</a>
+          <a href="#">User Facilities</a>
+
+          <div class="drpdwn">
+            <form action="energyindustry.html">
+              <input class="drpREDUCEDbtn" type="submit" value="Energy Industry">
+            </form>
+            <div class="drpdwncntentREDUCED">
+              <a href="#">Florida Energy Facts</a>
+              <a href="#">Energy Efficiency</a>
+              <a href="#">Energy Crops</a>
+              <a href="#">Waste to Energy</a>
+              <a href="#">Smart Grid & Power</a>
+              <a href="#">Energy Storage</a>
+              <a href="#">Network & Security</a>
+              <a href="#">Water Purification</a>
+              <a href="#">Consulates & Law</a>
+              <a href="#">Engineering Consulting</a>
+              <a href="#">Associations & Organizations</a>
+              <a href="#">Energy Financing & Funding</a>
+              <a href="#">FL University Spin-off</a>
+              <a href="#">Other</a>
+            </div>
+          </div>
+
+          <a href="#">News & Events</a>
+          <a href="#">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <!-- Call to JS for Hamburger Nav to open-->
+        <!-- Font Awesome icon used for the hamburger -->
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+        <!-- Center Top Submit Form -->
+
+        <article class="center">
+          <form name="research" onsubmit="search()">
+            <label>Search:
             <input class="topsearch" type="text" name="searchbar">
           </label>
-        </form>
-      </article>
+          </form>
+        </article>
+      </div>
 
       <div class="imgcontainer">
         <img src="images/logo.png" alt="logo" width="60">
@@ -61,6 +132,7 @@
           <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
         </div>
       </div>
+
     </div>
 
     <!--Main Nav -->
@@ -122,34 +194,44 @@
       <article class="maintextcontact">
 
         <h2>Contact Us</h2>
-        <article class="one">
+        <article>
           <h3>Interim Director</h3>
-          <p class="contactperson">Dr. David Norton</p>
-          <p class="contactperson">Email: dpnorton@ufl.edu</p>
+          <p class="contact">Dr. David Norton</p>
+          <p class="contact"><a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> dpnorton@ufl.edu</p>
         </article>
 
-        <article class="two">
+        <article>
           <h3>Associate Director</h3>
-          <p class="contactperson">Ms. Canan “Janan” Balaban</p>
-          <p class="contactperson">Email: cbalaban@ufl.edu</p>
-          <p class="contactperson">Phone: 352 294 2027</p>
+          <p class="contact">Ms. Canan “Janan” Balaban</p>
+          <p class="contact"><a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> cbalaban@ufl.edu</p>
         </article>
 
         <h2>Visit Us</h2>
-        <article class="three">
-          <p class="contact">Telephone: 352 294 2027</p>
-          <p class="contact">272 Grinter Hall</p>
-          <p class="contact">P.O. Box 115500</p>
-          <p class="contact">Gainesville, FL 32611-5500</p>
+        <article class="visit">
+          <div>
+            <p class="firstoftype">272 Grinter Hall</p>
+            <p class="contact">P.O. Box 115500</p>
+            <p class="contact">Gainesville, FL 32611-5500</p>
+            <p class="contact">Telephone: 352 294 2027</p>
+          </div>
+
+          <img src="images/map.png" alt="map">
         </article>
 
-        <article class="four">
+        <article>
           <h2>Parking Directions</h2>
-          <p>The Visitor Welcome Center and Bookstore parking garage is located at the Reitz Union, at the corner of Museum Road and Reitz Union Drive. Daily and short-term fees are to be paid at pay stations located at the stair towers and elevators in the garage. Standard daily fee: $5.00 – 159 spaces available</p>
 
-          <p>The garage is an unrestricted pay facility available to all members of the university community. This garage can accommodate 300 vehicles. There are 45 short term parking spaces located in the garage.</p>
+          <p class="text">The Visitor Welcome Center and Bookstore parking garage is located at the Reitz Union, at the corner of Museum Road and Reitz Union Drive. The garage is an unrestricted pay facility available to all members of the university community.</p>
 
-          <p>The garage hours of operation are Monday through Friday, 7:30 am to 4:30 pm. Short-term and daily fees apply during this time. The garage may be used during non-operating hours for short-term parking, free of charge.</p>
+          <p class="centerbold">Standard daily fee:</p>
+          <p class="center">$5.00 (159 spaces available)</p>
+          <p class="centerbold">Hours of operation:</p>
+          <p class="center">Monday - Friday: 7:30 am - 4:30 pm*</p>
+
+
+          <p class="text">The garage may be used during non-operating hours for short-term parking, free of charge.</p>
+
+          <p class="smaller">* Short-term and daily fees apply during this time. They are to be paid at pay stations located at the stair towers and elevators in the garage.</p>
         </article>
 
         <!-- Link to Google Map -->
@@ -168,15 +250,15 @@
         <form name="signup" onsubmit="submit()">
           <label>Sign up for the FESC Florida Energy Connecions Newsletter 
             <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
+              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a>
+            </label>
         </form>
       </article>
 
       <!-- Copyright Section -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-04">May 04 2018</time></p>
+      <p class="foot">Last modified on <time datetime="2018-05-09">May 09 2018</time></p>
 
       <!-- Footer Icons -->
       <div class="icons">
@@ -192,7 +274,7 @@
   </footer>
 
   <!-- Script Tag -->
-  <script src="#"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
