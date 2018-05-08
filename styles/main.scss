@@ -88,7 +88,7 @@ header {
 
 /* Top most navigation (Hamburger menu) disappears on large screens */
 
-@media screen and (min-width: 506px) {
+@media screen and (min-width: 629px) {
   .reducednav {
     display: none;
   }
@@ -112,10 +112,19 @@ header {
   transition: 0.5s;
 
   a {
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     decoration: none;
     font-size: 18px;
     color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  .drpbtn {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: $main-font;
+    border: none;
+    padding: 1.5rem 1rem 1rem 1rem;
     display: block;
     transition: 0.3s;
   }
@@ -150,7 +159,7 @@ header {
 
 /* Resize logo */
 
-@media screen and (max-width: 506px) {
+@media screen and (max-width: 628px) {
   .logotext {
     flex-direction: column;
 
@@ -241,8 +250,7 @@ p {
   }
 }
 
-
-@media screen and (max-width: 506px) {
+@media screen and (max-width: 628px) {
   .mainnav {
     display: none;
   }
@@ -336,6 +344,7 @@ p {
     padding: 1rem 0rem;
   }
 
+  /* Home page styles */
   .topic {
     font-size: 16px;
     font-weight: bolder;
@@ -393,24 +402,9 @@ p {
     text-indent: 1rem;
     padding: 0.5rem 0rem;
   }
-} //  .maintextcontact {
-//    display: inline-flex;
-//    flex-wrap: wrap;
-//    flex-direction: column;
-//    padding: 0rem 0rem 1rem 0rem;
-//
-//    p {
-//      text-indent: 1rem;
-//      line-height: 1.15rem;
-//
-//      padding: 0rem;
-//    }
-//
-//    article {
-//      padding: 0.5rem;
-//    }
-//  }
-//}
+}
+
+
 ol {
   text-align: justify;
   line-height: 1.5rem;
@@ -450,6 +444,66 @@ ul {
   }
 }
 
+/* Enery Industry styles */
+
+#images {
+  justify-content: space-between;
+
+  column-count: 4;
+}
+
+.energyimg {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border: 0.5px solid rgb(57, 172, 57);
+}
+
+
+/* Contact page styles */
+
+.maintextcontact {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0rem 0rem 1rem 0rem;
+
+  article {
+    padding: 0rem 0rem 0.5rem 0rem;
+  }
+}
+
+.contact {
+  text-indent: 1rem;
+  line-height: 1.15rem;
+
+  padding: 0rem;
+}
+
+.firstoftype {
+  text-indent: 1rem;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.text {
+  text-indent: 0rem;
+}
+
+.centerbold {
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.center {
+  text-align: center;
+  padding: 0.15rem 0rem 0rem 0rem;
+}
+
+.smaller {
+  font-size: 12px;
+  line-height: 1rem;
+}
 
 /* FOOTER */
 

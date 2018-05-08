@@ -39,18 +39,82 @@
   <a class="top"></a>
 
   <header>
+
     <div class="topheader">
 
-      <!-- Center Top Submit Form -->
-      <article class="center">
-        <form name="research" onsubmit="search()">
-          <label>Search:
+      <div class="toptop">
+
+        <!-- Call to JS for Hamburger Nav to close -->
+        <!-- &times represents an X icon in CSS -->
+        <div id="reducedNav" class="reducednav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+          <!-- Hamburger Navigation -->
+          <form action="index.html">
+            <input class="drpbtn" type="submit" value="Home">
+          </form>
+          <div class="drpdwn-cntent">
+            <a href="#">FESC Expertise</a>
+            <a href="#">Technology Commercialization</a>
+            <a href="#">Annual Reports, Publications and Presentations</a>
+            <a href="#">Advisory Board</a>
+            <a href="#">Supplementary Information</a>
+          </div>
+
+          <div class="drpdwn">
+            <form action="research.html">
+              <input class="drpbtn" type="submit" value="FESC Research">
+            </form>
+            <div class="drpdwn-cntent">
+              <a href="#">Research Archives</a>
+            </div>
+          </div>
+          <a href="#">Education</a>
+          <a href="#">Outreach</a>
+          <a href="#">User Facilities</a>
+          <div class="drpdwn">
+            <form action="energyindustry.html">
+              <input class="drpbtn" type="submit" value="Energy Industry">
+            </form>
+            <div class="drpdwn-cntent">
+              <a href="#">Florida Energy Facts</a>
+              <a href="#">Energy Efficiency</a>
+              <a href="#">Energy Crops</a>
+              <a href="#">Waste to Energy</a>
+              <a href="#">Smart Grid & Power</a>
+              <a href="#">Energy Storage</a>
+              <a href="#">Network & Security</a>
+              <a href="#">Water Purification</a>
+              <a href="#">Consulates & Law</a>
+              <a href="#">Engineering Consulting</a>
+              <a href="#">Associations & Organizations</a>
+              <a href="#">Energy Financing & Funding</a>
+              <a href="#">FL University Spin-off</a>
+              <a href="#">Other</a>
+            </div>
+          </div>
+          <a href="#">News & Events</a>
+          <a href="#">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <!-- Call to JS for Hamburger Nav to open-->
+        <!-- Font Awesome icon used for the hamburger -->
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+        <!-- Center Top Submit Form -->
+
+        <article class="center">
+          <form name="research" onsubmit="search()">
+            <label>Search:
             <input class="topsearch" type="text" name="searchbar">
           </label>
-        </form>
-      </article>
+          </form>
+        </article>
+      </div>
 
-      <!-- The header image is replaced by h1, h2, h3 Google Font text and a logo image, increasing efficiency -->
       <div class="imgcontainer">
         <img src="images/logo.png" alt="logo" width="60">
       </div>
@@ -58,10 +122,11 @@
       <div class="logotext">
         <h1>FESC</h1>
         <div class="below">
-          <h2>Florida Energy Systems Consortium</h2>
-          <h3>Universities Addressing Florida's Energy Needs</h3>
+          <h2 class="logo">Florida Energy Systems Consortium</h2>
+          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
         </div>
       </div>
+
     </div>
 
     <!--Main Nav -->
@@ -212,7 +277,7 @@
       <!-- Copyright Section -->
       <p class="foot ">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot ">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot ">Last modified on <time datetime="2018-05-04 ">May 04 2018</time></p>
+      <p class="foot ">Last modified on <time datetime="2018-05-09 ">May 09 2018</time></p>
 
       <!-- Footer Icons -->
       <div class="icons ">
@@ -228,7 +293,7 @@
   </footer>
 
   <!-- Script Tag -->
-  <script src="# "></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
