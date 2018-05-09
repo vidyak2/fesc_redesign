@@ -376,6 +376,8 @@ p {
 
 .topic {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
   font-size: 16px;
   font-weight: bolder;
@@ -387,10 +389,8 @@ p {
   }
 
   .video {
-    width: 50%;
-    height: 100%;
-
     padding: 1rem;
+
   }
 }
 
