@@ -1,5 +1,5 @@
-/* Definitions */
-/* BODY STYLES */
+/* DEFINITIONS */
+/* BODY */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +24,9 @@ header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    /* Submit Form */
+    /* Logo Image Container */ }
     header .topheader article {
       -ms-flex-item-align: end;
           align-self: flex-end;
@@ -33,6 +35,7 @@ header {
       margin-left: 8rem; }
 
 /* TOP NAVIGATION */
+/* Reduced Navigation & Search Bar */
 .toptop {
   width: 100%;
   display: -webkit-inline-box;
@@ -44,8 +47,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /* Appears when screen is reduced */
-  /* SEARCH BAR styles */ }
+  /* REDUCED NAV: HAMBURGER MENU on reduced screen */
+  /* Include animation to make menu appear over page content */
+  /* Hamburger Icon (to open menu) */
+  /* Search Bar */ }
   .toptop .reducednav {
     -ms-flex-item-align: start;
         align-self: flex-start; }
@@ -67,15 +72,10 @@ header {
       width: 8rem;
       text-align: center; }
 
-/* Top most navigation (Hamburger menu) disappears on large screens */
-@media screen and (min-width: 629px) {
-  .reducednav {
-    display: none; }
-
-  span {
-    display: none; } }
-/* REDUCED NAV: HAMBURGER MENU on reduced screen */
+/* Hamburger Menu */
 .reducednav {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   height: 100%;
   width: 0;
   position: fixed;
@@ -96,14 +96,21 @@ header {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
 
-/* X icon styles */
+/* X Icon (to close menu) */
 .reducednav .closebtn {
   position: absolute;
   top: 0;
   right: 0rem;
   font-size: 36px; }
 
-/* LOGO styles */
+/* Resize Hamburger Menu */
+@media screen and (min-width: 629px) {
+  .reducednav {
+    display: none; }
+
+  span {
+    display: none; } }
+/* Logo styles */
 .logotext {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -148,10 +155,11 @@ header {
   .imgcontainer {
     -ms-flex-item-align: center;
         align-self: center; } }
+/* Logo Image disappears on reduced screen */
 @media screen and (max-width: 188px) {
   .imgcontainer {
     display: none; } }
-/* GENERAL styles */
+/* GENERAL */
 h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -184,6 +192,34 @@ p {
   line-height: 1.5rem;
   padding: 1rem 0rem 0rem 0rem; }
 
+/* MAIN */
+.container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem 2rem; }
+  .container a {
+    font-weight: bolder; }
+
+.maintext {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .maintext p {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-indent: 0;
+    padding: 1rem 0rem; }
+
 /* MAIN NAVIGATION styles */
 .mainnav {
   display: -webkit-box;
@@ -202,7 +238,7 @@ p {
 @media screen and (max-width: 628px) {
   .mainnav {
     display: none; } }
-/* DROPDOWN SUBNAVIGATION styles */
+/* DROPDOWN SUBNAVIGATION */
 .drpbtn {
   font-size: 16px;
   text-decoration: none;
@@ -210,13 +246,13 @@ p {
   border: none;
   background-color: #39ac39; }
 
-/* Position: absolute permits the dropdown to appear over other elements on the page */
 .drpdwn {
   position: relative;
   display: inline-block; }
   .drpdwn :hover {
     border: 0.5px solid #39ac39; }
 
+/* Position: absolute permits the dropdown to appear over other elements on the page */
 .drpdwn-cntent {
   padding: 0.5rem;
   text-align: center;
@@ -233,7 +269,7 @@ p {
   .drpdwn-cntent a:hover {
     background-color: #ffffff; }
 
-/* REDUCED NAVIGATION styles */
+/* REDUCED NAVIGATION DROPDOWN SUBNAVIGATION*/
 .drpREDUCEDbtn {
   background-color: #39ac39;
   font-size: 18px;
@@ -288,34 +324,6 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 0.5px solid #39ac39; }
-
-/* MAIN */
-.container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 1rem 2rem; }
-  .container a {
-    font-weight: bolder; }
-
-.maintext {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .maintext p {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    line-height: 1.5rem;
-    text-align: justify;
-    text-indent: 0;
-    padding: 1rem 0rem; }
 
 /* HOME PAGE styles */
 .topic {

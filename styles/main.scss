@@ -1,4 +1,4 @@
-/* Definitions */
+/* DEFINITIONS */
 
 $default-margin: 1rem 2rem;
 $topbottom-color: #d9f2d9; //rgb(217, 242, 217)
@@ -15,7 +15,7 @@ $title-font: 'Kalam',
 cursive;
 
 
-/* BODY STYLES */
+/* BODY */
 
 * {
   margin: 0;
@@ -40,11 +40,13 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
 
+    /* Submit Form */
     article {
       align-self: flex-end;
       padding: 1rem 2rem 0rem 0rem;
     }
 
+    /* Logo Image Container */
     .imgcontainer {
       margin-left: 8rem;
     }
@@ -53,16 +55,20 @@ header {
 
 /* TOP NAVIGATION */
 
+/* Reduced Navigation & Search Bar */
+
 .toptop {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
 
-  /* Appears when screen is reduced */
+  /* REDUCED NAV: HAMBURGER MENU on reduced screen */
+  /* Include animation to make menu appear over page content */
   .reducednav {
     align-self: flex-start;
   }
+  /* Hamburger Icon (to open menu) */
   span {
     margin: 0.5rem 1rem 0.5rem 1rem;
     padding: 0.25rem 0.25rem 0.25rem 0.55rem;
@@ -73,7 +79,7 @@ header {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
   }
 
-  /* SEARCH BAR styles */
+  /* Search Bar */
   .center {
     align-self: flex-end;
     margin-left: auto;
@@ -86,20 +92,10 @@ header {
   }
 }
 
-/* Top most navigation (Hamburger menu) disappears on large screens */
-
-@media screen and (min-width: 629px) {
-  .reducednav {
-    display: none;
-  }
-  span {
-    display: none;
-  }
-}
-
-/* REDUCED NAV: HAMBURGER MENU on reduced screen */
+/* Hamburger Menu */
 
 .reducednav {
+  align-self: flex-start;
   height: 100%;
   width: 0;
   position: fixed;
@@ -121,7 +117,7 @@ header {
   }
 }
 
-/* X icon styles */
+/* X Icon (to close menu) */
 
 .reducednav .closebtn {
   position: absolute;
@@ -130,7 +126,18 @@ header {
   font-size: 36px;
 }
 
-/* LOGO styles */
+/* Resize Hamburger Menu */
+
+@media screen and (min-width: 629px) {
+  .reducednav {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+}
+
+/* Logo styles */
 
 .logotext {
   display: inline-flex;
@@ -178,6 +185,8 @@ header {
   }
 }
 
+/* Logo Image disappears on reduced screen */
+
 @media screen and (max-width: 188px) {
   .imgcontainer {
     display: none;
@@ -185,7 +194,7 @@ header {
 }
 
 
-/* GENERAL styles */
+/* GENERAL */
 
 h1 {
   align-self: flex-start;
@@ -226,6 +235,37 @@ p {
   padding: 1rem 0rem 0rem 0rem;
 }
 
+/* MAIN */
+
+.container {
+  flex-wrap: wrap;
+  margin: $default-margin;
+
+  a {
+    font-weight: bolder;
+  }
+}
+
+.maintext {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  p {
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-indent: 0;
+
+    padding: 1rem 0rem;
+  }
+}
+
+
 /* MAIN NAVIGATION styles */
 
 .mainnav {
@@ -247,7 +287,7 @@ p {
   }
 }
 
-/* DROPDOWN SUBNAVIGATION styles */
+/* DROPDOWN SUBNAVIGATION */
 
 .drpbtn {
   font-size: 16px;
@@ -258,8 +298,6 @@ p {
   background-color: $nav-color;
 }
 
-/* Position: absolute permits the dropdown to appear over other elements on the page */
-
 .drpdwn {
   position: relative;
   display: inline-block;
@@ -267,6 +305,8 @@ p {
     border: 0.5px solid rgb(57, 172, 57);
   }
 }
+
+/* Position: absolute permits the dropdown to appear over other elements on the page */
 
 .drpdwn-cntent {
   padding: 0.5rem;
@@ -288,7 +328,7 @@ p {
   }
 }
 
-/* REDUCED NAVIGATION styles */
+/* REDUCED NAVIGATION DROPDOWN SUBNAVIGATION*/
 
 .drpREDUCEDbtn {
   background-color: $nav-color;
@@ -341,36 +381,6 @@ p {
   border: 0.5px solid rgb(57, 172, 57);
 }
 
-
-/* MAIN */
-
-.container {
-  flex-wrap: wrap;
-  margin: $default-margin;
-
-  a {
-    font-weight: bolder;
-  }
-}
-
-.maintext {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  p {
-    width: 100%;
-    height: 100%;
-
-    font-size: 16px;
-    line-height: 1.5rem;
-    text-align: justify;
-    text-indent: 0;
-
-    padding: 1rem 0rem;
-  }
-}
 
 /* HOME PAGE styles */
 
