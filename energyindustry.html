@@ -40,17 +40,19 @@
 
   <header>
 
+    <!-- Reduced Nav, Search Bar, Logo Image & Title -->
     <div class="topheader">
-
+      <!-- Hamburger Nav & Search Bar -->
       <div class="toptop">
 
-        <!-- Hamburger Navigation -->
+        <!-- Hamburger Navigation (on reduced screens) -->
         <div id="reducedNav" class="reducednav">
+
           <!-- Call to JS for Hamburger Nav to close -->
-          <!-- &times represents an X icon in CSS -->
+          <!-- &times for X icon in CSS -->
           <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
 
-          <!-- index.html in dropdown menu -->
+          <!-- index.html in Dropdown Menu -->
           <div class="drpdwn">
             <form action="index.html">
               <input class="drpREDUCEDbtn" type="submit" value="Home">
@@ -110,8 +112,8 @@
         <!-- Font Awesome icon used for the hamburger -->
         <span onclick="openNav()"><i class="fas fa-bars"></i></span>
 
-        <!-- Center Top Submit Form -->
 
+        <!-- Center Top Submit Form -->
         <article class="center">
           <form name="research" onsubmit="search()">
             <label>Search:
@@ -121,10 +123,12 @@
         </article>
       </div>
 
+      <!-- Logo Image -->
       <div class="imgcontainer">
         <img src="images/logo.png" alt="logo" width="60">
       </div>
 
+      <!-- Title -->
       <div class="logotext">
         <h1>FESC</h1>
         <div class="below">
@@ -135,10 +139,10 @@
 
     </div>
 
-    <!--Main Nav -->
+    <!-- Main Nav (on larger screens) -->
     <nav class="mainnav">
       <div class="drpdwn">
-        <!-- Form to access index.html in dropdown menu -->
+
         <form action="index.html">
           <input class="drpbtn" type="submit" value="Home">
         </form>
@@ -186,6 +190,7 @@
       <a href="#">FAQ</a>
       <a href="contact.html">Contact Us</a>
     </nav>
+
   </header>
 
 
@@ -224,7 +229,7 @@
   <footer>
     <article class="footer">
 
-      <!-- Footer Submit form -->
+      <!-- Footer Submit Form -->
       <article class="footcenter">
         <form name="signup" onsubmit="submit()">
           <label>Sign up for the FESC Florida Energy Connecions Newsletter 
@@ -234,13 +239,13 @@
         </form>
       </article>
 
-      <!-- Copyright Section -->
+      <!-- Copyright -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
       <p class="foot">Last modified on <time datetime="2018-05-09">May 09 2018</time></p>
 
       <!-- Footer Icons -->
-      <div class="icons">
+      <div class="icons ">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
