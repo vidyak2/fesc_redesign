@@ -32,65 +32,76 @@ body {
 /* HEADER */
 
 header {
-  background-color: $topbottom-color;
-
-  .topheader {
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    /* Submit Form */
-    article {
-      align-self: flex-end;
-      padding: 1rem 2rem 0rem 0rem;
-    }
-
-    /* Logo Image Container */
-    .imgcontainer {
-      margin-left: 8rem;
-    }
-  }
+  //    background-color: $topbottom-color;
+  background: linear-gradient($nav-color 20%, $topbottom-color 80%, white 100%);
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column; //  .topheader {
+  //    width: 100%;
+  //    display: inline-flex;
+  //    flex-wrap: wrap;
+  //    flex-direction: column;
+  //
+  //  }
 }
 
 /* TOP NAVIGATION */
 
 /* Reduced Navigation & Search Bar */
 
-.toptop {
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
+//.toptop {
+//  width: 100%;
+//  display: inline-flex;
+//  flex-wrap: wrap;
+//  flex-direction: row;
+/* REDUCED NAV: HAMBURGER MENU on reduced screen */
+
+/* Include animation to make menu appear over page content */
+
+.reducednav {
+  align-self: flex-start;
+}
+
+/* Hamburger Icon (to open menu) */
+
+span {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.55rem;
+  width: 2.2rem;
+  height: 1.6rem;
+  border: 0.5px solid rgb(57, 172, 57);
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+}
+
+//}
+.headerimg {
+  display: flex;
   flex-direction: row;
 
-  /* REDUCED NAV: HAMBURGER MENU on reduced screen */
-  /* Include animation to make menu appear over page content */
-  .reducednav {
-    align-self: flex-start;
-  }
-  /* Hamburger Icon (to open menu) */
-  span {
-    margin: 0.5rem 1rem 0.5rem 1rem;
-    padding: 0.25rem 0.25rem 0.25rem 0.55rem;
-    width: 2.2rem;
-    height: 1.6rem;
-    border: 0.5px solid rgb(57, 172, 57);
-    border-radius: 0.4rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+
+  /* Logo Image Container */
+  .imgcontainer {
+    margin-left: 8rem;
+    height: 0rem;
+    width: 2rem;
   }
 
   /* Search Bar */
   .center {
     align-self: flex-end;
     margin-left: auto;
-    padding: 0.5rem 1rem 0.5rem 0rem;
-
-    input.topsearch {
-      width: 8rem;
-      text-align: center;
-    }
+    padding: 0.5rem 2rem 0.5rem 0rem;
   }
 }
+
+input.topsearch {
+  width: 8rem;
+  text-align: center;
+}
+
+
 
 /* Hamburger Menu */
 
@@ -144,14 +155,24 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
 
+  h1 {
+    align-self: flex-start;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 0.5rem 2rem;
+
+    font-family: $title-font;
+  }
+
   h2 {
+    font-size: 1.4rem;
     padding: 0rem 0rem 0.5rem 0rem;
     font-family: $main-font;
   }
 
   h3 {
     padding: 0.25rem 0rem 0rem 0rem;
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 
@@ -195,16 +216,6 @@ header {
 
 
 /* GENERAL */
-
-h1 {
-  align-self: flex-start;
-  font-size: 46px;
-  font-weight: bolder;
-  padding: 0.5rem 2rem;
-
-  font-family: $title-font;
-}
-
 
 h2 {
   align-self: flex-start;
@@ -272,10 +283,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem 2rem;
-
-  background-color: $nav-color;
-
+  padding: 1rem 2rem; //  background-color: $nav-color;
   a {
     padding: 0.25rem 0rem 0rem 0rem;
   }
@@ -296,6 +304,7 @@ p {
   border: none;
 
   background-color: $nav-color;
+
 }
 
 .drpdwn {
@@ -601,9 +610,8 @@ footer {
   display: inline-flex;
   flex-wrap: wrap;
 
-  padding: 1rem 2rem;
-
-  background-color: $topbottom-color;
+  padding: 1rem 2rem; //  background-color: $topbottom-color;
+  background: linear-gradient($main-back-color 0%, $topbottom-color 20%, $nav-color 80%);
 }
 
 .footer {

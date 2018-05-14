@@ -13,64 +13,61 @@ body {
 
 /* HEADER */
 header {
-  background-color: #d9f2d9; }
-  header .topheader {
-    width: 100%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    /* Submit Form */
-    /* Logo Image Container */ }
-    header .topheader article {
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-      padding: 1rem 2rem 0rem 0rem; }
-    header .topheader .imgcontainer {
-      margin-left: 8rem; }
-
-/* TOP NAVIGATION */
-/* Reduced Navigation & Search Bar */
-.toptop {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #39ac39), color-stop(80%, #d9f2d9), to(white));
+  background: linear-gradient(#39ac39 20%, #d9f2d9 80%, white 100%);
   width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* TOP NAVIGATION */
+/* Reduced Navigation & Search Bar */
+/* REDUCED NAV: HAMBURGER MENU on reduced screen */
+/* Include animation to make menu appear over page content */
+.reducednav {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+/* Hamburger Icon (to open menu) */
+span {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.55rem;
+  width: 2.2rem;
+  height: 1.6rem;
+  border: 0.5px solid #39ac39;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+          box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2); }
+
+.headerimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /* REDUCED NAV: HAMBURGER MENU on reduced screen */
-  /* Include animation to make menu appear over page content */
-  /* Hamburger Icon (to open menu) */
+  /* Logo Image Container */
   /* Search Bar */ }
-  .toptop .reducednav {
-    -ms-flex-item-align: start;
-        align-self: flex-start; }
-  .toptop span {
-    margin: 0.5rem 1rem 0.5rem 1rem;
-    padding: 0.25rem 0.25rem 0.25rem 0.55rem;
-    width: 2.2rem;
-    height: 1.6rem;
-    border: 0.5px solid #39ac39;
-    border-radius: 0.4rem;
-    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
-            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2); }
-  .toptop .center {
+  .headerimg .imgcontainer {
+    margin-left: 8rem;
+    height: 0rem;
+    width: 2rem; }
+  .headerimg .center {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: auto;
-    padding: 0.5rem 1rem 0.5rem 0rem; }
-    .toptop .center input.topsearch {
-      width: 8rem;
-      text-align: center; }
+    padding: 0.5rem 2rem 0.5rem 0rem; }
+
+input.topsearch {
+  width: 8rem;
+  text-align: center; }
 
 /* Hamburger Menu */
 .reducednav {
@@ -121,12 +118,20 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  .logotext h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 0.5rem 2rem;
+    font-family: "Kalam", cursive; }
   .logotext h2 {
+    font-size: 1.4rem;
     padding: 0rem 0rem 0.5rem 0rem;
     font-family: "Open Sans", sans-serif; }
   .logotext h3 {
     padding: 0.25rem 0rem 0rem 0rem;
-    font-size: 14px; }
+    font-size: 1rem; }
 
 /* Resize logo */
 @media screen and (max-width: 628px) {
@@ -160,14 +165,6 @@ header {
   .imgcontainer {
     display: none; } }
 /* GENERAL */
-h1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  font-size: 46px;
-  font-weight: bolder;
-  padding: 0.5rem 2rem;
-  font-family: "Kalam", cursive; }
-
 h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -230,8 +227,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #39ac39; }
+  padding: 1rem 2rem; }
   .mainnav a {
     padding: 0.25rem 0rem 0rem 0rem; }
 
@@ -521,7 +517,8 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1rem 2rem;
-  background-color: #d9f2d9; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(20%, #d9f2d9), color-stop(80%, #39ac39));
+  background: linear-gradient(#ffffff 0%, #d9f2d9 20%, #39ac39 80%); }
 
 .footer {
   -webkit-box-flex: 1;
