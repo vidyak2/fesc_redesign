@@ -32,11 +32,16 @@ body {
 /* HEADER */
 
 header {
-  background: linear-gradient($nav-color 20%, $topbottom-color 80%, white 100%);
+  //  background: linear-gradient($nav-color 20%, $topbottom-color 80%, white 100%);
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
+  .top {
+    width: 100%;
+    background: linear-gradient($topbottom-color 80%, white 100%);
+  }
+
 }
 
 /* TOP NAVIGATION */
@@ -104,20 +109,21 @@ header {
     padding: 0.25rem 0.25rem 0.25rem 0.55rem;
     width: 2.2rem;
     height: 1.6rem;
-    border: 2px solid rgb(217, 242, 217);
+    border: 2px solid rgb(57, 172, 57);
     border-radius: 0.4rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.6);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.6);
   }
 
   /* Logo Image Container */
-  .imgcontainer {
-    img {
-      width: 4rem;
-    }
-    margin-left: 9rem;
-    height: 0rem;
-    width: 2rem;
-  }
+  //  .imgcontainer {
+  img {
+    width: 4rem;
+    margin-left: 10rem;
+    padding: 0.25rem 0rem 0rem 0rem;
+  } //    margin-left: 9rem;
+  //    height: 0rem;
+  //    width: 2rem;
+  //  }
   /* Search Bar */
   .center {
     align-self: flex-end;
@@ -186,27 +192,28 @@ input.topsearch {
       text-align: center;
     }
   }
+
+
   .headerimg {
     display: flex;
     flex-direction: row;
 
     /* Logo Image Container */
-    .imgcontainer {
-      img {
-        width: 4rem;
-      }
-      margin-left: auto;
-      float: flex-end;
-      height: 0rem;
-
-
-    }
+    //    .imgcontainer {
+    /* Logo img */
+    img {
+      width: 4rem;
+    } //      margin-left: auto;
+    //      float: flex-end;
+    //      height: 0rem;
+    //    }
     /* Search Bar */
     .center {
       align-self: flex-end;
       margin-left: 0rem;
       padding: 0.5rem 2rem 0.5rem 0rem;
     }
+    /* Hamburger icon */
     span {
       align-self: flex-start;
     }
@@ -289,6 +296,7 @@ p {
 /* MAIN NAVIGATION styles */
 
 .mainnav {
+  background: linear-gradient($nav-color 80%, $topbottom-color 100%); //  background-color: $nav-color;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -328,12 +336,11 @@ p {
 
 .drpdwn-cntent {
   padding: 0.5rem;
-  text-align: center;
   display: none;
   position: absolute;
   background-color: $topbottom-color;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
-  width: 14rem;
+  width: 16.8rem;
 
   a {
     font-size: 16px;
@@ -613,15 +620,18 @@ footer {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
-  padding: 1rem 2rem; //  background-color: $topbottom-color;
+  padding: 1rem 0rem; //  background-color: $topbottom-color;
   background: linear-gradient($main-back-color 0%, $topbottom-color 20%, $nav-color 80%);
 }
 
-.footer {
+.topfooter {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(white 0%, $topbottom-color 10%);
+  padding: 1rem 0rem 0rem 0rem;
 
   .footcenter {
     margin-left: auto;
@@ -655,11 +665,17 @@ footer {
       padding: 0.25rem;
     }
   }
+}
 
+.bottomfooter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient($topbottom-color 0%, $nav-color 99%);
+  padding: 0.5rem 2rem 0rem 0rem;
   .backtotop {
-    flex-grow: 1;
-    align-self: flex-end;
-
     padding: 0.5rem;
+    margin-left: auto;
+    align-self: flex-end;
   }
 }

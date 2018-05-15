@@ -13,8 +13,6 @@ body {
 
 /* HEADER */
 header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #39ac39), color-stop(80%, #d9f2d9), to(white));
-  background: linear-gradient(#39ac39 20%, #d9f2d9 80%, white 100%);
   width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -25,6 +23,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  header .top {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #d9f2d9), to(white));
+    background: linear-gradient(#d9f2d9 80%, white 100%); }
 
 /* TOP NAVIGATION */
 /* REDUCED NAV: HAMBURGER MENU on reduced screen */
@@ -87,16 +89,14 @@ header {
     padding: 0.25rem 0.25rem 0.25rem 0.55rem;
     width: 2.2rem;
     height: 1.6rem;
-    border: 2px solid #d9f2d9;
+    border: 2px solid #39ac39;
     border-radius: 0.4rem;
-    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.6);
-            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.6); }
-  .headerimg .imgcontainer {
-    margin-left: 9rem;
-    height: 0rem;
-    width: 2rem; }
-    .headerimg .imgcontainer img {
-      width: 4rem; }
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.6);
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.6); }
+  .headerimg img {
+    width: 4rem;
+    margin-left: 10rem;
+    padding: 0.25rem 0rem 0rem 0rem; }
   .headerimg .center {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -166,13 +166,11 @@ input.topsearch {
         -ms-flex-direction: row;
             flex-direction: row;
     /* Logo Image Container */
-    /* Search Bar */ }
-    .headerimg .imgcontainer {
-      margin-left: auto;
-      float: flex-end;
-      height: 0rem; }
-      .headerimg .imgcontainer img {
-        width: 4rem; }
+    /* Logo img */
+    /* Search Bar */
+    /* Hamburger icon */ }
+    .headerimg img {
+      width: 4rem; }
     .headerimg .center {
       -ms-flex-item-align: end;
           align-self: flex-end;
@@ -240,6 +238,8 @@ p {
 
 /* MAIN NAVIGATION styles */
 .mainnav {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #39ac39), to(#d9f2d9));
+  background: linear-gradient(#39ac39 80%, #d9f2d9 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,13 +272,12 @@ p {
 /* Position: absolute permits the dropdown to appear over other elements on the page */
 .drpdwn-cntent {
   padding: 0.5rem;
-  text-align: center;
   display: none;
   position: absolute;
   background-color: #d9f2d9;
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
           box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
-  width: 14rem; }
+  width: 16.8rem; }
   .drpdwn-cntent a {
     font-size: 16px;
     font-weight: normal;
@@ -524,11 +523,15 @@ footer {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(20%, #d9f2d9), color-stop(80%, #39ac39));
   background: linear-gradient(#ffffff 0%, #d9f2d9 20%, #39ac39 80%); }
 
-.footer {
+.topfooter {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -538,15 +541,18 @@ footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-  .footer .footcenter {
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, #d9f2d9));
+  background: linear-gradient(white 0%, #d9f2d9 10%);
+  padding: 1rem 0rem 0rem 0rem; }
+  .topfooter .footcenter {
     margin-left: auto;
     margin-right: auto;
     padding: 0rem 0.5rem 0.5rem 0.5rem; }
   @media screen and (max-width: 670px) {
-    .footer .footcenter {
+    .topfooter .footcenter {
       text-align: center; } }
-  .footer .foot {
+  .topfooter .foot {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -555,22 +561,31 @@ footer {
     text-align: center;
     font-size: small;
     line-height: 1rem; }
-  .footer .icons {
+  .topfooter .icons {
     margin-left: auto;
     margin-right: auto; }
-    .footer .icons a {
+    .topfooter .icons a {
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
               flex-grow: 1;
       -ms-flex-item-align: center;
           align-self: center;
       padding: 0.25rem; }
-  .footer .backtotop {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+
+.bottomfooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9f2d9), color-stop(99%, #39ac39));
+  background: linear-gradient(#d9f2d9 0%, #39ac39 99%);
+  padding: 0.5rem 2rem 0rem 0rem; }
+  .bottomfooter .backtotop {
+    padding: 0.5rem;
+    margin-left: auto;
     -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 0.5rem; }
+        align-self: flex-end; }
 
 /*# sourceMappingURL=main.css.map */

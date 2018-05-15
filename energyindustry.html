@@ -90,36 +90,41 @@
       <a href="contact.html">Contact Us</a>
     </nav>
 
-    <!-- Logo Image, Search Bar, Title & Hamburger Menu-->
-    <div class="headerimg">
 
-      <!-- Call to JS for Hamburger Nav to open-->
-      <!-- Font Awesome icon used for the hamburger -->
-      <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+    <div class="top">
 
-      <!-- Logo Image -->
-      <div class="imgcontainer">
-        <img src="images/logo.png" alt="logo">
-      </div>
+      <!-- Logo Image, Search Bar & Hamburger Menu-->
+      <div class="headerimg">
 
-      <!-- Center Top Submit Form -->
-      <article class="center">
-        <form name="research" onsubmit="search()">
-          <label>Search:
+        <!-- Call to JS for Hamburger Nav to open-->
+        <!-- Font Awesome icon used for the hamburger -->
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+        <!-- Logo Image -->
+        <div class="imgcontainer">
+          <img src="images/logo.png" alt="logo">
+        </div>
+
+        <!-- Center Top Submit Form -->
+        <article class="center">
+          <form name="research" onsubmit="search()">
+            <label>Search:
             <input class="topsearch" type="text" name="searchbar">
           </label>
-        </form>
-      </article>
+          </form>
+        </article>
 
-    </div>
-
-    <!-- Title -->
-    <div class="logotext">
-      <h1>FESC</h1>
-      <div class="below">
-        <h2 class="logo">Florida Energy Systems Consortium</h2>
-        <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
       </div>
+
+      <!-- Title -->
+      <div class="logotext">
+        <h1>FESC</h1>
+        <div class="below">
+          <h2 class="logo">Florida Energy Systems Consortium</h2>
+          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
+        </div>
+      </div>
+
     </div>
 
     <!-- Hamburger Menu (On smaller screens)-->
@@ -204,8 +209,9 @@
     </section>
   </main>
 
+
   <footer>
-    <article class="footer">
+    <article class="topfooter">
 
       <!-- Footer Submit Form -->
       <article class="footcenter">
@@ -220,18 +226,22 @@
       <!-- Copyright -->
       <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
       <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-09">May 09 2018</time></p>
+      <p class="foot">Last modified on <time datetime="2018-05-15">May 15 2018</time></p>
 
       <!-- Footer Icons -->
-      <div class="icons ">
+      <div class="icons">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
 
-      <!-- Back to Top Button -->
+    </article>
+
+    <!-- Back to Top Button -->
+    <article class="bottomfooter">
       <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
     </article>
+
 
   </footer>
 
