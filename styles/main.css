@@ -292,7 +292,8 @@ p {
   padding: 0.5rem;
   margin-left: 1.5rem;
   text-align: left;
-  background-color: #d9f2d9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#39ac39), color-stop(6%, #d9f2d9), color-stop(95%, #d9f2d9), to(#39ac39));
+  background: linear-gradient(#39ac39 0%, #d9f2d9 6%, #d9f2d9 95%, #39ac39 100%);
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
           box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2); }
   .leftmargin a {

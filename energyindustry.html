@@ -40,105 +40,6 @@
 
   <header>
 
-    <!-- Reduced Nav, Search Bar, Logo Image & Title -->
-    <div class="topheader">
-      <!-- Hamburger Nav & Search Bar -->
-      <div class="toptop">
-
-        <!-- Hamburger Navigation (on reduced screens) -->
-        <div id="reducedNav" class="reducednav">
-
-          <!-- Call to JS for Hamburger Nav to close -->
-          <!-- &times for X icon in CSS -->
-          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-          <!-- index.html in Dropdown Menu -->
-          <div class="drpdwn">
-            <form action="index.html">
-              <input class="drpREDUCEDbtn" type="submit" value="Home">
-            </form>
-
-            <div class="drpdwncntentREDUCED">
-              <a href="#">FESC Expertise</a>
-              <a href="#">Technology Commercialization</a>
-              <a href="#">Annual Reports, Publications and Presentations</a>
-              <a href="#">Advisory Board</a>
-              <a href="#">Supplementary Information</a>
-            </div>
-          </div>
-
-          <div class="drpdwn">
-            <form action="research.html">
-              <input class="drpREDUCEDbtn" type="submit" value="FESC Research">
-            </form>
-            <div class="drpdwncntentREDUCED">
-              <a href="#">Research Archives</a>
-            </div>
-          </div>
-
-          <a href="#">Education</a>
-          <a href="#">Outreach</a>
-          <a href="#">User Facilities</a>
-
-          <div class="drpdwn">
-            <form action="energyindustry.html">
-              <input class="drpREDUCEDbtn" type="submit" value="Energy Industry">
-            </form>
-            <div class="drpdwncntentREDUCED">
-              <a href="#">Florida Energy Facts</a>
-              <a href="#">Energy Efficiency</a>
-              <a href="#">Energy Crops</a>
-              <a href="#">Waste to Energy</a>
-              <a href="#">Smart Grid & Power</a>
-              <a href="#">Energy Storage</a>
-              <a href="#">Network & Security</a>
-              <a href="#">Water Purification</a>
-              <a href="#">Consulates & Law</a>
-              <a href="#">Engineering Consulting</a>
-              <a href="#">Associations & Organizations</a>
-              <a href="#">Energy Financing & Funding</a>
-              <a href="#">FL University Spin-off</a>
-              <a href="#">Other</a>
-            </div>
-          </div>
-
-          <a href="#">News & Events</a>
-          <a href="#">FAQ</a>
-          <a href="contact.html">Contact Us</a>
-
-        </div>
-
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-
-        <!-- Center Top Submit Form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
-          </label>
-          </form>
-        </article>
-      </div>
-
-      <!-- Logo Image -->
-      <div class="imgcontainer">
-        <img src="images/logo.png" alt="logo" width="60">
-      </div>
-
-      <!-- Title -->
-      <div class="logotext">
-        <h1>FESC</h1>
-        <div class="below">
-          <h2 class="logo">Florida Energy Systems Consortium</h2>
-          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
-        </div>
-      </div>
-
-    </div>
-
     <!-- Main Nav (on larger screens) -->
     <nav class="mainnav">
       <div class="drpdwn">
@@ -162,9 +63,7 @@
           <a href="#">Research Archives</a>
         </div>
       </div>
-      <a href="#">Education</a>
-      <a href="#">Outreach</a>
-      <a href="#">User Facilities</a>
+
       <div class="drpdwn">
         <form action="energyindustry.html">
           <input class="drpbtn" type="submit" value="Energy Industry">
@@ -190,6 +89,85 @@
       <a href="#">FAQ</a>
       <a href="contact.html">Contact Us</a>
     </nav>
+
+    <!-- Logo Image, Search Bar, Title & Hamburger Menu-->
+    <div class="headerimg">
+
+      <!-- Call to JS for Hamburger Nav to open-->
+      <!-- Font Awesome icon used for the hamburger -->
+      <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+      <!-- Logo Image -->
+      <div class="imgcontainer">
+        <img src="images/logo.png" alt="logo">
+      </div>
+
+      <!-- Center Top Submit Form -->
+      <article class="center">
+        <form name="research" onsubmit="search()">
+          <label>Search:
+            <input class="topsearch" type="text" name="searchbar">
+          </label>
+        </form>
+      </article>
+
+    </div>
+
+    <!-- Title -->
+    <div class="logotext">
+      <h1>FESC</h1>
+      <div class="below">
+        <h2 class="logo">Florida Energy Systems Consortium</h2>
+        <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
+      </div>
+    </div>
+
+    <!-- Hamburger Menu (On smaller screens)-->
+    <div id="reducedNav" class="reducednav">
+
+      <!-- Call to JS for Hamburger Nav to close -->
+      <!-- &times for X icon in CSS -->
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Dropdown Menu changed to left margin menu-->
+      <a href="index.html">Home</a>
+      <div class="leftmargin">
+        <a href="#">FESC Expertise</a>
+        <a href="#">Technology Commercialization</a>
+        <a href="#">Annual Reports, Publications and Presentations</a>
+        <a href="#">Advisory Board</a>
+        <a href="#">Supplementary Information</a>
+      </div>
+
+      <a href="research.html">FESC Research</a>
+      <div class="leftmargin">
+        <a href="#">Research Archives</a>
+      </div>
+
+
+      <a href="energyindustry.html">Energy Industry</a>
+      <div class="leftmargin">
+        <a href="#">Florida Energy Facts</a>
+        <a href="#">Energy Efficiency</a>
+        <a href="#">Energy Crops</a>
+        <a href="#">Waste to Energy</a>
+        <a href="#">Smart Grid & Power</a>
+        <a href="#">Energy Storage</a>
+        <a href="#">Network & Security</a>
+        <a href="#">Water Purification</a>
+        <a href="#">Consulates & Law</a>
+        <a href="#">Engineering Consulting</a>
+        <a href="#">Associations & Organizations</a>
+        <a href="#">Energy Financing & Funding</a>
+        <a href="#">FL University Spin-off</a>
+        <a href="#">Other</a>
+      </div>
+
+      <a href="#">News & Events</a>
+      <a href="#">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+
+    </div>
 
   </header>
 

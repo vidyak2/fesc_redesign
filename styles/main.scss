@@ -376,8 +376,8 @@ p {
 .leftmargin {
   padding: 0.5rem;
   margin-left: 1.5rem;
-  text-align: left;
-  background-color: $topbottom-color;
+  text-align: left; //  background-color: $topbottom-color;
+  background: linear-gradient($nav-color 0%, $topbottom-color 6%, $topbottom-color 95%, $nav-color 100%);
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
 
   a {
@@ -392,6 +392,7 @@ p {
 }
 
 /* Reduced nav DROPDOWN SUBNAVIGATION styles */
+
 //
 //.drpdwncntentREDUCED {
 //  padding: 0.5rem;
@@ -412,7 +413,6 @@ p {
 //    background-color: $main-back-color;
 //  }
 //}
-
 .drpdwn:hover .drpdwncntentREDUCED {
   display: block;
   display: flex;
