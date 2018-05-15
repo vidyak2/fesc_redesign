@@ -27,7 +27,6 @@ header {
           flex-direction: column; }
 
 /* TOP NAVIGATION */
-/* Reduced Navigation & Search Bar */
 /* REDUCED NAV: HAMBURGER MENU on reduced screen */
 /* Include animation to make menu appear over page content */
 .reducednav {
@@ -303,7 +302,6 @@ p {
   .leftmargin a:hover {
     background-color: #ffffff; }
 
-/* Reduced nav DROPDOWN SUBNAVIGATION styles */
 .drpdwn:hover .drpdwncntentREDUCED {
   display: block;
   display: -webkit-box;

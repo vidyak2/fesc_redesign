@@ -32,29 +32,15 @@ body {
 /* HEADER */
 
 header {
-  //    background-color: $topbottom-color;
   background: linear-gradient($nav-color 20%, $topbottom-color 80%, white 100%);
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: column; //  .topheader {
-  //    width: 100%;
-  //    display: inline-flex;
-  //    flex-wrap: wrap;
-  //    flex-direction: column;
-  //
-  //  }
+  flex-direction: column;
 }
 
 /* TOP NAVIGATION */
 
-/* Reduced Navigation & Search Bar */
-
-//.toptop {
-//  width: 100%;
-//  display: inline-flex;
-//  flex-wrap: wrap;
-//  flex-direction: row;
 /* REDUCED NAV: HAMBURGER MENU on reduced screen */
 
 /* Include animation to make menu appear over page content */
@@ -108,7 +94,6 @@ header {
   }
 }
 
-//}
 .headerimg {
   display: flex;
   flex-direction: row;
@@ -391,28 +376,6 @@ p {
   }
 }
 
-/* Reduced nav DROPDOWN SUBNAVIGATION styles */
-
-//
-//.drpdwncntentREDUCED {
-//  padding: 0.5rem;
-//  text-align: center;
-//  display: none;
-//  position: relative;
-//  background-color: $topbottom-color;
-//  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
-//  width: 14rem;
-//
-//  a {
-//    font-size: 16px;
-//    font-weight: normal;
-//    padding: 0.2rem;
-//  }
-//
-//  a:hover {
-//    background-color: $main-back-color;
-//  }
-//}
 .drpdwn:hover .drpdwncntentREDUCED {
   display: block;
   display: flex;
