@@ -363,27 +363,22 @@ p {
 
 /* REDUCED NAVIGATION DROPDOWN SUBNAVIGATION*/
 
-.drpREDUCEDbtn {
-  background-color: $nav-color;
-  font-size: 18px;
-  text-decoration: none;
-  font-family: $main-font;
-  border: none;
-  padding: 1.5rem 1rem 1rem 1.5rem;
-  display: block;
-  transition: 0.3s;
-}
-
-/* Reduced nav DROPDOWN SUBNAVIGATION styles */
-
-.drpdwncntentREDUCED {
+//.drpREDUCEDbtn {
+//  background-color: $nav-color;
+//  font-size: 18px;
+//  text-decoration: none;
+//  font-family: $main-font;
+//  border: none;
+//  padding: 1.5rem 1rem 1rem 1.5rem;
+//  display: block;
+//  transition: 0.3s;
+//}
+.leftmargin {
   padding: 0.5rem;
-  text-align: center;
-  display: none;
-  position: relative;
+  margin-left: 1.5rem;
+  text-align: left;
   background-color: $topbottom-color;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
-  width: 14rem;
 
   a {
     font-size: 16px;
@@ -395,6 +390,28 @@ p {
     background-color: $main-back-color;
   }
 }
+
+/* Reduced nav DROPDOWN SUBNAVIGATION styles */
+//
+//.drpdwncntentREDUCED {
+//  padding: 0.5rem;
+//  text-align: center;
+//  display: none;
+//  position: relative;
+//  background-color: $topbottom-color;
+//  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.2);
+//  width: 14rem;
+//
+//  a {
+//    font-size: 16px;
+//    font-weight: normal;
+//    padding: 0.2rem;
+//  }
+//
+//  a:hover {
+//    background-color: $main-back-color;
+//  }
+//}
 
 .drpdwn:hover .drpdwncntentREDUCED {
   display: block;
