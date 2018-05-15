@@ -63,46 +63,6 @@ header {
   align-self: flex-start;
 }
 
-/* Hamburger Icon (to open menu) */
-
-span {
-  margin: 0.5rem 1rem 0.5rem 1rem;
-  padding: 0.25rem 0.25rem 0.25rem 0.55rem;
-  width: 2.2rem;
-  height: 1.6rem;
-  border: 0.5px solid rgb(57, 172, 57);
-  border-radius: 0.4rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
-}
-
-//}
-.headerimg {
-  display: flex;
-  flex-direction: row;
-
-
-  /* Logo Image Container */
-  .imgcontainer {
-    margin-left: 8rem;
-    height: 0rem;
-    width: 2rem;
-  }
-
-  /* Search Bar */
-  .center {
-    align-self: flex-end;
-    margin-left: auto;
-    padding: 0.5rem 2rem 0.5rem 0rem;
-  }
-}
-
-input.topsearch {
-  width: 8rem;
-  text-align: center;
-}
-
-
-
 /* Hamburger Menu */
 
 .reducednav {
@@ -147,6 +107,46 @@ input.topsearch {
     display: none;
   }
 }
+
+//}
+.headerimg {
+  display: flex;
+  flex-direction: row;
+
+  /* Hamburger Icon (to open menu) */
+  span {
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.55rem;
+    width: 2.2rem;
+    height: 1.6rem;
+    border: 2px solid rgb(217, 242, 217);
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(217, 242, 217, 0.6);
+  }
+
+  /* Logo Image Container */
+  .imgcontainer {
+    img {
+      width: 4rem;
+    }
+    margin-left: 9rem;
+    height: 0rem;
+    width: 2rem;
+  }
+  /* Search Bar */
+  .center {
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+  }
+}
+
+input.topsearch {
+  width: 6rem;
+  text-align: center;
+}
+
+
 
 /* Logo styles */
 
@@ -201,14 +201,38 @@ input.topsearch {
       text-align: center;
     }
   }
-  .imgcontainer {
-    align-self: center;
+  .headerimg {
+    display: flex;
+    flex-direction: row;
+
+    /* Logo Image Container */
+    .imgcontainer {
+      img {
+        width: 4rem;
+      }
+      margin-left: auto;
+      float: flex-end;
+      height: 0rem;
+
+
+    }
+    /* Search Bar */
+    .center {
+      align-self: flex-end;
+      margin-left: 0rem;
+      padding: 0.5rem 2rem 0.5rem 0rem;
+    }
+    span {
+      align-self: flex-start;
+    }
   }
 }
 
+
+
 /* Logo Image disappears on reduced screen */
 
-@media screen and (max-width: 188px) {
+@media screen and (max-width: 252px) {
   .imgcontainer {
     display: none;
   }
