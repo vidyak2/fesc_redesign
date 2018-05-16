@@ -32,7 +32,6 @@ body {
 /* HEADER */
 
 header {
-  //  background: linear-gradient($nav-color 20%, $topbottom-color 80%, white 100%);
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -88,16 +87,8 @@ header {
   font-size: 36px;
 }
 
-/* Resize Hamburger Menu */
 
-@media screen and (min-width: 629px) {
-  .reducednav {
-    display: none;
-  }
-  span {
-    display: none;
-  }
-}
+/* Hamburger Icon, Logo Image & Search Bar */
 
 .headerimg {
   display: flex;
@@ -105,7 +96,7 @@ header {
 
   /* Hamburger Icon (to open menu) */
   span {
-    margin: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem 2rem 0.5rem 2rem;
     padding: 0.25rem 0.25rem 0.25rem 0.55rem;
     width: 2.2rem;
     height: 1.6rem;
@@ -114,16 +105,11 @@ header {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.6);
   }
 
-  /* Logo Image Container */
-  //  .imgcontainer {
+  /* Logo Image */
   img {
-    width: 4rem;
     margin-left: 10rem;
     padding: 0.25rem 0rem 0rem 0rem;
-  } //    margin-left: 9rem;
-  //    height: 0rem;
-  //    width: 2rem;
-  //  }
+  }
   /* Search Bar */
   .center {
     align-self: flex-end;
@@ -135,6 +121,102 @@ header {
 input.topsearch {
   width: 6rem;
   text-align: center;
+}
+
+
+
+
+/* Resize .headerimg elements */
+
+@media screen and (max-width: 356px) {
+  /* Resize Hamburger menu icon */
+  .headerimg {
+    span {
+      padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 628px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 16.8rem;
+    }
+    /* Resize Top Search */
+    input.topsearch {
+      width: 4rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 16rem;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 15.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 556px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 14rem;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 12.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 464px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 11.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* Remove Logo Img */
+  .headerimg {
+    img {
+      display: none;
+    }
+  }
+}
+
+
+/* Hamburger menu and icon not displayed on large screen */
+
+@media screen and (min-width: 629px) {
+  .reducednav {
+    display: none;
+  }
+  span {
+    display: none;
+  }
 }
 
 
@@ -171,6 +253,7 @@ input.topsearch {
 
 @media screen and (max-width: 628px) {
   .logotext {
+    width: 100%;
     flex-direction: column;
 
     h1 {
@@ -192,43 +275,8 @@ input.topsearch {
       text-align: center;
     }
   }
-
-
-  .headerimg {
-    display: flex;
-    flex-direction: row;
-
-    /* Logo Image Container */
-    //    .imgcontainer {
-    /* Logo img */
-    img {
-      width: 4rem;
-    } //      margin-left: auto;
-    //      float: flex-end;
-    //      height: 0rem;
-    //    }
-    /* Search Bar */
-    .center {
-      align-self: flex-end;
-      margin-left: 0rem;
-      padding: 0.5rem 2rem 0.5rem 0rem;
-    }
-    /* Hamburger icon */
-    span {
-      align-self: flex-start;
-    }
-  }
 }
 
-
-
-/* Logo Image disappears on reduced screen */
-
-@media screen and (max-width: 252px) {
-  .imgcontainer {
-    display: none;
-  }
-}
 
 
 /* GENERAL */
@@ -355,16 +403,6 @@ p {
 
 /* REDUCED NAVIGATION DROPDOWN SUBNAVIGATION*/
 
-//.drpREDUCEDbtn {
-//  background-color: $nav-color;
-//  font-size: 18px;
-//  text-decoration: none;
-//  font-family: $main-font;
-//  border: none;
-//  padding: 1.5rem 1rem 1rem 1.5rem;
-//  display: block;
-//  transition: 0.3s;
-//}
 .leftmargin {
   padding: 0.5rem;
   margin-left: 1.5rem;
@@ -671,7 +709,7 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient($topbottom-color 0%, $nav-color 99%);
+  background: linear-gradient($topbottom-color 0%, $nav-color 20%);
   padding: 0.5rem 2rem 0rem 0rem;
   .backtotop {
     padding: 0.5rem;

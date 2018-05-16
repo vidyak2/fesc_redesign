@@ -66,13 +66,7 @@ header {
   right: 0rem;
   font-size: 36px; }
 
-/* Resize Hamburger Menu */
-@media screen and (min-width: 629px) {
-  .reducednav {
-    display: none; }
-
-  span {
-    display: none; } }
+/* Hamburger Icon, Logo Image & Search Bar */
 .headerimg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,10 +76,10 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   /* Hamburger Icon (to open menu) */
-  /* Logo Image Container */
+  /* Logo Image */
   /* Search Bar */ }
   .headerimg span {
-    margin: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem 2rem 0.5rem 2rem;
     padding: 0.25rem 0.25rem 0.25rem 0.55rem;
     width: 2.2rem;
     height: 1.6rem;
@@ -94,7 +88,6 @@ header {
     -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.6);
             box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.6); }
   .headerimg img {
-    width: 4rem;
     margin-left: 10rem;
     padding: 0.25rem 0rem 0rem 0rem; }
   .headerimg .center {
@@ -107,6 +100,51 @@ input.topsearch {
   width: 6rem;
   text-align: center; }
 
+/* Resize .headerimg elements */
+@media screen and (max-width: 356px) {
+  /* Resize Hamburger menu icon */
+  .headerimg span {
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem; } }
+@media screen and (max-width: 628px) {
+  /* Resize Logo Img */
+  .headerimg {
+    /* Resize Top Search */ }
+    .headerimg img {
+      margin-left: 16.8rem; }
+    .headerimg input.topsearch {
+      width: 4rem;
+      text-align: center; } }
+@media screen and (max-width: 600px) {
+  /* Resize Logo Img */
+  .headerimg img {
+    margin-left: 16rem; } }
+@media screen and (max-width: 580px) {
+  /* Resize Logo Img */
+  .headerimg img {
+    margin-left: 15.6rem; } }
+@media screen and (max-width: 556px) {
+  /* Resize Logo Img */
+  .headerimg img {
+    margin-left: 14rem; } }
+@media screen and (max-width: 530px) {
+  /* Resize Logo Img */
+  .headerimg img {
+    margin-left: 12.9rem; } }
+@media screen and (max-width: 464px) {
+  /* Resize Logo Img */
+  .headerimg img {
+    margin-left: 11.4rem; } }
+@media screen and (max-width: 420px) {
+  /* Remove Logo Img */
+  .headerimg img {
+    display: none; } }
+/* Hamburger menu and icon not displayed on large screen */
+@media screen and (min-width: 629px) {
+  .reducednav {
+    display: none; }
+
+  span {
+    display: none; } }
 /* Logo styles */
 .logotext {
   display: -webkit-inline-box;
@@ -136,6 +174,7 @@ input.topsearch {
 /* Resize logo */
 @media screen and (max-width: 628px) {
   .logotext {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -155,34 +194,7 @@ input.topsearch {
       font-size: 12px;
       -ms-flex-item-align: center;
           align-self: center;
-      text-align: center; }
-
-  .headerimg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    /* Logo Image Container */
-    /* Logo img */
-    /* Search Bar */
-    /* Hamburger icon */ }
-    .headerimg img {
-      width: 4rem; }
-    .headerimg .center {
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-      margin-left: 0rem;
-      padding: 0.5rem 2rem 0.5rem 0rem; }
-    .headerimg span {
-      -ms-flex-item-align: start;
-          align-self: flex-start; } }
-/* Logo Image disappears on reduced screen */
-@media screen and (max-width: 252px) {
-  .imgcontainer {
-    display: none; } }
+      text-align: center; } }
 /* GENERAL */
 h2 {
   -ms-flex-item-align: start;
@@ -579,8 +591,8 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d9f2d9), color-stop(99%, #39ac39));
-  background: linear-gradient(#d9f2d9 0%, #39ac39 99%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9f2d9), color-stop(20%, #39ac39));
+  background: linear-gradient(#d9f2d9 0%, #39ac39 20%);
   padding: 0.5rem 2rem 0rem 0rem; }
   .bottomfooter .backtotop {
     padding: 0.5rem;
