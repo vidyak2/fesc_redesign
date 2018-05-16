@@ -32,7 +32,6 @@ body {
 /* HEADER */
 
 header {
-  //  background: linear-gradient($nav-color 20%, $topbottom-color 80%, white 100%);
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -144,24 +143,67 @@ input.topsearch {
   /* Resize Logo Img */
   .headerimg {
     img {
-      margin-left: 6rem;
+      margin-left: 16.8rem;
+    }
+    /* Resize Top Search */
+    input.topsearch {
+      width: 4rem;
+      text-align: center;
     }
   }
 }
 
-@media screen and (max-width: 462px) {
-  /* Resize Top Search */
-  input.topsearch {
-    width: 4rem;
-    text-align: center;
+@media screen and (max-width: 600px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 16rem;
+    }
   }
 }
 
+@media screen and (max-width: 580px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 15.6rem;
+    }
+  }
+}
 
-@media screen and (max-width: 334px) {
+@media screen and (max-width: 556px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 14rem;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 12.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 464px) {
+  /* Resize Logo Img */
+  .headerimg {
+    img {
+      margin-left: 11.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
   /* Remove Logo Img */
-  img {
-    display: none;
+  .headerimg {
+    img {
+      display: none;
+    }
   }
 }
 
@@ -211,6 +253,7 @@ input.topsearch {
 
 @media screen and (max-width: 628px) {
   .logotext {
+    width: 100%;
     flex-direction: column;
 
     h1 {
