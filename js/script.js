@@ -27,7 +27,19 @@ function drawEnergyChart() {
     chart: {
       title: 'Renewable Energy Production in Florida'
     },
-    bars: 'vertical'
+    bars: 'vertical',
+    legend: {
+      position: 'none'
+    },
+    vAxis: {
+      interval: [10]
+    },
+    //    explorer: {
+    //      maxZoomIn: .8
+    //    },
+    vAxis: {
+      title: 'Billion BTU'
+    }
   };
 
   // Instantiate and draw our chart, passing in some options.
