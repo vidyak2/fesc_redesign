@@ -191,7 +191,7 @@ function drawElectricityChart() {
         count: 10
       }
     },
-    height: 500,
+    height: 450,
     legend: 'none',
     colors: ['#39ac39']
   };
