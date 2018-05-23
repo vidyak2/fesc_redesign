@@ -83,7 +83,7 @@ function drawEnergyChart() {
   // Set chart options
   var options = {
     chart: {
-      title: 'Renewable Energy Production in Florida',
+      title: 'Annual Renewable Energy Production in Florida',
     },
 
     bars: 'vertical',
@@ -175,7 +175,7 @@ function drawElectricityChart() {
 
   // Set chart options
   var options = {
-    title: 'Total Electricity Consumption in Florida',
+    title: 'Total Annual Electricity Consumption in Florida',
     legend: {
       position: 'bottom'
     },
