@@ -310,6 +310,15 @@ p {
   a {
     font-weight: bolder;
   }
+
+  /* Chart styles */
+  #energy_chart {
+    padding: 1rem 0rem 0rem 1rem;
+  }
+
+  #electricity_chart {
+    padding: 1rem 0rem 0rem 1rem;
+  }
 }
 
 .maintext {
@@ -573,6 +582,14 @@ ul {
       padding: 0.25rem;
     }
   }
+}
+
+/* CHART PAGE styles */
+
+.smaller_chart {
+  font-size: 12px;
+  line-height: 0rem;
+  padding: 0.5rem 0rem 1rem 0rem;
 }
 
 
