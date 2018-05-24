@@ -123,9 +123,6 @@ input.topsearch {
   text-align: center;
 }
 
-
-
-
 /* Resize .headerimg elements */
 
 @media screen and (max-width: 356px) {
@@ -136,8 +133,6 @@ input.topsearch {
     }
   }
 }
-
-
 
 @media screen and (max-width: 628px) {
   /* Resize Logo Img */
@@ -214,12 +209,10 @@ input.topsearch {
   .reducednav {
     display: none;
   }
-  span {
+  .open {
     display: none;
   }
 }
-
-
 
 /* Logo styles */
 
@@ -277,8 +270,6 @@ input.topsearch {
   }
 }
 
-
-
 /* GENERAL */
 
 h2 {
@@ -318,6 +309,15 @@ p {
 
   a {
     font-weight: bolder;
+  }
+
+  /* Chart styles */
+  #energy_chart {
+    padding: 1rem 0rem 0rem 1rem;
+  }
+
+  #electricity_chart {
+    padding: 1rem 0rem 0rem 1rem;
   }
 }
 
@@ -584,6 +584,15 @@ ul {
   }
 }
 
+/* CHART PAGE styles */
+
+.smaller_chart {
+  font-size: 12px;
+  line-height: 1rem;
+  padding: 0.5rem 0rem 1rem 0rem;
+}
+
+
 /* CONTACT PAGE styles */
 
 .maintextcontact {
@@ -660,7 +669,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
 
-  padding: 1rem 0rem; //  background-color: $topbottom-color;
+  padding: 1rem 0rem;
   background: linear-gradient($main-back-color 0%, $topbottom-color 20%, $nav-color 80%);
 }
 
