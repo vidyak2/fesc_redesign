@@ -114,7 +114,7 @@ Below are recommendations directly relating to the points to improve, put togeth
 5.6 Ease of Use
 • Collapse elements on the left-side navigation: The left-side navigation is longer than the content on some pages. A collapsing menu would be useful here. 
 • Merge left-side navigation and main navigation: This could avoid unnecessary links such as, Public Outreach on the Home page, left-side navigation, which leads to the same page as Outreach, on the main navigation. 
-• Keep an identical left-side navigation on every page: This would permit the user to continue from one page to another, always relying on the same menu.
+• Keep an identical left-side navigation on every page: This would permit the user to continue from one page to another, always relying on the same menu. 
 
 6. Progress of the Redesign
 
@@ -156,13 +156,48 @@ Links eliminated from the main navigation of the HOME page:
   - Advisory Board: Move to dropdown of Home navigation
   
 ENERGY INDUSTRY PAGE:
-  - Educational & Professional Energy Opportunities: Should be part of Education page
+- Educational & Professional Energy Opportunities: Should be part of Education page
   
 FESC RESEARCH PAGE: 
-  - Page created to place elements eliminated from Home page
-  - Left side navigation: Replaced by Research Archives in dropdown menu
+- Page created to place elements eliminated from Home page
+- Left side navigation: Replaced by Research Archives in dropdown menu
+  
+Changes Made As of May 10, 2018: 
+- Reduced Navigation: Created
+- Complete all styling to make sure responsiveness and coherence is present throughout all pages
 
-7. Bibliography
+Changes Made As of May 17, 2018: 
+- Main Navigation: 
+  - Modified to only keep the pages created, and eliminate all supplementary links (except the dropdown menu links, which were kept)
+  - Changed color to add gradient effect less prominent
+- Reduced Navigation:
+  - Modified to keep dropdown menus always open on smaller screens
+
+HOME PAGE: 
+- Addition of video
+- Change formatting to create a topic section, and a text section below
+
+CONTACT PAGE: 
+- Addition of map
+
+Changes Made As of May 23, 2018: 
+Addition of Data & Charts page
+
+DATA & CHARTS PAGE: 
+- Page created to store two different charts containing information about the annual renewable energy produced, and the total annual electricity consummed.
+  
+7. Data & Charts Page 
+An extra Data & Charts page was created in order to present clearly the information. The charts are not present on any other page, since there is no direct link with any of the pages, and it would add confusion, reducing the clariy of the pages. 
+
+7.1 Renewable Energy Production Chart
+The Renewable Energy Production data is presented in a column chart. The column chart permits the users to see the difference between every production of renewable energy every year. In this case, it is easily visible that, from 1989, the amount of renewable energy created has been much higher. When hovering over the bars, the complete numbers are shown, permitting users to establish which years had the highest production, in billion BTU. 
+Improvement: In order to clarify the results, a darked color could be given to the tallest bars, putting them in the spotlight. 
+
+7.2 Electricity Consumption Chart
+The Electricity Consumption data is presented in a line chart. The line chart permits users to observe the variation in the data accross a certain period of time. In the case of the electricity consumption, it becomes rapidly evident that the amount of electricity consummed is much heigher in 2016, than in 1960.
+Improvement: In order to clarify the results, points on the data value could be added on the chart, like scatter charts usually have. This would put the spotlight on each value, and not only the points on the chart. 
+
+8. Bibliography
 
 FESC Florida Energy Systems Consortium. (2015). FESC Bringing Energy Solutions to Florida, the Nation and the World. Retrieved from http://floridaenergy.ufl.edu
 Google. (n.d.). Mobile-Friendly Test. Retrieved from https://search.google.com/test/mobile-friendly
