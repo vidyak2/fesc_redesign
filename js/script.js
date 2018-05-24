@@ -198,6 +198,7 @@ function drawElectricityChart() {
     legend: {
       position: 'none'
     },
+    // Create a chart with points, and not curves
     curveType: 'none',
 
     hAxis: {
