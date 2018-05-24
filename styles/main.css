@@ -471,7 +471,7 @@ ul {
 /* CHART PAGE styles */
 .smaller_chart {
   font-size: 12px;
-  line-height: 0rem;
+  line-height: 1rem;
   padding: 0.5rem 0rem 1rem 0rem; }
 
 /* CONTACT PAGE styles */
