@@ -1,19 +1,18 @@
-//function openNav() {
-//  document.getElementById("reducedNav").style.width = "250px";
-//}
-//
-//function closeNav() {
-//  document.getElementById("reducedNav").style.width = "0";
-//}
+// Reduced Navigation open and close functions
+function openNav() {
+  document.getElementById("reducedNav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("reducedNav").style.width = "0";
+}
 
-
+// Google Charts 
 google.charts.load('current', {
   'packages': ['corechart', 'bar']
 });
 
-// Set a callback to run when the Google Visualization API is loaded.
-
+// Callback
 google.charts.setOnLoadCallback(drawEnergyChart);
 google.charts.setOnLoadCallback(drawElectricityChart);
 
@@ -80,10 +79,10 @@ function drawEnergyChart() {
     ['1960', 35680]
         ]);
 
-  // Set chart options
+  // Chart Options
   var options = {
     chart: {
-      title: 'Annual Renewable Energy Production in Florida',
+      title: 'Chart 1. Annual Renewable Energy Production in Florida',
     },
 
     bars: 'vertical',
@@ -105,7 +104,7 @@ function drawEnergyChart() {
   };
 
 
-  // Instantiate and draw our chart, passing in some options.
+  // Draw Charts Using Options
   var chart = new google.charts.Bar(document.getElementById('energy_chart'));
   chart.draw(data, google.charts.Bar.convertOptions(options));
 }
@@ -173,11 +172,11 @@ function drawElectricityChart() {
     ['1960', 57344]
         ]);
 
-  // Set chart options
+  // Chart Options
   var options = {
-    title: 'Total Annual Electricity Consumption in Florida',
+    title: 'Chart 2. Total Annual Electricity Consumption in Florida',
     legend: {
-      position: 'bottom'
+      position: 'none'
     },
     curveType: 'none',
 
@@ -197,7 +196,7 @@ function drawElectricityChart() {
   };
 
 
-  // Instantiate and draw our chart, passing in some options.
+  // Draw Charts Using Options
   var chart = new google.visualization.LineChart(document.getElementById('electricity_chart'));
   chart.draw(data, options);
 }
