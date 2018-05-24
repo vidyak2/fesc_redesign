@@ -143,7 +143,7 @@ input.topsearch {
   .reducednav {
     display: none; }
 
-  span {
+  .open {
     display: none; } }
 /* Logo styles */
 .logotext {
@@ -220,7 +220,6 @@ p {
   line-height: 1.5rem;
   padding: 1rem 0rem 0rem 0rem; }
 
-/* MAIN */
 .container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

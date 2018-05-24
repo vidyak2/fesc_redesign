@@ -108,7 +108,7 @@
 
         <!-- Call to JS for Hamburger Nav to open-->
         <!-- Font Awesome icon used for the hamburger -->
-        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
 
         <!-- Logo Image -->
         <img src="images/logo.png" alt="logo">
@@ -185,32 +185,31 @@
   </header>
 
 
-  <main>
+  <!--  <main>-->
 
-    <section class="container">
-      <h2>Data & Charts</h2>
+  <section class="container">
+    <h2>Data & Charts</h2>
 
-      <!-- Main Text Article -->
+    <!-- Main Text Article -->
+    <!-- Div that holds Column Chart-->
+    <div id="energy_chart">
+    </div>
 
-      <!-- Div that holds Column Chart-->
-      <div id="energy_chart">
-      </div>
-
-      <p class="smaller">*Source: U.S. Energy Information Administration</p>
+    <p class="smaller">*Source: U.S. Energy Information Administration</p>
 
 
-      <!-- Div that holds Line Chart-->
-      <div id="electricity_chart">
-      </div>
+    <!-- Div that holds Line Chart-->
+    <div id="electricity_chart">
+    </div>
 
-      <p class="smaller">**Source: U.S. Energy Information Administration</p>
+    <p class="smaller">**Source: U.S. Energy Information Administration</p>
 
-      <!-- Extended Source -->
-      <p class="smaller">*Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A14:12:24 GMT-0700 (PDT)</p>
-      <p class="smaller">**Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A14:14:30 GMT-0700 (PDT)</p>
+    <!-- Extended Source -->
+    <p class="smaller">*Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A14:12:24 GMT-0700 (PDT)</p>
+    <p class="smaller">**Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A14:14:30 GMT-0700 (PDT)</p>
 
-    </section>
-  </main>
+  </section>
+  <!--  </main>-->
 
 
   <footer>

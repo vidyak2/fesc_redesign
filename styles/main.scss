@@ -123,9 +123,6 @@ input.topsearch {
   text-align: center;
 }
 
-
-
-
 /* Resize .headerimg elements */
 
 @media screen and (max-width: 356px) {
@@ -136,8 +133,6 @@ input.topsearch {
     }
   }
 }
-
-
 
 @media screen and (max-width: 628px) {
   /* Resize Logo Img */
@@ -214,12 +209,10 @@ input.topsearch {
   .reducednav {
     display: none;
   }
-  span {
+  .open {
     display: none;
   }
 }
-
-
 
 /* Logo styles */
 
@@ -277,8 +270,6 @@ input.topsearch {
   }
 }
 
-
-
 /* GENERAL */
 
 h2 {
@@ -310,8 +301,7 @@ p {
   padding: 1rem 0rem 0rem 0rem;
 }
 
-/* MAIN */
-
+///* MAIN */
 .container {
   flex-wrap: wrap;
   margin: $default-margin;
