@@ -84,7 +84,6 @@ function drawEnergyChart() {
     chart: {
       title: 'Chart 1. Annual Renewable Energy Production in Florida',
     },
-
     bars: 'vertical',
     legend: {
       position: 'none'
@@ -95,12 +94,33 @@ function drawEnergyChart() {
     vAxis: {
       title: 'Renewable Energy (Billion BTU)',
       format: 'decimal',
+      titleTextStyle: {
+        color: 'black',
+        fontName: 'Open Sans',
+        fontSize: 12,
+        bold: false,
+        italic: false
+      }
     },
     hAxis: {
       title: 'Year',
+      titleTextStyle: {
+        color: 'black',
+        fontName: 'Open Sans',
+        fontSize: 12,
+        bold: false,
+        italic: false
+      }
     },
     height: 300,
-    colors: ['#39ac39']
+    colors: ['#39ac39'],
+    titleTextStyle: {
+      color: 'black',
+      fontName: 'Open Sans',
+      fontSize: 16,
+      bold: true,
+      italic: false
+    },
   };
 
 
@@ -181,20 +201,40 @@ function drawElectricityChart() {
     curveType: 'none',
 
     hAxis: {
-      title: 'Year'
+      title: 'Year',
+      titleTextStyle: {
+        color: 'black',
+        fontName: 'Open Sans',
+        fontSize: 12,
+        bold: false,
+        italic: false
+      }
     },
     vAxis: {
       title: 'Total Energy Consumption in Florida (Billion BTU)',
       format: 'decimal',
       gridlines: {
         count: 10
+      },
+      titleTextStyle: {
+        color: 'black',
+        fontName: 'Open Sans',
+        fontSize: 12,
+        bold: false,
+        italic: false
       }
     },
     height: 450,
     legend: 'none',
-    colors: ['#39ac39']
+    colors: ['#39ac39'],
+    titleTextStyle: {
+      color: 'black',
+      fontName: 'Open Sans',
+      fontSize: 16,
+      bold: true,
+      italic: false
+    },
   };
-
 
   // Draw Charts Using Options
   var chart = new google.visualization.LineChart(document.getElementById('electricity_chart'));
