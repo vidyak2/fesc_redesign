@@ -160,42 +160,45 @@ ENERGY INDUSTRY PAGE:
   
 FESC RESEARCH PAGE: 
 - Page created to place elements eliminated from Home page
-- Left side navigation: Replaced by Research Archives in dropdown menu
+- Left side navigation: Replace by Research Archives in dropdown menu
   
 Changes Made As of May 10, 2018: 
-- Reduced Navigation: Created
+- Create Reduced Navigation
 - Complete all styling to make sure responsiveness and coherence is present throughout all pages
 
 Changes Made As of May 17, 2018: 
 - Main Navigation: 
-  - Modified to only keep the pages created, and eliminate all supplementary links (except the dropdown menu links, which were kept)
-  - Changed color to add gradient effect less prominent
+  - Modify to keep only created pages, and eliminate all supplementary links (except the dropdown menu links)
+  - Changed color to add gradient effect
 - Reduced Navigation:
-  - Modified to keep dropdown menus always open on smaller screens
+  - Modify to keep dropdown menus always open on smaller screens
 
 HOME PAGE: 
-- Addition of video
-- Change formatting to create a topic section, and a text section below
+- Add video
+- Change formatting to create a topic section and a text section below
 
 CONTACT PAGE: 
-- Addition of map
+- Add map
 
 Changes Made As of May 23, 2018: 
-Addition of Data & Charts page
+- Create Data & Charts page
 
 DATA & CHARTS PAGE: 
 - Page created to store two different charts containing information about the annual renewable energy produced, and the total annual electricity consummed.
   
 7. Data & Charts Page 
-An extra Data & Charts page was created in order to present clearly the information. The charts are not present on any other page, since there is no direct link with any of the pages, and it would add confusion, reducing the clariy of the pages. 
+A Data & Charts page was created to clearly present information about the annual renewable energy produced, and the total annual electricity consummed. The charts are not present on any other page, since this would add confusion, reducing the clarity of the pages.
+The charts on this page have been created using Google Charts (https://developers.google.com/chart/).
 
 7.1 Renewable Energy Production Chart
-The Renewable Energy Production data is presented in a column chart. The column chart permits the users to see the difference between every production of renewable energy every year. In this case, it is easily visible that, from 1989, the amount of renewable energy created has been much higher. When hovering over the bars, the complete numbers are shown, permitting users to establish which years had the highest production, in billion BTU. 
-Improvement: In order to clarify the results, a darked color could be given to the tallest bars, putting them in the spotlight. 
+The Renewable Energy Production data is presented in a column chart. The column chart permits the users to see the difference between the production of renewable energy every year. In this case, it is easily visible that, from 1989, the amount of renewable energy created has been much higher. When hovering over the bars, the complete numbers are shown, permitting users to establish which years had the highest production, in billion BTU. 
+Improvement: In order to clarify the results, a darker color could be given to the tallest bars, putting them in the spotlight. 
+This chart has been created using Google Charts, Column Chart (https://developers.google.com/chart/interactive/docs/gallery/columnchart).
 
 7.2 Electricity Consumption Chart
-The Electricity Consumption data is presented in a line chart. The line chart permits users to observe the variation in the data accross a certain period of time. In the case of the electricity consumption, it becomes rapidly evident that the amount of electricity consummed is much heigher in 2016, than in 1960.
-Improvement: In order to clarify the results, points on the data value could be added on the chart, like scatter charts usually have. This would put the spotlight on each value, and not only the points on the chart. 
+The Electricity Consumption data is presented in a line chart. The line chart permits users to observe the variation in the data accross a certain period of time. In the case of the electricity consumption, it becomes rapidly evident that the amount of electricity consummed is much heigher in 2016, compared to 1960.
+Improvement: In order to clarify the results, larger circle points on the data value could be added on the chart. This would put the spotlight on each value, and not only on the shape of the chart. 
+This chart has been created using Google Charts, Line Chart (https://developers.google.com/chart/interactive/docs/gallery/linechart).
 
 8. Bibliography
 
@@ -209,5 +212,3 @@ Pew Research Center. (2018). Mobile Fact Sheet. Retrieved from Pew Research Cent
 pingdom. (2018). Pingdom Website Speed Test. Retrieved from https://tools.pingdom.com
 WebPageTest. (n.d.). Test a website's performance. Retrieved from WebPageTest: https://www.webpagetest.org
 websitecriteria. (2010). Website Writing Guide. Retrieved from http://www.websitecriteria.com/website_writing_guide_before_you_begin_to_write/identify_the_intended_audience.html
-
-
