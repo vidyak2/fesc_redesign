@@ -6,25 +6,23 @@
   <meta charset="utf-8">
 
   <!-- Force mobile browsers to display at the size of the device -->
-  <!--
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="styles/reset.css">
--->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
   <!-- Main stylesheet -->
-  <!--  <link rel="stylesheet" type="text/css" href="styles/main.css">-->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
   <!-- Google font link -->
-  <!--  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
 
   <!-- Font Awesome CDN link -->
-  <!--  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <!-- Facebook Meta Tags -->
-  <!--
   <meta property="og:title" content="2017 FESC/Polytech Conference - July 31-August 01 2017">
   <meta property="og:description" content="FESC holds an annual technical workshop to disseminate the latest advances in energy research and education and assist the Florida Office of Energy with the Florida Energy Summit.">
   <meta property="og:image" content="http://floridaenergy.ufl.edu/wp-content/uploads/Polytech-Conference-Venue.jpg">
@@ -32,27 +30,23 @@
   <meta property="og:image:height" content="720">
   <meta property="og:url" content="https://vidyak2.github.io/fesc_redesign/">
   <meta property="og:type" content="website">
--->
 
   <!-- Twitter Meta Tags - To be completed when share button is created -->
-  <!--
   <meta name="twitter:title" content=" ">
   <meta name="twitter:description" content=" ">
   <meta name="twitter:image" content=" ">
   <meta name="twitter:card" content="summary_large_image">
--->
 </head>
 
 <body>
   <!-- Reference for Back to top button -->
 
-  <!--<a class="top"></a>-->
+  <a class="top"></a>
 
 
   <header>
 
     <!-- Main Nav (on larger screens) -->
-    <!--
     <nav class="mainnav">
       <div class="drpdwn">
 
@@ -102,20 +96,15 @@
     </nav>
 
     <div class="top">
--->
 
-    <!-- Logo Image, Search Bar & Hamburger Menu-->
-    <!--      <div class="headerimg">-->
+      <!-- Logo Image, Search Bar & Hamburger Menu-->
+      <div class="headerimg">
 
-    <!-- Call to JS for Hamburger Nav to open-->
-    <!-- Font Awesome icon used for the hamburger -->
-    <!--        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>-->
+        <!-- Call to JS for Hamburger Nav to open-->
+        <!-- Font Awesome icon used for the hamburger -->
+        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
 
-    <!-- Logo Image -->
-    <!--<img src="images/logo.png" alt="logo">-->
-
-    <!-- Center Top Submit Form -->
-    <!--
+        <!-- Center Top Submit Form -->
         <article class="center">
           <form name="research" onsubmit="search()">
             <label>Search:
@@ -125,71 +114,73 @@
         </article>
 
       </div>
+
+      <!-- Wrap everything so that it's part of what is going to interact in vue.js-->
+      <div id="app">
+        <!-- Use Vue.js for logo -->
+        <app-header text="FESC"></app-header>
+        <app-second-header text="Florida Energy Systems Consortium"></app-second-header>
+        <app-third-header text="Universities Addressing Florida's Energy Needs"></app-third-header>
+
+        <!-- Title -->
+        <!--
+
+        <div class="logotext">
+          <h1>FESC</h1>
+          <div class="below">
+            <h2 class="logo">Florida Energy Systems Consortium</h2>
+            <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
+          </div>
+        </div>
 -->
 
-    <!-- Wrap everything so that it's part of what is going to interact in vue.js-->
-    <div id="app">
-      <!--     {{ message }}-->
-      <!-- Calling the .js-->
-      <app-header text="FESC"></app-header>
-
-      <!-- Title -->
-      <!--
-<div class="logotext">
-  <h1>FESC</h1>
-  <div class="below">
-    <h2 class="logo">Florida Energy Systems Consortium</h2>
-    <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
-  </div>
-</div>
--->
-    </div>
-    <!--    </div>-->
-
-    <!-- Hamburger Menu (On smaller screens)-->
-    <div id="reducedNav" class="reducednav">
-
-      <!-- Call to JS for Hamburger Nav to close -->
-      <!-- &times for X icon in CSS -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Dropdown Menu changed to left margin menu-->
-      <a href="index.html">Home</a>
-      <div class="leftmargin">
-        <a href="#">FESC Expertise</a>
-        <a href="#">Technology Commercialization</a>
-        <a href="#">Annual Reports, Publications and Presentations</a>
-        <a href="#">Advisory Board</a>
-        <a href="#">Supplementary Information</a>
       </div>
+      <!--    </div>-->
 
-      <a href="research.html">FESC Research</a>
-      <div class="leftmargin">
-        <a href="#">Research Archives</a>
+      <!-- Hamburger Menu (On smaller screens)-->
+      <div id="reducedNav" class="reducednav">
+
+        <!-- Call to JS for Hamburger Nav to close -->
+        <!-- &times for X icon in CSS -->
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Dropdown Menu changed to left margin menu-->
+        <a href="index.html">Home</a>
+        <div class="leftmargin">
+          <a href="#">FESC Expertise</a>
+          <a href="#">Technology Commercialization</a>
+          <a href="#">Annual Reports, Publications and Presentations</a>
+          <a href="#">Advisory Board</a>
+          <a href="#">Supplementary Information</a>
+        </div>
+
+        <a href="research.html">FESC Research</a>
+        <div class="leftmargin">
+          <a href="#">Research Archives</a>
+        </div>
+
+
+        <a href="energyindustry.html">Energy Industry</a>
+        <div class="leftmargin">
+          <a href="#">Florida Energy Facts</a>
+          <a href="#">Energy Efficiency</a>
+          <a href="#">Energy Crops</a>
+          <a href="#">Waste to Energy</a>
+          <a href="#">Smart Grid & Power</a>
+          <a href="#">Energy Storage</a>
+          <a href="#">Network & Security</a>
+          <a href="#">Water Purification</a>
+          <a href="#">Consulates & Law</a>
+          <a href="#">Engineering Consulting</a>
+          <a href="#">Associations & Organizations</a>
+          <a href="#">Energy Financing & Funding</a>
+          <a href="#">FL University Spin-off</a>
+          <a href="#">Other</a>
+        </div>
+        <a href="charts.html">Data and Charts</a>
+        <a href="contact.html">Contact Us</a>
+
       </div>
-
-
-      <a href="energyindustry.html">Energy Industry</a>
-      <div class="leftmargin">
-        <a href="#">Florida Energy Facts</a>
-        <a href="#">Energy Efficiency</a>
-        <a href="#">Energy Crops</a>
-        <a href="#">Waste to Energy</a>
-        <a href="#">Smart Grid & Power</a>
-        <a href="#">Energy Storage</a>
-        <a href="#">Network & Security</a>
-        <a href="#">Water Purification</a>
-        <a href="#">Consulates & Law</a>
-        <a href="#">Engineering Consulting</a>
-        <a href="#">Associations & Organizations</a>
-        <a href="#">Energy Financing & Funding</a>
-        <a href="#">FL University Spin-off</a>
-        <a href="#">Other</a>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-
-    </div>
   </header>
 
 
@@ -309,9 +300,11 @@
   </footer>
 
   <!-- Script Tag -->
-  <!-- Add link to vue.js-->
   <!--  <script src="js/script.js"></script>-->
+
+  <!-- Add link to vue.js-->
   <script src="js/components.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
