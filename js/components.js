@@ -7,7 +7,7 @@ var app = new Vue({
   }
 })
 
-
+//
 //Vue.component('app-header', {
 //  props: ['text'],
 //  template: '<header><h1><img src="images/logo.png" alt="logo">{{text}}</h1></header>'

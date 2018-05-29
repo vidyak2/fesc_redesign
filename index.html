@@ -6,13 +6,16 @@
   <meta charset="utf-8">
 
   <!-- Force mobile browsers to display at the size of the device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+<link rel="stylesheet" type="text/css" href="styles/reset.css">
+-->
   <!-- Main stylesheet -->
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <!--  <link rel="stylesheet" type="text/css" href="styles/main.css">-->
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 
   <!-- Google font link -->
   <!--  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">-->
@@ -42,11 +45,14 @@
 
 <body>
   <!-- Reference for Back to top button -->
-  <a class="top"></a>
+
+  <!--<a class="top"></a>-->
 
 
   <header>
+
     <!-- Main Nav (on larger screens) -->
+    <!--
     <nav class="mainnav">
       <div class="drpdwn">
 
@@ -96,18 +102,20 @@
     </nav>
 
     <div class="top">
+-->
 
-      <!-- Logo Image, Search Bar & Hamburger Menu-->
-      <div class="headerimg">
+    <!-- Logo Image, Search Bar & Hamburger Menu-->
+    <!--      <div class="headerimg">-->
 
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
+    <!-- Call to JS for Hamburger Nav to open-->
+    <!-- Font Awesome icon used for the hamburger -->
+    <!--        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>-->
 
-        <!-- Logo Image -->
-        <!--<img src="images/logo.png" alt="logo">-->
+    <!-- Logo Image -->
+    <!--<img src="images/logo.png" alt="logo">-->
 
-        <!-- Center Top Submit Form -->
+    <!-- Center Top Submit Form -->
+    <!--
         <article class="center">
           <form name="research" onsubmit="search()">
             <label>Search:
@@ -117,15 +125,16 @@
         </article>
 
       </div>
+-->
 
-      <!-- Wrap everything so that it's part of what is going to interact in vue.js-->
-      <div id="app">
-        {{ message }}
-        <!-- Calling the .js-->
-        <!--        <app-header text="FESC"></app-header>-->
+    <!-- Wrap everything so that it's part of what is going to interact in vue.js-->
+    <div id="app">
+      <!--     {{ message }}-->
+      <!-- Calling the .js-->
+      <app-header text="FESC"></app-header>
 
-        <!-- Title -->
-        <!--
+      <!-- Title -->
+      <!--
 <div class="logotext">
   <h1>FESC</h1>
   <div class="below">
@@ -134,8 +143,8 @@
   </div>
 </div>
 -->
-      </div>
     </div>
+    <!--    </div>-->
 
     <!-- Hamburger Menu (On smaller screens)-->
     <div id="reducedNav" class="reducednav">
@@ -301,8 +310,8 @@
 
   <!-- Script Tag -->
   <!-- Add link to vue.js-->
+  <!--  <script src="js/script.js"></script>-->
   <script src="js/components.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
