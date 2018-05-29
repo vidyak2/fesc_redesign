@@ -151,11 +151,7 @@ input.topsearch {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+      flex-wrap: wrap; }
   .logotext h1 {
     -ms-flex-item-align: start;
         align-self: flex-start;

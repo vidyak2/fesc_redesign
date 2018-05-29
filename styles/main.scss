@@ -35,7 +35,7 @@ header {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column; // Keep main navigation extend the entire length of the page 
   .top {
     width: 100%;
     background: linear-gradient($topbottom-color 80%, white 100%);
@@ -86,7 +86,6 @@ header {
   right: 0rem;
   font-size: 36px;
 }
-
 
 /* Hamburger Icon, Logo Image & Search Bar */
 
@@ -209,9 +208,11 @@ input.topsearch {
   .reducednav {
     display: none;
   }
+
   .open {
     display: none;
   }
+
 }
 
 /* Logo styles */
@@ -219,8 +220,6 @@ input.topsearch {
 .logotext {
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: row;
-
   h1 {
     align-self: flex-start;
     font-size: 4rem;
