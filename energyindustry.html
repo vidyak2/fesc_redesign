@@ -5,12 +5,17 @@
   <title>FESC Florida Energy Systems Consortium - Energy Industry</title>
 
   <meta charset="utf-8">
+
   <!-- Force mobile browsers to display at the size of the device -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
   <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <!-- Link to Vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <!-- Google font link -->
   <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
@@ -40,142 +45,8 @@
     <!-- Reference for Back to top button -->
     <a class="top"></a>
 
-    <header>
-
-      <!-- Main Nav (on larger screens) -->
-      <nav class="mainnav">
-        <div class="drpdwn">
-
-          <form action="index.html">
-            <input class="drpbtn" type="submit" value="Home">
-          </form>
-          <div class="drpdwn-cntent">
-            <a href="#">FESC Expertise</a>
-            <a href="#">Technology Commercialization</a>
-            <a href="#">Annual Reports, Publications and Presentations</a>
-            <a href="#">Advisory Board</a>
-            <a href="#">Supplementary Information</a>
-          </div>
-        </div>
-        <div class="drpdwn">
-          <form action="research.html">
-            <input class="drpbtn" type="submit" value="FESC Research">
-          </form>
-          <div class="drpdwn-cntent">
-            <a href="#">Research Archives</a>
-          </div>
-        </div>
-
-        <div class="drpdwn">
-          <form action="energyindustry.html">
-            <input class="drpbtn" type="submit" value="Energy Industry">
-          </form>
-          <div class="drpdwn-cntent">
-            <a href="#">Florida Energy Facts</a>
-            <a href="#">Energy Efficiency</a>
-            <a href="#">Energy Crops</a>
-            <a href="#">Waste to Energy</a>
-            <a href="#">Smart Grid & Power</a>
-            <a href="#">Energy Storage</a>
-            <a href="#">Network & Security</a>
-            <a href="#">Water Purification</a>
-            <a href="#">Consulates & Law</a>
-            <a href="#">Engineering Consulting</a>
-            <a href="#">Associations & Organizations</a>
-            <a href="#">Energy Financing & Funding</a>
-            <a href="#">FL University Spin-off</a>
-            <a href="#">Other</a>
-          </div>
-        </div>
-        <a href="charts.html">Data and Charts</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-
-
-      <div class="top">
-
-        <!-- Logo Image, Search Bar & Hamburger Menu-->
-        <div class="headerimg">
-
-          <!-- Call to JS for Hamburger Nav to open-->
-          <!-- Font Awesome icon used for the hamburger -->
-          <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-          <!-- Logo Image -->
-          <img src="images/logo.png" alt="logo">
-
-          <!-- Center Top Submit Form -->
-          <article class="center">
-            <form name="research" onsubmit="search()">
-              <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
-          </label>
-            </form>
-          </article>
-
-        </div>
-
-        <!-- Title -->
-        <div class="logotext">
-          <!-- Use Vue.js for logo -->
-          <div class="beggining">
-            <app-header text="FESC"></app-header>
-          </div>
-          <div class="below">
-            <!--            <h2>{{message}}</h2>-->
-            <app-second-header text="Florida Energy Systems Consortium"></app-second-header>
-            <!--         <h3>{{messagetwo}}</h3>-->
-            <app-third-header text="Universities Addressing Florida's Energy Needs"></app-third-header>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hamburger Menu (On smaller screens)-->
-      <div id="reducedNav" class="reducednav">
-
-        <!-- Call to JS for Hamburger Nav to close -->
-        <!-- &times for X icon in CSS -->
-        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <!-- Dropdown Menu changed to left margin menu-->
-        <a href="index.html">Home</a>
-        <div class="leftmargin">
-          <a href="#">FESC Expertise</a>
-          <a href="#">Technology Commercialization</a>
-          <a href="#">Annual Reports, Publications and Presentations</a>
-          <a href="#">Advisory Board</a>
-          <a href="#">Supplementary Information</a>
-        </div>
-
-        <a href="research.html">FESC Research</a>
-        <div class="leftmargin">
-          <a href="#">Research Archives</a>
-        </div>
-
-
-        <a href="energyindustry.html">Energy Industry</a>
-        <div class="leftmargin">
-          <a href="#">Florida Energy Facts</a>
-          <a href="#">Energy Efficiency</a>
-          <a href="#">Energy Crops</a>
-          <a href="#">Waste to Energy</a>
-          <a href="#">Smart Grid & Power</a>
-          <a href="#">Energy Storage</a>
-          <a href="#">Network & Security</a>
-          <a href="#">Water Purification</a>
-          <a href="#">Consulates & Law</a>
-          <a href="#">Engineering Consulting</a>
-          <a href="#">Associations & Organizations</a>
-          <a href="#">Energy Financing & Funding</a>
-          <a href="#">FL University Spin-off</a>
-          <a href="#">Other</a>
-        </div>
-        <a href="charts.html">Data and Charts</a>
-        <a href="contact.html">Contact Us</a>
-
-      </div>
-
-    </header>
+    <!-- Use Vue.js for entire header -->
+    <app-header text="FESC" texttwo="Florida Energy Systems Consortium" textthree="Universities Addressing Florida's Energy Needs"></app-header>
 
 
     <main>
@@ -246,10 +117,10 @@
 
     </footer>
   </div>
-  <!-- Add link to vue.js-->
+  <!-- Add link to Script tags-->
   <script src="js/components.js"></script>
   <script src="js/energyindustry.js"></script>
-  <!-- Script Tag -->
+  <!-- Basic Script Tag -->
   <script src="js/script.js"></script>
 </body>
 

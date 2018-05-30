@@ -1,5 +1,5 @@
 //Call Vue function
-var app = new Vue({
+var appEnergy = new Vue({
   //What Vue is going to dynamically change
   el: '#appEnergy',
   data: {
