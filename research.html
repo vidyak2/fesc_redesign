@@ -5,12 +5,17 @@
   <title>FESC Florida Energy Systems Consortium - FESC Research</title>
 
   <meta charset="utf-8">
+
   <!-- Force mobile browsers to display at the size of the device -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
   <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <!-- Link to Vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <!-- Google font link -->
   <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
@@ -35,224 +40,69 @@
 </head>
 
 <body>
-  <!-- Reference for Back to top button -->
-  <a class="top"></a>
+  <!--  Beggining of Vue.js-->
+  <div id="appResearch">
+    <!-- Reference for Back to top button -->
+    <a class="top"></a>
 
-  <header>
-
-    <!-- Main Nav (on larger screens) -->
-    <nav class="mainnav">
-      <div class="drpdwn">
-
-        <form action="index.html">
-          <input class="drpbtn" type="submit" value="Home">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">FESC Expertise</a>
-          <a href="#">Technology Commercialization</a>
-          <a href="#">Annual Reports, Publications and Presentations</a>
-          <a href="#">Advisory Board</a>
-          <a href="#">Supplementary Information</a>
-        </div>
-      </div>
-      <div class="drpdwn">
-        <form action="research.html">
-          <input class="drpbtn" type="submit" value="FESC Research">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Research Archives</a>
-        </div>
-      </div>
-
-      <div class="drpdwn">
-        <form action="energyindustry.html">
-          <input class="drpbtn" type="submit" value="Energy Industry">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
-          <a href="#">Energy Efficiency</a>
-          <a href="#">Energy Crops</a>
-          <a href="#">Waste to Energy</a>
-          <a href="#">Smart Grid & Power</a>
-          <a href="#">Energy Storage</a>
-          <a href="#">Network & Security</a>
-          <a href="#">Water Purification</a>
-          <a href="#">Consulates & Law</a>
-          <a href="#">Engineering Consulting</a>
-          <a href="#">Associations & Organizations</a>
-          <a href="#">Energy Financing & Funding</a>
-          <a href="#">FL University Spin-off</a>
-          <a href="#">Other</a>
-        </div>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+    <!-- Use Vue.js for entire header -->
+    <app-header text="FESC" texttwo="Florida Energy Systems Consortium" textthree="Universities Addressing Florida's Energy Needs"></app-header>
 
 
-    <div class="top">
+    <main>
+      <section class="container">
+        <h2>FESC Research</h2>
+        <!-- Main Text Article -->
+        <article class="maintext">
+          <h2>FL University Research</h2>
 
-      <!-- Logo Image, Search Bar & Hamburger Menu-->
-      <div class="headerimg">
+          <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 11 supported universities to share energy-related expertise. The development of environmentally friendly, renewable, and cost-effective energy options are very important to our State’s future.</p>
 
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
+          <p>The Consortium has very strong and diverse energy expertise. More than 400 faculty members are currently engaged in energy related research. The energy expertise within the consortium includes energy efficiency, biomass, solar, marine, grid, storage, carbon capture, nuclear, policy/economics, and energy education/outreach. The consortium’s research projects are listed under each “submenu” given on the left side of this page. Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development. The consortium universities collectively have over 60 energy related centers, laboratories, and user facilities.</p>
 
-        <!-- Logo Image -->
-        <img src="images/logo.png" alt="logo">
+          <p>In addition, the consortium has a strong industry outreach and technology commercialization program. FESC’s industrial program promotes collaboration between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p>
 
-        <!-- Center Top Submit Form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
-          </label>
-          </form>
+          <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs.</p>
+
+          <h2>FESC Funded Projects</h2>
+
+          <p>The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
+
+          <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
+
+          <h2>Research Vision</h2>
+
+          <p>The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.</p>
+
+          <p>The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.</p>
+
         </article>
 
-      </div>
-
-      <!-- Title -->
-      <div class="logotext">
-        <h1>FESC</h1>
-        <div class="below">
-          <h2 class="logo">Florida Energy Systems Consortium</h2>
-          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Hamburger Menu (On smaller screens)-->
-    <div id="reducedNav" class="reducednav">
-
-      <!-- Call to JS for Hamburger Nav to close -->
-      <!-- &times for X icon in CSS -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Dropdown Menu changed to left margin menu-->
-      <a href="index.html">Home</a>
-      <div class="leftmargin">
-        <a href="#">FESC Expertise</a>
-        <a href="#">Technology Commercialization</a>
-        <a href="#">Annual Reports, Publications and Presentations</a>
-        <a href="#">Advisory Board</a>
-        <a href="#">Supplementary Information</a>
-      </div>
-
-      <a href="research.html">FESC Research</a>
-      <div class="leftmargin">
-        <a href="#">Research Archives</a>
-      </div>
+        <article>
+          <h2>Strategic Research Thrusts of FESC:</h2>
+          <ul>
+            <li>Understanding Florida’s Energy Systems (Overarching)</li>
+            <li>Enhancing Energy Efficiency and Conservation</li>
+            <li>Developing Florida’s Biomass Resources</li>
+            <li>Harnessing Florida’s Solar Resources</li>
+            <li>Ensuring Nuclear Energy & Carbon Constrained Technologies for Electric Power in Florida</li>
+            <li>Exploiting Florida’s Ocean Energy Resources</li>
+            <li>Securing our Energy Storage and Delivery Infrastructure</li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
 
-      <a href="energyindustry.html">Energy Industry</a>
-      <div class="leftmargin">
-        <a href="#">Florida Energy Facts</a>
-        <a href="#">Energy Efficiency</a>
-        <a href="#">Energy Crops</a>
-        <a href="#">Waste to Energy</a>
-        <a href="#">Smart Grid & Power</a>
-        <a href="#">Energy Storage</a>
-        <a href="#">Network & Security</a>
-        <a href="#">Water Purification</a>
-        <a href="#">Consulates & Law</a>
-        <a href="#">Engineering Consulting</a>
-        <a href="#">Associations & Organizations</a>
-        <a href="#">Energy Financing & Funding</a>
-        <a href="#">FL University Spin-off</a>
-        <a href="#">Other</a>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
+    <!-- Use Vue.js for entire header -->
+    <app-footer message="Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website." messagetwo="&copy; 2018 || Vidya Krishnan" messagethree="Last modified on May 30 2018"></app-footer>
 
-    </div>
+  </div>
 
-  </header>
-
-
-  <main>
-    <section class="container">
-      <h2>FESC Research</h2>
-      <!-- Main Text Article -->
-      <article class="maintext">
-        <h2>FL University Research</h2>
-
-        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 11 supported universities to share energy-related expertise. The development of environmentally friendly, renewable, and cost-effective energy options are very important to our State’s future.</p>
-
-        <p>The Consortium has very strong and diverse energy expertise. More than 400 faculty members are currently engaged in energy related research. The energy expertise within the consortium includes energy efficiency, biomass, solar, marine, grid, storage, carbon capture, nuclear, policy/economics, and energy education/outreach. The consortium’s research projects are listed under each “submenu” given on the left side of this page. Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development. The consortium universities collectively have over 60 energy related centers, laboratories, and user facilities.</p>
-
-        <p>In addition, the consortium has a strong industry outreach and technology commercialization program. FESC’s industrial program promotes collaboration between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p>
-
-        <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs.</p>
-
-        <h2>FESC Funded Projects</h2>
-
-        <p>The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
-
-        <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
-
-        <h2>Research Vision</h2>
-
-        <p>The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.</p>
-
-        <p>The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.</p>
-
-      </article>
-
-      <article>
-        <h2>Strategic Research Thrusts of FESC:</h2>
-        <ul>
-          <li>Understanding Florida’s Energy Systems (Overarching)</li>
-          <li>Enhancing Energy Efficiency and Conservation</li>
-          <li>Developing Florida’s Biomass Resources</li>
-          <li>Harnessing Florida’s Solar Resources</li>
-          <li>Ensuring Nuclear Energy & Carbon Constrained Technologies for Electric Power in Florida</li>
-          <li>Exploiting Florida’s Ocean Energy Resources</li>
-          <li>Securing our Energy Storage and Delivery Infrastructure</li>
-        </ul>
-      </article>
-    </section>
-  </main>
-
-
-  <footer>
-    <article class="topfooter">
-
-      <!-- Footer Submit Form -->
-      <article class="footcenter">
-        <form name="signup" onsubmit="submit()">
-          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-        </form>
-      </article>
-
-      <!-- Copyright -->
-      <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
-      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
-
-      <!-- Footer Icons -->
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-
-    </article>
-
-    <!-- Back to Top Button -->
-    <article class="bottomfooter">
-      <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
-    </article>
-
-
-  </footer>
-
-  <!-- Script Tag -->
+  <!-- Add link to Script tags-->
+  <script src="js/components.js"></script>
+  <script src="js/research.js"></script>
+  <!-- Original Script Tag -->
   <script src="js/script.js"></script>
 </body>
 
