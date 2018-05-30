@@ -3,14 +3,18 @@
 
 <head>
   <title>FESC Florida Energy Systems Consortium - Home</title>
-
   <meta charset="utf-8">
+
   <!-- Force mobile browsers to display at the size of the device -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
   <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <!-- Link to Vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <!-- Google font link -->
   <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
@@ -35,260 +39,105 @@
 </head>
 
 <body>
-  <!-- Reference for Back to top button -->
-  <a class="top"></a>
+  <!--  Beggining of Vue.js-->
+  <div id="app">
+    <!-- Reference for Back to top button -->
 
+    <a class="top"></a>
 
-  <header>
+    <!-- Use Vue.js for entire header -->
+    <app-header text="FESC" texttwo="Florida Energy Systems Consortium" textthree="Universities Addressing Florida's Energy Needs"></app-header>
 
-    <!-- Main Nav (on larger screens) -->
-    <nav class="mainnav">
-      <div class="drpdwn">
+    <!-- Main section -->
+    <main>
+      <section class="container">
+        <h2>FESC - Bringing Energy Solutions to Florida, the Nation and the World</h2>
 
-        <form action="index.html">
-          <input class="drpbtn" type="submit" value="Home">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">FESC Expertise</a>
-          <a href="#">Technology Commercialization</a>
-          <a href="#">Annual Reports, Publications and Presentations</a>
-          <a href="#">Advisory Board</a>
-          <a href="#">Supplementary Information</a>
-        </div>
-      </div>
-      <div class="drpdwn">
-        <form action="research.html">
-          <input class="drpbtn" type="submit" value="FESC Research">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Research Archives</a>
-        </div>
-      </div>
+        <!-- Main Text Article -->
+        <div class="maintext">
+          <h2>About Us</h2>
+          <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its <a href="#backtouniversities">12 supported universities</a> to share energy-related expertise.</p>
 
-      <div class="drpdwn">
-        <form action="energyindustry.html">
-          <input class="drpbtn" type="submit" value="Energy Industry">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
-          <a href="#">Energy Efficiency</a>
-          <a href="#">Energy Crops</a>
-          <a href="#">Waste to Energy</a>
-          <a href="#">Smart Grid & Power</a>
-          <a href="#">Energy Storage</a>
-          <a href="#">Network & Security</a>
-          <a href="#">Water Purification</a>
-          <a href="#">Consulates & Law</a>
-          <a href="#">Engineering Consulting</a>
-          <a href="#">Associations & Organizations</a>
-          <a href="#">Energy Financing & Funding</a>
-          <a href="#">FL University Spin-off</a>
-          <a href="#">Other</a>
-        </div>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-
-
-    <div class="top">
-
-      <!-- Logo Image, Search Bar & Hamburger Menu-->
-      <div class="headerimg">
-
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-        <!-- Logo Image -->
-        <img src="images/logo.png" alt="logo">
-
-        <!-- Center Top Submit Form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
-          </label>
-          </form>
-        </article>
-
-      </div>
-
-      <!-- Title -->
-      <div class="logotext">
-        <h1>FESC</h1>
-        <div class="below">
-          <h2 class="logo">Florida Energy Systems Consortium</h2>
-          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Hamburger Menu (On smaller screens)-->
-    <div id="reducedNav" class="reducednav">
-
-      <!-- Call to JS for Hamburger Nav to close -->
-      <!-- &times for X icon in CSS -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Dropdown Menu changed to left margin menu-->
-      <a href="index.html">Home</a>
-      <div class="leftmargin">
-        <a href="#">FESC Expertise</a>
-        <a href="#">Technology Commercialization</a>
-        <a href="#">Annual Reports, Publications and Presentations</a>
-        <a href="#">Advisory Board</a>
-        <a href="#">Supplementary Information</a>
-      </div>
-
-      <a href="research.html">FESC Research</a>
-      <div class="leftmargin">
-        <a href="#">Research Archives</a>
-      </div>
-
-
-      <a href="energyindustry.html">Energy Industry</a>
-      <div class="leftmargin">
-        <a href="#">Florida Energy Facts</a>
-        <a href="#">Energy Efficiency</a>
-        <a href="#">Energy Crops</a>
-        <a href="#">Waste to Energy</a>
-        <a href="#">Smart Grid & Power</a>
-        <a href="#">Energy Storage</a>
-        <a href="#">Network & Security</a>
-        <a href="#">Water Purification</a>
-        <a href="#">Consulates & Law</a>
-        <a href="#">Engineering Consulting</a>
-        <a href="#">Associations & Organizations</a>
-        <a href="#">Energy Financing & Funding</a>
-        <a href="#">FL University Spin-off</a>
-        <a href="#">Other</a>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-
-    </div>
-
-  </header>
-
-
-  <main>
-    <section class="container">
-      <h2>FESC - Bringing Energy Solutions to Florida, the Nation and the World</h2>
-
-      <!-- Main Text Article -->
-      <div class="maintext">
-        <h2>About Us</h2>
-        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its <a href="#backtouniversities">12 supported universities</a> to share energy-related expertise.</p>
-
-        <!-- Centered Text & Video -->
-        <article class="topic">
-          <!-- Text -->
-          <p>The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to 'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'.</p>
-          <!-- Video -->
-          <div class="video">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/YA2ofbdd-G8">
+          <!-- Centered Text & Video -->
+          <article class="topic">
+            <!-- Text -->
+            <p>The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to 'perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state'.</p>
+            <!-- Video -->
+            <div class="video">
+              <iframe width="400" height="300" src="https://www.youtube.com/embed/YA2ofbdd-G8">
           </iframe>
-          </div>
+            </div>
+          </article>
+
+          <h2>Our Mission</h2>
+          <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
+          <ol>
+            <li> Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</li>
+            <li> Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</li>
+            <li>Provide a state resource for objective energy systems analysis.</li>
+            <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
+          </ol>
+
+          <p>For more information on FESC, download the full brochure <a href="#">here</a>.</p>
+
+        </div>
+
+        <!-- News & Events -->
+        <article class="news">
+          <h2>News & Events</h2>
+
+          <h3>Florida Energy Summit - October 18-20 2017</h3>
+          <p><a href="#">Westin Fort Lauderdale Beach Resort - Fort Lauderdale, Florida</a></p>
+
+          <h3>2017 FESC/Polytech Conference - July 31-August 01 2017</h3>
+          <p>FESC holds an <a href="#">annual technical workshop</a> to disseminate the latest advances in energy research and education and assist the Florida Office of Energy with the Florida Energy Summit.</p>
+
+
+          <!-- Facebook Share Button -->
+
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fvidyak2.github.io%2Fweektwo%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0 " allowTransparency="true" allow="encrypted-media"></iframe>
+        </article>
+        <p class="info">For more information on the news, events, and conferences related to FESC, please visit the <a href="#">News & Events page</a>.</p>
+
+
+
+        <!-- Reference for Supported Universities -->
+        <a id="backtouniversities"></a>
+        <!-- Supported Universities Article -->
+
+        <article class="universities">
+          <h2>12 Supported Universities</h2>
+          <ul class="one">
+            <li>University of Florida</li>
+            <li>Florida State University</li>
+            <li>University of Central Florida</li>
+            <li>University of South Florida</li>
+            <li>Florida Agricultural and Mechanical University</li>
+            <li>Florida Atlantic University</li>
+          </ul>
+          <ul class="two">
+            <li>Florida Gulf Coast University</li>
+            <li>Florida International University</li>
+            <li>New College of Florida</li>
+            <li>University of North Florida</li>
+            <li>University of West Florida</li>
+            <li>Florida Polytechnic University</li>
+          </ul>
         </article>
 
-        <h2>Our Mission</h2>
-        <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
-        <ol>
-          <li> Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</li>
-          <li> Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</li>
-          <li>Provide a state resource for objective energy systems analysis.</li>
-          <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
-        </ol>
-
-        <p>For more information on FESC, download the full brochure <a href="#">here</a>.</p>
-
-      </div>
-
-      <!-- News & Events -->
-      <article class="news">
-        <h2>News & Events</h2>
-
-        <h3>Florida Energy Summit - October 18-20 2017</h3>
-        <p><a href="#">Westin Fort Lauderdale Beach Resort - Fort Lauderdale, Florida</a></p>
-
-        <h3>2017 FESC/Polytech Conference - July 31-August 01 2017</h3>
-        <p>FESC holds an <a href="#">annual technical workshop</a> to disseminate the latest advances in energy research and education and assist the Florida Office of Energy with the Florida Energy Summit.</p>
+      </section>
+    </main>
 
 
-        <!-- Facebook Share Button -->
+    <!-- Use Vue.js for entire header -->
+    <app-footer message="Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website." messagetwo="&copy; 2018 || Vidya Krishnan" messagethree="Last modified on May 30 2018"></app-footer>
 
-        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fvidyak2.github.io%2Fweektwo%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0 " allowTransparency="true" allow="encrypted-media"></iframe>
-      </article>
-      <p class="info">For more information on the news, events, and conferences related to FESC, please visit the <a href="#">News & Events page</a>.</p>
-
-
-
-      <!-- Reference for Supported Universities -->
-      <a id="backtouniversities"></a>
-      <!-- Supported Universities Article -->
-
-      <article class="universities">
-        <h2>12 Supported Universities</h2>
-        <ul class="one">
-          <li>University of Florida</li>
-          <li>Florida State University</li>
-          <li>University of Central Florida</li>
-          <li>University of South Florida</li>
-          <li>Florida Agricultural and Mechanical University</li>
-          <li>Florida Atlantic University</li>
-        </ul>
-        <ul class="two">
-          <li>Florida Gulf Coast University</li>
-          <li>Florida International University</li>
-          <li>New College of Florida</li>
-          <li>University of North Florida</li>
-          <li>University of West Florida</li>
-          <li>Florida Polytechnic University</li>
-        </ul>
-      </article>
-
-    </section>
-  </main>
-
-
-  <footer>
-    <article class="topfooter">
-
-      <!-- Footer Submit Form -->
-      <article class="footcenter">
-        <form name="signup" onsubmit="submit()">
-          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-        </form>
-      </article>
-
-      <!-- Copyright -->
-      <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
-      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
-
-      <!-- Footer Icons -->
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-
-    </article>
-
-    <!-- Back to Top Button -->
-    <article class="bottomfooter">
-      <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
-    </article>
-
-
-  </footer>
-
-  <!-- Script Tag -->
+    <!--    End of Vue.js-->
+  </div>
+  <!-- Add link to Script tags-->
+  <script src="js/components.js"></script>
+  <script src="js/index.js"></script>
+  <!-- Basic Script Tag -->
   <script src="js/script.js"></script>
 </body>
 
