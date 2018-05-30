@@ -57,24 +57,20 @@
           <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.*</p>
         </article>
 
-        <!-- Images Article. Each image links to a single web page. This eliminates left-side navigation. -->
+
+        <!-- Images with title and description, populated by vue.js -->
         <article class="images" id="images">
-          <!-- Link to Algea Page-->
-          <a href="#"><img class="energyimg" src="images/algae.png" alt="algae"></a>
-          <!-- Link to Biomass & Biofuels Page-->
-          <a href="#"><img class="energyimg" src="images/biomassandbiofuels.png" alt="biomass and biofuels"></a>
-          <!-- Link to Solar Page-->
-          <a href="#"><img class="energyimg" src="images/solar.png" alt="solar"></a>
-          <!-- Link to Wind Page-->
-          <a href="#"><img class="energyimg" src="images/wind.png" alt="wind"></a>
-          <!-- Link to Utilities, Electric & Power Page-->
-          <a href="#"><img class="energyimg" src="images/electricity.png" alt="utilities electric & power"></a>
-          <!-- Link to Marine Page - This image will be changed by a Marine image -->
-          <a href="#"><img class="energyimg" src="images/algae.png" alt="marine"></a>
-          <!-- Link to Natural Gas Page - This image will be changed by a Natural Gas image -->
-          <a href="#"><img class="energyimg" src="images/algae.png" alt="natural gas"></a>
-          <!-- Link to Gas Turbine, Oil & Petroleum Page-->
-          <a href="#"><img class="energyimg" src="images/petroleum.png" alt="gas turbine, oil & petroleum"></a>
+
+          <div v-for="energy in energyitems" class="energyimg">
+            <h3>{{ energy.name }}</h3>
+            <img :src="energy.imgSource" :alt="energy.name">
+            <div class="side">
+              <p> {{ energy.description }}</p>
+              <!-- This would link to the associated pages-->
+              <p><a href="#"><i class="fas fa-arrow-right"></i></a></p>
+            </div>
+          </div>
+
         </article>
 
         <p class="smaller">*This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
