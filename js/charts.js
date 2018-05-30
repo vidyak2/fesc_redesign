@@ -232,3 +232,13 @@ function drawElectricityChart() {
   var chart = new google.visualization.LineChart(document.getElementById('electricity_chart'));
   chart.draw(data, options);
 }
+
+
+//Call Vue function
+var appCharts = new Vue({
+  //What Vue is going to dynamically change
+  el: '#appCharts',
+  data: {
+
+  }
+})

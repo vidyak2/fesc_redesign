@@ -40,232 +40,103 @@
 </head>
 
 <body>
-  <!-- Reference for Back to top button -->
-  <a class="top"></a>
+  <!--  Beggining of Vue.js-->
+  <div id="appContact">
+    <!-- Reference for Back to top button -->
+    <a class="top"></a>
 
-  <header>
+    <!-- Use Vue.js for entire header -->
+    <app-header text="FESC" texttwo="Florida Energy Systems Consortium" textthree="Universities Addressing Florida's Energy Needs"></app-header>
 
-    <!-- Main Nav (on larger screens) -->
-    <nav class="mainnav">
-      <div class="drpdwn">
+    <main>
+      <section class="container">
+        <!-- Main Text Article -->
+        <article class="maintextcontact">
 
-        <form action="index.html">
-          <input class="drpbtn" type="submit" value="Home">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">FESC Expertise</a>
-          <a href="#">Technology Commercialization</a>
-          <a href="#">Annual Reports, Publications and Presentations</a>
-          <a href="#">Advisory Board</a>
-          <a href="#">Supplementary Information</a>
-        </div>
-      </div>
-      <div class="drpdwn">
-        <form action="research.html">
-          <input class="drpbtn" type="submit" value="FESC Research">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Research Archives</a>
-        </div>
-      </div>
+          <h2>Contact Us</h2>
+          <article>
+            <h3>Interim Director</h3>
+            <p class="contact">Dr. David Norton</p>
+            <p class="contact"><a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> dpnorton@ufl.edu</p>
+          </article>
 
-      <div class="drpdwn">
-        <form action="energyindustry.html">
-          <input class="drpbtn" type="submit" value="Energy Industry">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
-          <a href="#">Energy Efficiency</a>
-          <a href="#">Energy Crops</a>
-          <a href="#">Waste to Energy</a>
-          <a href="#">Smart Grid & Power</a>
-          <a href="#">Energy Storage</a>
-          <a href="#">Network & Security</a>
-          <a href="#">Water Purification</a>
-          <a href="#">Consulates & Law</a>
-          <a href="#">Engineering Consulting</a>
-          <a href="#">Associations & Organizations</a>
-          <a href="#">Energy Financing & Funding</a>
-          <a href="#">FL University Spin-off</a>
-          <a href="#">Other</a>
-        </div>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+          <article>
+            <h3>Associate Director</h3>
+            <p class="contact">Ms. Canan “Janan” Balaban</p>
+            <p class="contact"><a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> cbalaban@ufl.edu</p>
+          </article>
+
+          <h2>Visit Us</h2>
+          <article class="visit">
+            <div>
+              <p class="firstoftype">272 Grinter Hall</p>
+              <p class="contact">P.O. Box 115500</p>
+              <p class="contact">Gainesville, FL 32611-5500</p>
+              <p class="contact"><i class="fa fa-phone-square" aria-hidden="true"></i> 352 294 2027</p>
+            </div>
+
+            <img src="images/map.png" alt="map">
+          </article>
+
+          <article>
+            <h2>Parking Directions</h2>
+
+            <p class="text">The Visitor Welcome Center and Bookstore parking garage is located at the Reitz Union, at the corner of Museum Road and Reitz Union Drive. The garage is an unrestricted pay facility available to all members of the university community.</p>
+
+            <p class="centerbold">Standard daily fee:</p>
+            <p class="center">$5.00 (159 spaces available)</p>
+            <p class="centerbold">Hours of operation:</p>
+            <p class="center">Monday - Friday: 7:30 am - 4:30 pm*</p>
 
 
-    <div class="top">
+            <p class="text">The garage may be used during non-operating hours for short-term parking, free of charge.</p>
 
-      <!-- Logo Image, Search Bar & Hamburger Menu-->
-      <div class="headerimg">
+            <p class="smaller">* Short-term and daily fees apply during this time. They are to be paid at pay stations located at the stair towers and elevators in the garage.</p>
+          </article>
 
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
+        </article>
+      </section>
+    </main>
 
-        <!-- Logo Image -->
-        <img src="images/logo.png" alt="logo">
 
-        <!-- Center Top Submit Form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
+    <footer>
+      <article class="topfooter">
+
+        <!-- Footer Submit Form -->
+        <article class="footcenter">
+          <form name="signup" onsubmit="submit()">
+            <label>Sign up for the FESC Florida Energy Connecions Newsletter 
+            <input class="newsletter" type="text" name="signup">
+              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
           </label>
           </form>
         </article>
 
-      </div>
-
-      <!-- Title -->
-      <div class="logotext">
-        <h1>FESC</h1>
-        <div class="below">
-          <h2 class="logo">Florida Energy Systems Consortium</h2>
-          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
+        <!-- Copyright -->
+        <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
+        <p class="foot">&copy; 2018 || Vidya Krishnan</p>
+        <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
+        <!-- Footer Icons -->
+        <div class="icons">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-      </div>
-
-    </div>
-
-    <!-- Hamburger Menu (On smaller screens)-->
-    <div id="reducedNav" class="reducednav">
-
-      <!-- Call to JS for Hamburger Nav to close -->
-      <!-- &times for X icon in CSS -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Dropdown Menu changed to left margin menu-->
-      <a href="index.html">Home</a>
-      <div class="leftmargin">
-        <a href="#">FESC Expertise</a>
-        <a href="#">Technology Commercialization</a>
-        <a href="#">Annual Reports, Publications and Presentations</a>
-        <a href="#">Advisory Board</a>
-        <a href="#">Supplementary Information</a>
-      </div>
-
-      <a href="research.html">FESC Research</a>
-      <div class="leftmargin">
-        <a href="#">Research Archives</a>
-      </div>
-
-
-      <a href="energyindustry.html">Energy Industry</a>
-      <div class="leftmargin">
-        <a href="#">Florida Energy Facts</a>
-        <a href="#">Energy Efficiency</a>
-        <a href="#">Energy Crops</a>
-        <a href="#">Waste to Energy</a>
-        <a href="#">Smart Grid & Power</a>
-        <a href="#">Energy Storage</a>
-        <a href="#">Network & Security</a>
-        <a href="#">Water Purification</a>
-        <a href="#">Consulates & Law</a>
-        <a href="#">Engineering Consulting</a>
-        <a href="#">Associations & Organizations</a>
-        <a href="#">Energy Financing & Funding</a>
-        <a href="#">FL University Spin-off</a>
-        <a href="#">Other</a>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-
-    </div>
-
-  </header>
-
-
-  <main>
-    <section class="container">
-      <!-- Main Text Article -->
-      <article class="maintextcontact">
-
-        <h2>Contact Us</h2>
-        <article>
-          <h3>Interim Director</h3>
-          <p class="contact">Dr. David Norton</p>
-          <p class="contact"><a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> dpnorton@ufl.edu</p>
-        </article>
-
-        <article>
-          <h3>Associate Director</h3>
-          <p class="contact">Ms. Canan “Janan” Balaban</p>
-          <p class="contact"><a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> cbalaban@ufl.edu</p>
-        </article>
-
-        <h2>Visit Us</h2>
-        <article class="visit">
-          <div>
-            <p class="firstoftype">272 Grinter Hall</p>
-            <p class="contact">P.O. Box 115500</p>
-            <p class="contact">Gainesville, FL 32611-5500</p>
-            <p class="contact"><i class="fa fa-phone-square" aria-hidden="true"></i> 352 294 2027</p>
-          </div>
-
-          <img src="images/map.png" alt="map">
-        </article>
-
-        <article>
-          <h2>Parking Directions</h2>
-
-          <p class="text">The Visitor Welcome Center and Bookstore parking garage is located at the Reitz Union, at the corner of Museum Road and Reitz Union Drive. The garage is an unrestricted pay facility available to all members of the university community.</p>
-
-          <p class="centerbold">Standard daily fee:</p>
-          <p class="center">$5.00 (159 spaces available)</p>
-          <p class="centerbold">Hours of operation:</p>
-          <p class="center">Monday - Friday: 7:30 am - 4:30 pm*</p>
-
-
-          <p class="text">The garage may be used during non-operating hours for short-term parking, free of charge.</p>
-
-          <p class="smaller">* Short-term and daily fees apply during this time. They are to be paid at pay stations located at the stair towers and elevators in the garage.</p>
-        </article>
 
       </article>
-    </section>
-  </main>
 
-
-  <footer>
-    <article class="topfooter">
-
-      <!-- Footer Submit Form -->
-      <article class="footcenter">
-        <form name="signup" onsubmit="submit()">
-          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-        </form>
+      <!-- Back to Top Button -->
+      <article class="bottomfooter">
+        <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
       </article>
 
-      <!-- Copyright -->
-      <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
-      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
-      <!-- Footer Icons -->
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
 
-    </article>
-
-    <!-- Back to Top Button -->
-    <article class="bottomfooter">
-      <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
-    </article>
-
-
-  </footer>
-
+    </footer>
+  </div>
   <!-- Add link to Script tags-->
   <script src="js/components.js"></script>
-  <script src="#"></script>
-  <!-- Basic Script Tag -->
+  <script src="js/contact.js"></script>
+  <!-- Original Script Tag -->
   <script src="js/script.js"></script>
 </body>
 

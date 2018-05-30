@@ -10,9 +10,10 @@
   <!-- Google Charts Link -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <!-- Script Tag -->
-  <script src="js/components.js"></script>
-  <script src="js/charts.js"></script>
+
+  <!-- Link to Vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
   <!-- Basic Script Tag -->
   <script src="js/script.js"></script>
 
@@ -49,202 +50,78 @@
 </head>
 
 <body>
-  <!-- Reference for Back to top button -->
-  <a class="top"></a>
+  <!--  Beggining of Vue.js-->
+  <div id="appCharts">
+    <!-- Reference for Back to top button -->
+    <a class="top"></a>
 
-  <header>
-    <!-- Main Nav (on larger screens) -->
-    <nav class="mainnav">
-      <div class="drpdwn">
+    <!-- Use Vue.js for entire header -->
+    <app-header text="FESC" texttwo="Florida Energy Systems Consortium" textthree="Universities Addressing Florida's Energy Needs"></app-header>
 
-        <form action="index.html">
-          <input class="drpbtn" type="submit" value="Home">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">FESC Expertise</a>
-          <a href="#">Technology Commercialization</a>
-          <a href="#">Annual Reports, Publications and Presentations</a>
-          <a href="#">Advisory Board</a>
-          <a href="#">Supplementary Information</a>
+    <main>
+
+      <section class="container">
+        <h2>Data & Charts</h2>
+
+        <!-- Main Text Article -->
+        <!-- Div that holds Column Chart-->
+        <div id="energy_chart">
         </div>
-      </div>
-      <div class="drpdwn">
-        <form action="research.html">
-          <input class="drpbtn" type="submit" value="FESC Research">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Research Archives</a>
+
+        <p class="smaller_chart">Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A14:12:24 GMT-0700 (PDT)</p>
+
+        <!-- Div that holds Line Chart-->
+        <div id="electricity_chart">
         </div>
-      </div>
 
-      <div class="drpdwn">
-        <form action="energyindustry.html">
-          <input class="drpbtn" type="submit" value="Energy Industry">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
-          <a href="#">Energy Efficiency</a>
-          <a href="#">Energy Crops</a>
-          <a href="#">Waste to Energy</a>
-          <a href="#">Smart Grid & Power</a>
-          <a href="#">Energy Storage</a>
-          <a href="#">Network & Security</a>
-          <a href="#">Water Purification</a>
-          <a href="#">Consulates & Law</a>
-          <a href="#">Engineering Consulting</a>
-          <a href="#">Associations & Organizations</a>
-          <a href="#">Energy Financing & Funding</a>
-          <a href="#">FL University Spin-off</a>
-          <a href="#">Other</a>
-        </div>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+        <p class="smaller_chart">Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A14:14:30 GMT-0700 (PDT)</p>
+
+      </section>
+    </main>
 
 
-    <div class="top">
-      <!-- Logo Image, Search Bar & Hamburger Menu-->
-      <div class="headerimg">
-
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-        <!-- Logo Image -->
-        <img src="images/logo.png" alt="logo">
-
-        <!-- Center Top Submit Form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
+    <footer>
+      <article class="topfooter">
+        <!-- Footer Submit Form -->
+        <article class="footcenter">
+          <form name="signup" onsubmit="submit()">
+            <label>Sign up for the FESC Florida Energy Connecions Newsletter 
+            <input class="newsletter" type="text" name="signup">
+              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
           </label>
           </form>
         </article>
 
-      </div>
+        <!-- Copyright -->
 
-      <!-- Title -->
-      <div class="logotext">
-        <h1>FESC</h1>
-        <div class="below">
-          <h2 class="logo">Florida Energy Systems Consortium</h2>
-          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
+        <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
+        <p class="foot">&copy; 2018 || Vidya Krishnan</p>
+        <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
+
+        <!-- Footer Icons -->
+
+        <div class="icons">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-      </div>
 
-    </div>
-
-
-    <!-- Hamburger Menu (On smaller screens)-->
-    <div id="reducedNav" class="reducednav">
-
-      <!-- Call to JS for Hamburger Nav to close -->
-      <!-- &times for X icon in CSS -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Dropdown Menu changed to left margin menu-->
-
-      <a href="index.html">Home</a>
-      <div class="leftmargin">
-        <a href="#">FESC Expertise</a>
-        <a href="#">Technology Commercialization</a>
-        <a href="#">Annual Reports, Publications and Presentations</a>
-        <a href="#">Advisory Board</a>
-        <a href="#">Supplementary Information</a>
-      </div>
-
-      <a href="research.html">FESC Research</a>
-      <div class="leftmargin">
-        <a href="#">Research Archives</a>
-      </div>
-
-
-      <a href="energyindustry.html">Energy Industry</a>
-      <div class="leftmargin">
-        <a href="#">Florida Energy Facts</a>
-        <a href="#">Energy Efficiency</a>
-        <a href="#">Energy Crops</a>
-        <a href="#">Waste to Energy</a>
-        <a href="#">Smart Grid & Power</a>
-        <a href="#">Energy Storage</a>
-        <a href="#">Network & Security</a>
-        <a href="#">Water Purification</a>
-        <a href="#">Consulates & Law</a>
-        <a href="#">Engineering Consulting</a>
-        <a href="#">Associations & Organizations</a>
-        <a href="#">Energy Financing & Funding</a>
-        <a href="#">FL University Spin-off</a>
-        <a href="#">Other</a>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-
-    </div>
-  </header>
-
-
-  <main>
-
-    <section class="container">
-      <h2>Data & Charts</h2>
-
-      <!-- Main Text Article -->
-      <!-- Div that holds Column Chart-->
-      <div id="energy_chart">
-      </div>
-
-      <p class="smaller_chart">Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A14:12:24 GMT-0700 (PDT)</p>
-
-      <!-- Div that holds Line Chart-->
-      <div id="electricity_chart">
-      </div>
-
-      <p class="smaller_chart">Source: U.S. Energy Information Administration. https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A14:14:30 GMT-0700 (PDT)</p>
-
-    </section>
-  </main>
-
-
-  <footer>
-    <article class="topfooter">
-      <!-- Footer Submit Form -->
-      <article class="footcenter">
-        <form name="signup" onsubmit="submit()">
-          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-        </form>
       </article>
 
-      <!-- Copyright -->
+      <!-- Back to Top Button -->
 
-      <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
-      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
-
-      <!-- Footer Icons -->
-
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-
-    </article>
-
-    <!-- Back to Top Button -->
-
-    <article class="bottomfooter">
-      <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
-    </article>
+      <article class="bottomfooter">
+        <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
+      </article>
 
 
-  </footer>
+    </footer>
 
+  </div>
 
+  <!-- Script Tag -->
+  <script src="js/components.js"></script>
+  <script src="js/charts.js"></script>
 </body>
 
 </html>
