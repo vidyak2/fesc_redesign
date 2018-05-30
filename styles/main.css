@@ -225,10 +225,19 @@ p {
   .container a {
     font-weight: bolder; }
   .container #energy_chart {
-    padding: 1rem 0rem 0rem 1rem; }
+    padding: 1rem 0rem 0rem 2.5rem; }
   .container #electricity_chart {
-    padding: 1rem 0rem 0rem 1rem; }
+    padding: 0rem 0rem 0rem 0rem; }
 
+@media screen and (max-width: 860px) {
+  .container #energy_chart {
+    padding: 1rem 0rem 0rem 1rem; } }
+@media screen and (max-width: 486px) {
+  .container #energy_chart {
+    padding: 1rem 0rem 0rem 1rem; } }
+@media screen and (max-width: 436px) {
+  .container #energy_chart {
+    padding: 1rem 0rem 0rem 0rem; } }
 .maintext {
   width: 100%;
   display: -webkit-box;

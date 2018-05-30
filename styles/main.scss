@@ -312,13 +312,39 @@ p {
 
   /* Chart styles */
   #energy_chart {
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 1rem 0rem 0rem 2.5rem;
   }
 
   #electricity_chart {
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
 }
+
+// Resize charts
+@media screen and (max-width: 860px) {
+  .container {
+    #energy_chart {
+      padding: 1rem 0rem 0rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .container {
+    #energy_chart {
+      padding: 1rem 0rem 0rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .container {
+    #energy_chart {
+      padding: 1rem 0rem 0rem 0rem;
+    }
+  }
+}
+
 
 .maintext {
   width: 100%;
@@ -338,7 +364,6 @@ p {
     padding: 1rem 0rem;
   }
 }
-
 
 /* MAIN NAVIGATION styles */
 
@@ -590,7 +615,6 @@ ul {
   line-height: 1rem;
   padding: 0.5rem 0rem 1rem 0rem;
 }
-
 
 /* CONTACT PAGE styles */
 

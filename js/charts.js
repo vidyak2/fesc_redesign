@@ -91,6 +91,10 @@ function drawEnergyChart() {
         fontSize: 12,
         bold: false,
         italic: false
+      },
+      textStyle: {
+        fontSize: 11,
+        color: 'black'
       }
     },
     hAxis: {
@@ -101,6 +105,10 @@ function drawEnergyChart() {
         fontSize: 12,
         bold: false,
         italic: false
+      },
+      textStyle: {
+        fontSize: 11,
+        color: 'black'
       }
     },
     height: 300,
@@ -200,6 +208,10 @@ function drawElectricityChart() {
         fontSize: 12,
         bold: false,
         italic: false
+      },
+      textStyle: {
+        fontSize: 11,
+        color: 'black'
       }
     },
     vAxis: {
@@ -214,9 +226,13 @@ function drawElectricityChart() {
         fontSize: 12,
         bold: false,
         italic: false
+      },
+      textStyle: {
+        fontSize: 11,
+        color: 'black'
       }
     },
-    height: 450,
+    height: 550,
     legend: 'none',
     colors: ['#39ac39'],
     titleTextStyle: {
