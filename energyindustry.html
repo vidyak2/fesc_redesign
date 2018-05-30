@@ -5,12 +5,17 @@
   <title>FESC Florida Energy Systems Consortium - Energy Industry</title>
 
   <meta charset="utf-8">
+
   <!-- Force mobile browsers to display at the size of the device -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
   <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <!-- Link to Vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <!-- Google font link -->
   <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
@@ -35,212 +40,52 @@
 </head>
 
 <body>
-  <!-- Reference for Back to top button -->
-  <a class="top"></a>
+  <!--  Beggining of Vue.js-->
+  <div id="appEnergy">
+    <!-- Reference for Back to top button -->
+    <a class="top"></a>
 
-  <header>
-
-    <!-- Main Nav (on larger screens) -->
-    <nav class="mainnav">
-      <div class="drpdwn">
-
-        <form action="index.html">
-          <input class="drpbtn" type="submit" value="Home">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">FESC Expertise</a>
-          <a href="#">Technology Commercialization</a>
-          <a href="#">Annual Reports, Publications and Presentations</a>
-          <a href="#">Advisory Board</a>
-          <a href="#">Supplementary Information</a>
-        </div>
-      </div>
-      <div class="drpdwn">
-        <form action="research.html">
-          <input class="drpbtn" type="submit" value="FESC Research">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Research Archives</a>
-        </div>
-      </div>
-
-      <div class="drpdwn">
-        <form action="energyindustry.html">
-          <input class="drpbtn" type="submit" value="Energy Industry">
-        </form>
-        <div class="drpdwn-cntent">
-          <a href="#">Florida Energy Facts</a>
-          <a href="#">Energy Efficiency</a>
-          <a href="#">Energy Crops</a>
-          <a href="#">Waste to Energy</a>
-          <a href="#">Smart Grid & Power</a>
-          <a href="#">Energy Storage</a>
-          <a href="#">Network & Security</a>
-          <a href="#">Water Purification</a>
-          <a href="#">Consulates & Law</a>
-          <a href="#">Engineering Consulting</a>
-          <a href="#">Associations & Organizations</a>
-          <a href="#">Energy Financing & Funding</a>
-          <a href="#">FL University Spin-off</a>
-          <a href="#">Other</a>
-        </div>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+    <!-- Use Vue.js for entire header -->
+    <app-header text="FESC" texttwo="Florida Energy Systems Consortium" textthree="Universities Addressing Florida's Energy Needs"></app-header>
 
 
-    <div class="top">
-
-      <!-- Logo Image, Search Bar & Hamburger Menu-->
-      <div class="headerimg">
-
-        <!-- Call to JS for Hamburger Nav to open-->
-        <!-- Font Awesome icon used for the hamburger -->
-        <span class="open" onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-        <!-- Logo Image -->
-        <img src="images/logo.png" alt="logo">
-
-        <!-- Center Top Submit Form -->
-        <article class="center">
-          <form name="research" onsubmit="search()">
-            <label>Search:
-            <input class="topsearch" type="text" name="searchbar">
-          </label>
-          </form>
+    <main>
+      <section class="container">
+        <h2>Energy Industry</h2>
+        <!-- Main Text Article -->
+        <article class="maintext">
+          <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.*</p>
         </article>
 
-      </div>
 
-      <!-- Title -->
-      <div class="logotext">
-        <h1>FESC</h1>
-        <div class="below">
-          <h2 class="logo">Florida Energy Systems Consortium</h2>
-          <h3 class="lowerlogo">Universities Addressing Florida's Energy Needs</h3>
-        </div>
-      </div>
+        <!-- Images with title and description, populated by vue.js -->
+        <article class="images" id="images">
 
-    </div>
+          <div v-for="energy in energyitems" class="energyimg">
+            <h3>{{ energy.name }}</h3>
+            <img :src="energy.imgSource" :alt="energy.name">
+            <div class="side">
+              <p> {{ energy.description }}</p>
+              <!-- This would link to the associated pages-->
+              <p><a href="#"><i class="fas fa-arrow-right"></i></a></p>
+            </div>
+          </div>
 
-    <!-- Hamburger Menu (On smaller screens)-->
-    <div id="reducedNav" class="reducednav">
+        </article>
 
-      <!-- Call to JS for Hamburger Nav to close -->
-      <!-- &times for X icon in CSS -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Dropdown Menu changed to left margin menu-->
-      <a href="index.html">Home</a>
-      <div class="leftmargin">
-        <a href="#">FESC Expertise</a>
-        <a href="#">Technology Commercialization</a>
-        <a href="#">Annual Reports, Publications and Presentations</a>
-        <a href="#">Advisory Board</a>
-        <a href="#">Supplementary Information</a>
-      </div>
-
-      <a href="research.html">FESC Research</a>
-      <div class="leftmargin">
-        <a href="#">Research Archives</a>
-      </div>
+        <p class="smaller">*This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
+      </section>
+    </main>
 
 
-      <a href="energyindustry.html">Energy Industry</a>
-      <div class="leftmargin">
-        <a href="#">Florida Energy Facts</a>
-        <a href="#">Energy Efficiency</a>
-        <a href="#">Energy Crops</a>
-        <a href="#">Waste to Energy</a>
-        <a href="#">Smart Grid & Power</a>
-        <a href="#">Energy Storage</a>
-        <a href="#">Network & Security</a>
-        <a href="#">Water Purification</a>
-        <a href="#">Consulates & Law</a>
-        <a href="#">Engineering Consulting</a>
-        <a href="#">Associations & Organizations</a>
-        <a href="#">Energy Financing & Funding</a>
-        <a href="#">FL University Spin-off</a>
-        <a href="#">Other</a>
-      </div>
-      <a href="charts.html">Data and Charts</a>
-      <a href="contact.html">Contact Us</a>
+    <!-- Use Vue.js for entire header -->
+    <app-footer message="Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website." messagetwo="&copy; 2018 || Vidya Krishnan" messagethree="Last modified on May 30 2018"></app-footer>
 
-    </div>
-
-  </header>
-
-
-  <main>
-    <section class="container">
-      <h2>Energy Industry</h2>
-      <!-- Main Text Article -->
-      <article class="maintext">
-        <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.*</p>
-      </article>
-
-      <!-- Images Article. Each image links to a single web page. This eliminates left-side navigation. -->
-      <article class="images" id="images">
-        <!-- Link to Algea Page-->
-        <a href="#"><img class="energyimg" src="images/algae.png" alt="algae"></a>
-        <!-- Link to Biomass & Biofuels Page-->
-        <a href="#"><img class="energyimg" src="images/biomassandbiofuels.png" alt="biomass and biofuels"></a>
-        <!-- Link to Solar Page-->
-        <a href="#"><img class="energyimg" src="images/solar.png" alt="solar"></a>
-        <!-- Link to Wind Page-->
-        <a href="#"><img class="energyimg" src="images/wind.png" alt="wind"></a>
-        <!-- Link to Utilities, Electric & Power Page-->
-        <a href="#"><img class="energyimg" src="images/electricity.png" alt="utilities electric & power"></a>
-        <!-- Link to Marine Page - This image will be changed by a Marine image -->
-        <a href="#"><img class="energyimg" src="images/algae.png" alt="marine"></a>
-        <!-- Link to Natural Gas Page - This image will be changed by a Natural Gas image -->
-        <a href="#"><img class="energyimg" src="images/algae.png" alt="natural gas"></a>
-        <!-- Link to Gas Turbine, Oil & Petroleum Page-->
-        <a href="#"><img class="energyimg" src="images/petroleum.png" alt="gas turbine, oil & petroleum"></a>
-      </article>
-
-      <p class="smaller">*This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
-    </section>
-  </main>
-
-
-  <footer>
-    <article class="topfooter">
-
-      <!-- Footer Submit Form -->
-      <article class="footcenter">
-        <form name="signup" onsubmit="submit()">
-          <label>Sign up for the FESC Florida Energy Connecions Newsletter 
-            <input class="newsletter" type="text" name="signup">
-              <a href="#" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a> 
-          </label>
-        </form>
-      </article>
-
-      <!-- Copyright -->
-      <p class="foot">Please note, this web page has been created solely for educational purposes. All images and texts present on this page have been taken from the original FESC website.</p>
-      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-      <p class="foot">Last modified on <time datetime="2018-05-24">May 24 2018</time></p>
-
-      <!-- Footer Icons -->
-      <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-
-    </article>
-
-    <!-- Back to Top Button -->
-    <article class="bottomfooter">
-      <a class="backtotop" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Back to Top</a>
-    </article>
-
-
-  </footer>
-
-  <!-- Script Tag -->
+  </div>
+  <!-- Add link to Script tags-->
+  <script src="js/components.js"></script>
+  <script src="js/energyindustry.js"></script>
+  <!-- Basic Script Tag -->
   <script src="js/script.js"></script>
 </body>
 
