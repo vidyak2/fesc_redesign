@@ -35,7 +35,7 @@ header {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column; // Keep main navigation extend the entire length of the page 
   .top {
     width: 100%;
     background: linear-gradient($topbottom-color 80%, white 100%);
@@ -87,7 +87,6 @@ header {
   font-size: 36px;
 }
 
-
 /* Hamburger Icon, Logo Image & Search Bar */
 
 .headerimg {
@@ -107,8 +106,11 @@ header {
 
   /* Logo Image */
   img {
-    margin-left: 10rem;
-    padding: 0.25rem 0rem 0rem 0rem;
+    margin-left: 9rem;
+    padding: 1rem 0rem 0rem 0rem;
+    width: 3.5rem;
+    height: 4rem;
+
   }
   /* Search Bar */
   .center {
@@ -209,9 +211,11 @@ input.topsearch {
   .reducednav {
     display: none;
   }
+
   .open {
     display: none;
   }
+
 }
 
 /* Logo styles */
@@ -219,8 +223,6 @@ input.topsearch {
 .logotext {
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: row;
-
   h1 {
     align-self: flex-start;
     font-size: 4rem;
@@ -313,13 +315,39 @@ p {
 
   /* Chart styles */
   #energy_chart {
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 1rem 0rem 0rem 2.5rem;
   }
 
   #electricity_chart {
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
 }
+
+// Resize charts
+@media screen and (max-width: 860px) {
+  .container {
+    #energy_chart {
+      padding: 1rem 0rem 0rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .container {
+    #energy_chart {
+      padding: 1rem 0rem 0rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .container {
+    #energy_chart {
+      padding: 1rem 0rem 0rem 0rem;
+    }
+  }
+}
+
 
 .maintext {
   width: 100%;
@@ -339,7 +367,6 @@ p {
     padding: 1rem 0rem;
   }
 }
-
 
 /* MAIN NAVIGATION styles */
 
@@ -562,16 +589,54 @@ ul {
 /* ENERGY INDUSTRY PAGE styles */
 
 #images {
-  column-count: 4;
-  padding: 0rem 0rem 0rem 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 
   .energyimg {
-    width: 80%;
-    height: auto;
-    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding: 0.5rem;
+    margin: 0.5rem;
     border: 0.5px solid rgb(57, 172, 57);
     border-radius: 0.25rem;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(57, 172, 57, 0.2);
+
+    width: 18rem;
+    height: auto;
+
+    h3 {
+      text-align: center;
+      font-weight: 900;
+      font-size: 19px;
+    }
+
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14px;
+    }
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 14rem;
+    }
+  }
+
+}
+
+
+.side {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  p {
+    padding: 0.25rem;
+
   }
 }
 
@@ -584,6 +649,7 @@ ul {
   }
 }
 
+
 /* CHART PAGE styles */
 
 .smaller_chart {
@@ -591,7 +657,6 @@ ul {
   line-height: 1rem;
   padding: 0.5rem 0rem 1rem 0rem;
 }
-
 
 /* CONTACT PAGE styles */
 
