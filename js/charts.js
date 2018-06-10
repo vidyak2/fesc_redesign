@@ -164,7 +164,7 @@ function getDataTwo() {
 
   let request = new XMLHttpRequest()
 
-  let requestUrl = "http://api.eia.gov/series/?api_key=459a12916e4ff6d4da97a9f9345ff000&series_id=SEDS.TETCB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=459a12916e4ff6d4da97a9f9345ff000&series_id=SEDS.TETCB.FL.A"
 
   request.open('GET', requestUrl, true)
 
