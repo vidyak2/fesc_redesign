@@ -194,11 +194,13 @@ The charts on this page have been created using Google Charts (https://developer
 The Renewable Energy Production data is presented in a column chart. The column chart permits the users to see the difference between the production of renewable energy every year. In this case, it is easily visible that, from 1989, the amount of renewable energy created has been much higher. When hovering over the bars, the complete numbers are shown, permitting users to establish which years had the highest production, in billion BTU. 
 Improvement: In order to clarify the results, a darker color could be given to the tallest bars, putting them in the spotlight. 
 This chart has been created using Google Charts, Column Chart (https://developers.google.com/chart/interactive/docs/gallery/columnchart).
+The data for the Renewable Energy Production has been sourced from US Energy Information Administration web API (https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A).
 
 7.2 Electricity Consumption Chart
 The Electricity Consumption data is presented in a line chart. The line chart permits users to observe the variation in the data accross a certain period of time. In the case of the electricity consumption, it becomes rapidly evident that the amount of electricity consummed is much heigher in 2016, compared to 1960.
 Improvement: In order to clarify the results, larger circle points on the data value could be added on the chart. This would put the spotlight on each value, and not only on the shape of the chart. 
 This chart has been created using Google Charts, Line Chart (https://developers.google.com/chart/interactive/docs/gallery/linechart).
+The data for the Total Energy Consumption has been sourced from US Energy Information Administration web API (https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A).
 
 8. Bibliography
 
